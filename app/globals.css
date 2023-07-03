@@ -45,19 +45,39 @@ body {
 
 /* Headings */
 h1 {
-  @apply text-8xl;
+  @apply text-4xl lg:text-8xl;
 }
 
 h2 {
-  @apply text-6xl;
+  @apply text-3xl lg:text-6xl;
 }
 
 h3 {
-  @apply text-4xl;
+  @apply text-2xl lg:text-4xl;
 }
 
 h4 {
-  @apply text-2xl;
+  @apply text-xl lg:text-2xl;
+}
+@media screen and (min-width: 1024px) {
+  h1 {
+    font-size: var(--h1-font-size);
+  }
+
+  h2 {
+    font-size: 3em;
+  }
+
+  h3 {
+    font-size: 2em;
+  }
+
+  h4 {
+    font-size: 1em;
+  }
+}
+a {
+  @apply no-underline text-[var(--orange)] duration-[400ms] hover:bg-[#d66400] hover:bg-opacity-20;
 }
 
 .p-timeline .p-timeline-event .p-timeline-event-connector {

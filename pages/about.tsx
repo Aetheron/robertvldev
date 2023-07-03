@@ -18,7 +18,7 @@ const About: NextPage = () => {
       content: (
         <div>
           <h3>Calvin University</h3>
-          <p className="w-96 ml-auto">
+          <p className="max-w-96 ml-auto">
             Bachelor of Science in Engineering, concentration in Electrical and
             Computer Engineering
           </p>
@@ -33,7 +33,7 @@ const About: NextPage = () => {
       content: (
         <div>
           <h3>Calvin Theological Seminary</h3>
-          <p className="w-96 ml-auto">
+          <p className="max-w-96 ml-auto">
             Master of Arts in Missions and Evangelism
           </p>
         </div>
@@ -47,7 +47,7 @@ const About: NextPage = () => {
       content: (
         <div>
           <h3>Christian Classics Ethereal Library</h3>
-          <p className="w-96 ml-auto">Web Developer</p>
+          <p className="max-w-96 ml-auto">Web Developer</p>
         </div>
       ),
       icon: <FontAwesomeIcon icon={faBriefcase} />,
@@ -59,7 +59,7 @@ const About: NextPage = () => {
       content: (
         <div>
           <h3>Fusionary</h3>
-          <p className="w-96 ml-auto">Web Developer and DevOps Engineer</p>
+          <p className="max-w-96 ml-auto">Web Developer and DevOps Engineer</p>
         </div>
       ),
       icon: <FontAwesomeIcon icon={faBriefcase} />,
