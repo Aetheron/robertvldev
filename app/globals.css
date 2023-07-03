@@ -6,6 +6,18 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+
+  --orange: #d66400;
+  --oarnge-hover: #d66400;
+  --orange-disabled: rgba(#d66400, 0.5);
+  --blue: #090446;
+  --teal: #1b9aaa;
+  --light-gray: #d0ccd0;
+  --gray: gray;
+  --dark-gray: #292929;
+
+  --color-text: var(--light-gray);
+  --color-background: var(--dark-gray);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -17,11 +29,16 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  min-height: 100vh;
+  color: var(--color-text);
+  background: var(--color-background);
+  transition: color 0.5s, background-color 0.5s;
+  line-height: 1.6;
+  font-family: Oxygen, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Inter, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  font-size: 15px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }

@@ -1,9 +1,12 @@
-import { AppProps } from "next/app";
-import Head from "next/head";
-import { MantineProvider } from "@mantine/core";
+import { AppProps } from "next/app"
+import Head from "next/head"
+import "@/app/globals.css"
+import { Oxygen } from "next/font/google"
+
+const oxygen = Oxygen({ subsets: ["latin"], weight: "300" })
 
 export default function App(props: AppProps) {
-  const { Component, pageProps } = props;
+  const { Component, pageProps } = props
 
   return (
     <>
@@ -15,16 +18,7 @@ export default function App(props: AppProps) {
         />
       </Head>
 
-      <MantineProvider
-        withGlobalStyles
-        withNormalizeCSS
-        theme={{
-          /** Put your mantine theme override here */
-          colorScheme: "dark",
-        }}
-      >
-        <Component {...pageProps} />
-      </MantineProvider>
+      <Component {...pageProps} />
     </>
-  );
+  )
 }
