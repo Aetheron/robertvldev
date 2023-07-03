@@ -1,6 +1,8 @@
 import { AppProps } from "next/app"
 import Head from "next/head"
 import "@/app/globals.css"
+import "@/app/primereact_theme.css"
+import "primereact/resources/primereact.min.css"
 import { Oxygen } from "next/font/google"
 
 const oxygen = Oxygen({ subsets: ["latin"], weight: "300" })
