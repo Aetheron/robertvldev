@@ -15,7 +15,7 @@ import stockX from "@/public/StockX_Green_Digital_RGB.png"
 const Home: NextPage = () => {
   return (
     <main>
-      <div className="flex flex-col justify-between text-center gap-6 lg:flex-row lg:text-left">
+      <div className="flex flex-col justify-between text-center gap-6 mb-12 lg:flex-row lg:text-left">
         <div>
           <h1 className="text-gray-300">Hi, I&apos;m Bob</h1>
           <h1 className="text-gray-300">VanLonkhuyzen</h1>
@@ -45,7 +45,7 @@ const Home: NextPage = () => {
       </div>
       <div className="text-center">
         <h2>Some clients I have worked with</h2>
-        <div className="flex flex-wrap justify-center gap-6 mb-12">
+        <div className="flex flex-wrap justify-center gap-6 my-12">
           <Card className="flex items-center justify-center bg-white w-[250px] h-24 shadow-md hover:shadow-xl hover:transition-all hover:-translate-y-1">
             <svg
               className="w-full h-full inline-block"
