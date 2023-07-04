@@ -17,10 +17,12 @@ const Home: NextPage = () => {
     <main>
       <div className="flex flex-col justify-between text-center gap-6 lg:flex-row lg:text-left">
         <div>
-          <h1>Hi, I&apos;m Bob</h1>
-          <h1>VanLonkhuyzen</h1>
+          <h1 className="text-gray-300">Hi, I&apos;m Bob</h1>
+          <h1 className="text-gray-300">VanLonkhuyzen</h1>
           <br />
-          <h2 className="mb-6">Web Developer and DevOps Engineer</h2>
+          <h2 className="text-gray-300 mb-6">
+            Web Developer and DevOps Engineer
+          </h2>
           <div className="flex flex-wrap justify-center gap-5 lg:justify-start">
             <Chip className="bg-orange" label="PHP"></Chip>
             <Chip className="bg-orange" label="WordPress"></Chip>
