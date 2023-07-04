@@ -14,14 +14,10 @@ export default function CertificationItem({
 }: CertificateItemProps) {
   return (
     <Card
-      className="shadow-md hover:shadow-xl"
-      color="var(--color-background)"
+      className="bg-gray-800 shadow-md hover:shadow-xl hover:transition-all"
       title={title}
     >
-      <h3>
-        <slot name="title"></slot>
-      </h3>
-      <div class="card-content">
+      <div className="flex flex-nowrap gap-5">
         <svg
           className="w-12 h-12"
           xmlns="http://www.w3.org/2000/svg"
@@ -33,7 +29,7 @@ export default function CertificationItem({
         </svg>
         <div>
           <div>{date}</div>
-          <div className="text-[var(--gray)]">{issuer}</div>
+          <div className="text-gray-400">{issuer}</div>
         </div>
       </div>
     </Card>
