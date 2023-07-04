@@ -41,7 +41,7 @@ const Home: NextPage = () => {
           />
         </div>
       </div>
-      <div class="clientGrid">
+      <div className="text-center">
         <h2>Some clients I have worked with</h2>
         <div className="flex flex-wrap justify-center gap-6 mb-12">
           <Card className="flex items-center justify-center w-[250px]">
