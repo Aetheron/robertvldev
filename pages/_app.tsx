@@ -12,7 +12,7 @@ import {
   faGithub,
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons"
-import logo from "@/app/logo.svg"
+import logo from "@/public/logo.svg"
 
 const oxygen = Oxygen({ subsets: ["latin"], weight: "300" })
 
@@ -29,7 +29,7 @@ export default function App(props: AppProps) {
         />
       </Head>
 
-      <header className="leading-normal max-h-screen lg:flex">
+      <header className="leading-normal max-h-screen mb-4 lg:flex">
         <Image
           alt="Site logo"
           className="block mt-0 mb-8 mx-auto"
@@ -39,7 +39,7 @@ export default function App(props: AppProps) {
         />
 
         <div className="w-full">
-          <nav className="w-full text-2xl mt-8 flex flex-wrap justify-center">
+          <nav className="w-full text-2xl mt-8 flex flex-wrap justify-center lg:text-base">
             <Link
               className="px-4 border-l border-[var(--gray)] first-of-type:border-0"
               href="/"

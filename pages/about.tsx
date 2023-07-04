@@ -72,7 +72,7 @@ const About: NextPage = () => {
   return (
     <main>
       <div className="flex flex-col items-center">
-        <h2 className="w-full text-center">About Bob</h2>
+        <h2 className="w-full text-center mb-3">About Bob</h2>
         <Timeline
           className="w-full"
           align="alternate"

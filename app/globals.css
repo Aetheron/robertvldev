@@ -43,6 +43,22 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+#__next {
+  max-width: 1280px;
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 2rem;
+  font-weight: normal;
+}
+
+@media (min-width: 1024px) {
+  #__next {
+    grid-template-columns: 1fr 1fr;
+    padding: 0 2rem;
+  }
+}
+
 /* Headings */
 h1 {
   @apply text-4xl lg:text-8xl;
@@ -58,23 +74,6 @@ h3 {
 
 h4 {
   @apply text-xl lg:text-2xl;
-}
-@media screen and (min-width: 1024px) {
-  h1 {
-    font-size: var(--h1-font-size);
-  }
-
-  h2 {
-    font-size: 3em;
-  }
-
-  h3 {
-    font-size: 2em;
-  }
-
-  h4 {
-    font-size: 1em;
-  }
 }
 a {
   @apply no-underline text-[var(--orange)] duration-[400ms] hover:bg-[#d66400] hover:bg-opacity-20;
