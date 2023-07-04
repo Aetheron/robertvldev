@@ -44,7 +44,7 @@ const Home: NextPage = () => {
       <div className="text-center">
         <h2>Some clients I have worked with</h2>
         <div className="flex flex-wrap justify-center gap-6 mb-12">
-          <Card className="flex items-center justify-center w-[250px] h-24 shadow-md hover:shadow-xl hover:transition-all hover:-translate-y-1">
+          <Card className="flex items-center justify-center bg-white w-[250px] h-24 shadow-md hover:shadow-xl hover:transition-all hover:-translate-y-1">
             <svg
               className="w-full h-full inline-block"
               width="153"
@@ -94,16 +94,16 @@ const Home: NextPage = () => {
               </defs>
             </svg>
           </Card>
-          <Card className="flex items-center justify-center w-[250px] h-24 shadow-md hover:shadow-xl hover:transition-all hover:-translate-y-1">
+          <Card className="flex items-center justify-center bg-white w-[250px] h-24 shadow-md hover:shadow-xl hover:transition-all hover:-translate-y-1">
             <Image src={stockX} alt="StockX logo" />
           </Card>
-          <Card className="flex items-center justify-center w-[250px] h-24 shadow-md hover:shadow-xl hover:transition-all hover:-translate-y-1">
+          <Card className="flex items-center justify-center bg-white w-[250px] h-24 shadow-md hover:shadow-xl hover:transition-all hover:-translate-y-1">
             <Image src={jetsPizza} alt="Jet's Pizza logo" />
           </Card>
-          <Card className="flex items-center justify-center w-[250px] h-24 shadow-md hover:shadow-xl hover:transition-all hover:-translate-y-1">
+          <Card className="flex items-center justify-center bg-white w-[250px] h-24 shadow-md hover:shadow-xl hover:transition-all hover:-translate-y-1">
             <Image src={digitalRealty} alt="Digital Realty logo" />
           </Card>
-          <Card className="flex items-center justify-center w-[250px] h-24 shadow-md hover:shadow-xl hover:transition-all hover:-translate-y-1">
+          <Card className="flex items-center justify-center bg-white w-[250px] h-24 shadow-md hover:shadow-xl hover:transition-all hover:-translate-y-1">
             <svg
               className="w-full h-full inline-block"
               xmlns="http://www.w3.org/2000/svg"
@@ -116,7 +116,7 @@ const Home: NextPage = () => {
               />
             </svg>
           </Card>
-          <Card className="flex items-center justify-center w-[250px] h-24 shadow-md hover:shadow-xl hover:transition-all hover:-translate-y-1">
+          <Card className="flex items-center justify-center bg-white w-[250px] h-24 shadow-md hover:shadow-xl hover:transition-all hover:-translate-y-1">
             <svg
               className="w-full h-full inline-block"
               data-v-f2c41a8a=""
@@ -125,7 +125,7 @@ const Home: NextPage = () => {
               viewBox="0 0 187 24"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <g data-v-f2c41a8a="" fill="none" fill-rule="evenodd">
+              <g data-v-f2c41a8a="" fill="none" fillRule="evenodd">
                 <path
                   data-v-f2c41a8a=""
                   d="M7.557 19.048c-1.444 0-2.742-.298-3.892-.894-1.151-.596-2.05-1.423-2.696-2.482-.647-1.058-.97-2.259-.97-3.602 0-1.344.323-2.545.97-3.603.646-1.058 1.545-1.885 2.696-2.482 1.15-.596 2.448-.894 3.892-.894 1.428 0 2.675.298 3.741.894a5.304 5.304 0 012.33 2.557L10.58 10.18C9.875 8.937 8.86 8.316 7.532 8.316c-1.025 0-1.873.336-2.545 1.008-.672.671-1.007 1.587-1.007 2.746s.335 2.074 1.007 2.746c.672.672 1.52 1.008 2.545 1.008 1.344 0 2.36-.622 3.048-1.865l3.049 1.663c-.487 1.075-1.264 1.915-2.33 2.52-1.067.604-2.314.906-3.742.906zm13.773 0c-1.428 0-2.708-.298-3.842-.894-1.134-.596-2.02-1.423-2.658-2.482-.638-1.058-.958-2.259-.958-3.602 0-1.344.32-2.545.958-3.603.638-1.058 1.524-1.885 2.658-2.482 1.134-.596 2.414-.894 3.842-.894s2.704.298 3.83.894a6.67 6.67 0 012.645 2.482c.638 1.058.957 2.259.957 3.603 0 1.343-.319 2.544-.957 3.602a6.67 6.67 0 01-2.646 2.482c-1.125.596-2.401.894-3.83.894zm0-3.224c1.008 0 1.835-.34 2.482-1.02.646-.681.97-1.592.97-2.734s-.324-2.054-.97-2.734c-.647-.68-1.474-1.02-2.482-1.02-1.008 0-1.84.34-2.494 1.02-.655.68-.983 1.592-.983 2.734s.328 2.053.983 2.733c.655.68 1.486 1.02 2.494 1.02zM47.9 5.09c1.697 0 3.045.5 4.044 1.499 1 1 1.5 2.498 1.5 4.497v7.76h-3.931v-7.155c0-1.075-.223-1.877-.668-2.406-.445-.53-1.079-.794-1.902-.794-.924 0-1.654.298-2.192.895-.537.596-.806 1.482-.806 2.657v6.803h-3.93v-7.155c0-2.133-.857-3.2-2.57-3.2-.907 0-1.63.298-2.167.895-.537.596-.806 1.482-.806 2.657v6.803h-3.93V5.292h3.754v1.562a4.96 4.96 0 011.851-1.31c.731-.302 1.533-.453 2.406-.453.958 0 1.823.189 2.595.567a4.596 4.596 0 011.865 1.65 5.56 5.56 0 012.104-1.638c.848-.386 1.776-.58 2.783-.58zm16.242 0c1.26 0 2.406.29 3.44.87a6.241 6.241 0 012.43 2.443c.588 1.05.882 2.272.882 3.666 0 1.394-.294 2.616-.881 3.665a6.241 6.241 0 01-2.432 2.444c-1.033.58-2.179.87-3.439.87-1.73 0-3.09-.546-4.081-1.638v6.324h-3.93V5.292h3.754v1.562c.974-1.175 2.393-1.763 4.257-1.763zm-.68 10.733c1.008 0 1.835-.34 2.482-1.02.646-.681.97-1.592.97-2.734s-.324-2.054-.97-2.734c-.647-.68-1.474-1.02-2.482-1.02-1.008 0-1.835.34-2.482 1.02-.646.68-.97 1.592-.97 2.734s.324 2.053.97 2.733c.647.68 1.474 1.02 2.482 1.02zM99.558 18.984c-1.444 0-2.742-.298-3.892-.894-1.15-.597-2.05-1.424-2.696-2.482-.647-1.058-.97-2.26-.97-3.603 0-1.344.323-2.544.97-3.603.647-1.058 1.545-1.885 2.696-2.481 1.15-.596 2.448-.895 3.892-.895 1.428 0 2.675.299 3.742.895a5.304 5.304 0 012.33 2.557l-3.048 1.638c-.706-1.243-1.722-1.865-3.049-1.865-1.025 0-1.873.336-2.545 1.008-.671.672-1.007 1.587-1.007 2.746 0 1.16.336 2.074 1.007 2.746.672.672 1.52 1.008 2.545 1.008 1.344 0 2.36-.621 3.049-1.864l3.048 1.663c-.487 1.075-1.264 1.914-2.33 2.519-1.067.605-2.314.907-3.742.907zm15.637-13.958c1.68 0 3.036.504 4.07 1.512 1.032 1.008 1.549 2.503 1.549 4.485v7.76h-3.93v-7.156c0-1.075-.236-1.877-.706-2.406-.47-.529-1.15-.793-2.04-.793-.992 0-1.781.306-2.369.92-.588.612-.882 1.523-.882 2.733v6.701h-3.93V.088h3.93v6.55c.52-.52 1.15-.919 1.89-1.196a6.836 6.836 0 012.418-.416zm22.239.202v13.554h-3.754V17.22c-.975 1.176-2.385 1.764-4.233 1.764-1.277 0-2.431-.286-3.464-.857a6.133 6.133 0 01-2.431-2.443c-.588-1.059-.882-2.285-.882-3.679 0-1.394.294-2.62.882-3.678a6.133 6.133 0 012.43-2.444c1.034-.571 2.188-.857 3.465-.857 1.73 0 3.082.546 4.056 1.638V5.228h3.93zm-7.307 10.531c.991 0 1.814-.34 2.47-1.02.654-.68.982-1.592.982-2.734s-.328-2.053-.983-2.733c-.655-.68-1.478-1.02-2.469-1.02-1.008 0-1.839.34-2.494 1.02-.655.68-.983 1.591-.983 2.733 0 1.142.328 2.054.983 2.734.655.68 1.486 1.02 2.494 1.02zM148.46 5.026c1.68 0 3.036.504 4.07 1.512 1.032 1.008 1.549 2.503 1.549 4.485v7.76h-3.93v-7.156c0-1.075-.236-1.877-.706-2.406-.47-.529-1.15-.793-2.04-.793-.992 0-1.781.306-2.37.92-.587.612-.881 1.523-.881 2.733v6.701h-3.93V5.228h3.754v1.587a5.212 5.212 0 011.94-1.323c.772-.31 1.62-.466 2.544-.466zm22.465.202v11.287c0 2.486-.647 4.333-1.94 5.543-1.293 1.209-3.183 1.814-5.669 1.814-1.31 0-2.553-.16-3.728-.479-1.176-.32-2.15-.781-2.923-1.386l1.562-2.821c.571.47 1.293.844 2.167 1.12a8.621 8.621 0 002.62.416c1.36 0 2.364-.306 3.01-.92.647-.612.97-1.54.97-2.783v-.58c-1.024 1.126-2.451 1.688-4.282 1.688-1.243 0-2.381-.273-3.414-.818a6.24 6.24 0 01-2.457-2.306c-.604-.99-.906-2.133-.906-3.426 0-1.293.302-2.436.906-3.427a6.24 6.24 0 012.457-2.305c1.033-.546 2.17-.819 3.414-.819 1.965 0 3.46.647 4.484 1.94V5.228h3.73zm-7.432 9.675c1.041 0 1.894-.307 2.557-.92s.995-1.415.995-2.406c0-.991-.332-1.793-.995-2.406-.663-.613-1.516-.92-2.557-.92-1.042 0-1.898.307-2.57.92-.672.613-1.008 1.415-1.008 2.406 0 .99.336 1.793 1.008 2.406.672.613 1.528.92 2.57.92zm17.073.932c.706 0 1.331-.105 1.877-.315a4.546 4.546 0 001.524-.995l2.091 2.267c-1.276 1.461-3.14 2.192-5.593 2.192-1.528 0-2.88-.298-4.056-.894-1.176-.597-2.083-1.424-2.721-2.482-.638-1.058-.957-2.26-.957-3.603 0-1.327.315-2.523.944-3.59a6.619 6.619 0 012.595-2.494c1.1-.596 2.34-.895 3.717-.895 1.293 0 2.469.273 3.527.82a6.302 6.302 0 012.532 2.367c.63 1.033.945 2.255.945 3.666l-10.028 1.94c.286.672.735 1.176 1.348 1.512.613.336 1.365.504 2.255.504zm-.58-7.836c-.99 0-1.797.32-2.418.958-.622.638-.949 1.52-.983 2.645l6.601-1.285a2.962 2.962 0 00-1.133-1.688c-.572-.42-1.26-.63-2.066-.63z"
@@ -139,13 +139,13 @@ const Home: NextPage = () => {
               </g>
             </svg>
           </Card>
-          <Card className="flex items-center justify-center w-[250px] h-24 shadow-md hover:shadow-xl hover:transition-all hover:-translate-y-1">
+          <Card className="flex items-center justify-center bg-white w-[250px] h-24 shadow-md hover:shadow-xl hover:transition-all hover:-translate-y-1">
             <Image src={detroitAxle} alt="Detroit Axle logo" />
           </Card>
-          <Card className="flex items-center justify-center w-[250px] h-24 shadow-md hover:shadow-xl hover:transition-all hover:-translate-y-1">
+          <Card className="flex items-center justify-center bg-white w-[250px] h-24 shadow-md hover:shadow-xl hover:transition-all hover:-translate-y-1">
             <Image className="w-full" src={s24} alt="Secure 24 logo" />
           </Card>
-          <Card className="flex items-center justify-center w-[250px] h-24 shadow-md hover:shadow-xl hover:transition-all hover:-translate-y-1">
+          <Card className="flex items-center justify-center bg-white w-[250px] h-24 shadow-md hover:shadow-xl hover:transition-all hover:-translate-y-1">
             <Image src={growX} alt="GrowX logo" />
           </Card>
         </div>
