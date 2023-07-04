@@ -61,19 +61,19 @@ body {
 
 /* Headings */
 h1 {
-  @apply text-4xl lg:text-8xl;
-}
-
-h2 {
   @apply text-3xl lg:text-6xl;
 }
 
-h3 {
+h2 {
   @apply text-2xl lg:text-4xl;
 }
 
-h4 {
+h3 {
   @apply text-xl lg:text-2xl;
+}
+
+h4 {
+  @apply text-lg lg:text-xl;
 }
 a {
   @apply no-underline text-[var(--orange)] duration-[400ms] hover:bg-[#d66400] hover:bg-opacity-20;

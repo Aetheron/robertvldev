@@ -6,7 +6,7 @@ const Certifications: NextPage = () => {
   return (
     <main>
       <div>
-        <h2 className="text-center">Certifications</h2>
+        <h1 className="text-center">Certifications</h1>
         <div className="flex flex-wrap justify-center gap-5 my-4">
           <CertificationItem
             title="Become an SEO Expert"
@@ -24,7 +24,7 @@ const Certifications: NextPage = () => {
             issuer="Stripe"
           />
         </div>
-        <h2 className="text-center">Courses</h2>
+        <h1 className="text-center">Courses</h1>
         <div className="flex flex-wrap justify-center gap-5 my-4">
           <CourseItem
             title="React Fundamentals"
