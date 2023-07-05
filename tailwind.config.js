@@ -41,6 +41,7 @@ module.exports = {
         '900': '#100300',
         DEFAULT: '#d66400',
       },
+      transparent: colors.transparent,
       white: colors.white,
       red: colors.red,
       amber: colors.amber,
