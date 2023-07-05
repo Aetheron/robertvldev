@@ -4,6 +4,7 @@ import {
   faCloudArrowUp,
   faDatabase,
   faGlobe,
+  faHome,
   faListCheck,
   faRocket,
   faRotate,
@@ -12,9 +13,10 @@ import {
 } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { NextPage } from "next"
-import { Fahkwang } from "next/font/google"
 import { Chip } from "primereact/chip"
 import { Timeline } from "primereact/timeline"
+import React from "react"
+import { BreadCrumb } from "primereact/breadcrumb"
 
 interface TimelineEvent {
   content: JSX.Element
@@ -79,8 +81,18 @@ const AutomatedDeployments: NextPage = () => {
     },
   ]
 
+  const items = [
+    { label: "Portfolio", url: "/portfolio" },
+    { label: "Automated Deployments" },
+  ]
+
   return (
     <div>
+      <BreadCrumb
+        className="bg-gray-800 mb-4"
+        home={{ icon: <FontAwesomeIcon icon={faHome} />, url: "/" }}
+        model={items}
+      />
       <h1>Automated Deployments</h1>
       <div className="mt-4 flex flex-wrap justify-center gap-5 lg:justify-start keywords-chips">
         <Chip className="bg-orange" label="CraftCMS"></Chip>
