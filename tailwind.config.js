@@ -42,6 +42,9 @@ module.exports = {
         DEFAULT: '#d66400',
       },
       white: colors.white,
+      red: colors.red,
+      amber: colors.amber,
+      yellow: colors.yellow,
     },
     extend: {
       backgroundImage: {
