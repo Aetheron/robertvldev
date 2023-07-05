@@ -13,6 +13,7 @@ import {
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons"
 import logo from "@/public/logo.svg"
+import { ParallaxProvider } from "react-scroll-parallax"
 
 const oxygen = Oxygen({ subsets: ["latin"], weight: "300" })
 
@@ -20,7 +21,7 @@ export default function App(props: AppProps) {
   const { Component, pageProps } = props
 
   return (
-    <>
+    <ParallaxProvider>
       <Head>
         <title>Page title</title>
         <meta
@@ -107,6 +108,6 @@ export default function App(props: AppProps) {
       <footer className="text-center mt-7">
         <p>©️ 2020 - {new Date().getFullYear()} Robert VanLonkhuyzen</p>
       </footer>
-    </>
+    </ParallaxProvider>
   )
 }
