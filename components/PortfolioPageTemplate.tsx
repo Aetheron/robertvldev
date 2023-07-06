@@ -19,7 +19,7 @@ export interface PortfolioPageTemplateProps {
   screenshots?: ScreenshotType[]
 }
 
-export const PortfolioPageTemplate: React.FC<PortfolioPageTemplateProps> = ({
+const PortfolioPageTemplate: React.FC<PortfolioPageTemplateProps> = ({
   children,
   title,
   heroImage,

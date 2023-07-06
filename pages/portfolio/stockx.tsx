@@ -1,4 +1,4 @@
-import { PortfolioPageTemplate } from "@/components/PortfolioPageTemplate"
+import PortfolioPageTemplate from "@/components/PortfolioPageTemplate"
 import { NextPage } from "next/types"
 import Image from "next/image"
 import stockx from "@/public/stockx/hero.jpg"
