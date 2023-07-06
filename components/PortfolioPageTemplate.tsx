@@ -72,7 +72,7 @@ const PortfolioPageTemplate: React.FC<PortfolioPageTemplateProps> = ({
           screenshots?.map((image, i) => (
             <div key={i} className="lg:flex-[50%] lg:max-w-[50%]">
               <Image
-                className="w-full p-3"
+                className="w-full p-3 rounded-3xl"
                 src={image.src}
                 alt={image.alt}
                 placeholder="blur"
