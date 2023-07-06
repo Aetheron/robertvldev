@@ -7,11 +7,16 @@ import React from "react"
 import Image from "next/image"
 import { ParallaxBanner, ParallaxBannerLayer } from "react-scroll-parallax"
 
+interface ScreenshotType {
+  src: StaticImageData
+  alt: string
+}
 export interface PortfolioPageTemplateProps {
-  children: React.ReactNode
+  children?: React.ReactNode
   title: string
   heroImage: StaticImageData
   pills: string[]
+  screenshots?: ScreenshotType[]
 }
 
 export const PortfolioPageTemplate: React.FC<PortfolioPageTemplateProps> = ({
@@ -19,6 +24,7 @@ export const PortfolioPageTemplate: React.FC<PortfolioPageTemplateProps> = ({
   title,
   heroImage,
   pills,
+  screenshots,
 }) => {
   const items = [{ label: "Portfolio", url: "/portfolio" }, { label: title }]
 
@@ -60,7 +66,21 @@ export const PortfolioPageTemplate: React.FC<PortfolioPageTemplateProps> = ({
     <v-overlay :activator="'#' + sc.id" v-for="sc in screenshots"
       ><img class="overlay" :src="sc.src" :alt="sc.alt"
     /></v-overlay>
-    <slot></slot> */}
+     */}
+      <div className="flex flex-wrap">
+        {screenshots &&
+          screenshots?.map((image, i) => (
+            <div key={i} className="lg:flex-[50%] lg:max-w-[50%]">
+              <Image
+                className="w-full p-3"
+                src={image.src}
+                alt={image.alt}
+                placeholder="blur"
+              />
+            </div>
+          ))}
+      </div>
+      {/* {children && children} */}
     </div>
   )
 }
