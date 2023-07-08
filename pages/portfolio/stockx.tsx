@@ -9,6 +9,7 @@ import news from "@/public/stockx/stockx_newsroom_ko_kr.png"
 
 const StockX: NextPage = () => {
   const pills = [
+    "PHP",
     "Wordpress",
     "Advanced Custom Fields",
     "Custom Wordpress Plugins",

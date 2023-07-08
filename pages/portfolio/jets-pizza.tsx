@@ -9,6 +9,7 @@ import mapMobile from "@/public/jets/Jets_map_mobile.png"
 
 const JetsPizza: NextPage = () => {
   const pills = [
+    "PHP",
     "Wordpress",
     "React",
     "Advanced Custom Fields",
