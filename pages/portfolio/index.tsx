@@ -91,6 +91,19 @@ const Portfolio: NextPage = () => {
               </Button>
             </Link>
           </Card>
+          <Card
+            className="w-full bg-gray-800 lg:min-w-[250px] lg:w-auto shadow-md hover:shadow-xl hover:transition-all"
+            title="PWP"
+          >
+            <Link href="/portfolio/pwp">
+              <Button
+                className="bg-orange bg-opacity-10 hover:bg-orange hover:text-white hover:opacity-100"
+                outlined
+              >
+                Read more
+              </Button>
+            </Link>
+          </Card>
         </div>
       </div>
     </>
