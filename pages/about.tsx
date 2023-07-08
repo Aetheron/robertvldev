@@ -2,6 +2,7 @@ import { Timeline } from "primereact/timeline"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faBriefcase, faGraduationCap } from "@fortawesome/free-solid-svg-icons"
 import type { NextPage } from "next/types"
+import Head from "next/head"
 
 interface TimelineEvent {
   content: JSX.Element
@@ -70,29 +71,34 @@ const About: NextPage = () => {
   ]
 
   return (
-    <main>
-      <div className="flex flex-col items-center">
-        <h1 className="w-full text-center mb-4">About Bob</h1>
-        <Timeline
-          className="w-full"
-          align="alternate"
-          value={events}
-          marker={(item) => {
-            if (item.icon) {
-              return (
-                <span
-                  className="flex w-10 h-10 items-center justify-center text-white border-circle border-2 rounded-full z-1 shadow-1"
-                  style={{ backgroundColor: "var(--orange)" }}
-                >
-                  {item.icon}
-                </span>
-              )
-            }
-          }}
-          content={(item) => item.content}
-        ></Timeline>
-      </div>
-    </main>
+    <>
+      <Head>
+        <title>About - robertvl.dev</title>
+      </Head>
+      <main>
+        <div className="flex flex-col items-center">
+          <h1 className="w-full text-center mb-4">About Bob</h1>
+          <Timeline
+            className="w-full"
+            align="alternate"
+            value={events}
+            marker={(item) => {
+              if (item.icon) {
+                return (
+                  <span
+                    className="flex w-10 h-10 items-center justify-center text-white border-circle border-2 rounded-full z-1 shadow-1"
+                    style={{ backgroundColor: "var(--orange)" }}
+                  >
+                    {item.icon}
+                  </span>
+                )
+              }
+            }}
+            content={(item) => item.content}
+          ></Timeline>
+        </div>
+      </main>
+    </>
   )
 }
 

@@ -17,6 +17,7 @@ import { Chip } from "primereact/chip"
 import { Timeline } from "primereact/timeline"
 import React from "react"
 import { BreadCrumb } from "primereact/breadcrumb"
+import Head from "next/head"
 
 interface TimelineEvent {
   content: JSX.Element
@@ -87,41 +88,46 @@ const AutomatedDeployments: NextPage = () => {
   ]
 
   return (
-    <div>
-      <BreadCrumb
-        className="bg-gray-800 mb-4"
-        home={{ icon: <FontAwesomeIcon icon={faHome} />, url: "/" }}
-        model={items}
-      />
-      <h1>Automated Deployments</h1>
-      <div className="mt-4 flex flex-wrap justify-center gap-5 lg:justify-start keywords-chips">
-        <Chip className="bg-orange" label="CraftCMS"></Chip>
-        <Chip className="bg-orange" label="Render"></Chip>
-        <Chip className="bg-orange" label="GitHub Actions"></Chip>
-        <Chip className="bg-orange" label="Golang"></Chip>
+    <>
+      <Head>
+        <title>Automated Deployments - robertvl.dev</title>
+      </Head>
+      <div>
+        <BreadCrumb
+          className="bg-gray-800 mb-4"
+          home={{ icon: <FontAwesomeIcon icon={faHome} />, url: "/" }}
+          model={items}
+        />
+        <h1>Automated Deployments</h1>
+        <div className="mt-4 flex flex-wrap justify-center gap-5 lg:justify-start keywords-chips">
+          <Chip className="bg-orange" label="CraftCMS"></Chip>
+          <Chip className="bg-orange" label="Render"></Chip>
+          <Chip className="bg-orange" label="GitHub Actions"></Chip>
+          <Chip className="bg-orange" label="Golang"></Chip>
+        </div>
+        <a href="https://pkg.go.dev/github.com/fusionary/go-render">
+          <pre>go-render</pre>
+          package
+        </a>
+        <Timeline
+          align="alternate"
+          value={events}
+          marker={(item) => {
+            if (item.icon) {
+              return (
+                <span
+                  className="flex w-10 h-10 items-center justify-center text-white border-circle border-2 rounded-full z-1 shadow-1"
+                  style={{ backgroundColor: "var(--orange)" }}
+                >
+                  {item.icon}
+                </span>
+              )
+            }
+          }}
+          content={(item) => item.content}
+        ></Timeline>
       </div>
-      <a href="https://pkg.go.dev/github.com/fusionary/go-render">
-        <pre>go-render</pre>
-        package
-      </a>
-      <Timeline
-        align="alternate"
-        value={events}
-        marker={(item) => {
-          if (item.icon) {
-            return (
-              <span
-                className="flex w-10 h-10 items-center justify-center text-white border-circle border-2 rounded-full z-1 shadow-1"
-                style={{ backgroundColor: "var(--orange)" }}
-              >
-                {item.icon}
-              </span>
-            )
-          }
-        }}
-        content={(item) => item.content}
-      ></Timeline>
-    </div>
+    </>
   )
 }
 
