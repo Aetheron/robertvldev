@@ -42,11 +42,11 @@ const PortfolioPageTemplate: React.FC<PortfolioPageTemplateProps> = ({
           model={items}
         />
 
-        <ParallaxBanner className="w-screen h-[calc(100vh-175px)] ml-[50%] -translate-x-1/2">
+        <ParallaxBanner className="aspect-[2/1] w-screen ml-[50%] -translate-x-1/2 lg:h-[calc(100vh-175px)]">
           <ParallaxBannerLayer speed={-20}>
             <Image
               src={heroImage}
-              className="w-screen max-w-screen blur-md brightness-50"
+              className="h-full blur-md brightness-50 lg:w-screen lg:max-w-[100vw]"
               alt=""
             ></Image>
           </ParallaxBannerLayer>
