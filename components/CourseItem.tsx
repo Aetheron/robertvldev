@@ -3,17 +3,13 @@ import { Card } from "primereact/card"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faLaptopCode } from "@fortawesome/free-solid-svg-icons"
 
-export interface CertificateItemProps {
+export interface CourseItemProps {
   title: string
   date: string
   issuer: string
 }
 
-export default function CertificationItem({
-  title,
-  date,
-  issuer,
-}: CertificateItemProps) {
+export default function CourseItem({ title, date, issuer }: CourseItemProps) {
   return (
     <Card
       className="bg-gray-800 shadow-md hover:shadow-xl hover:transition-all"
