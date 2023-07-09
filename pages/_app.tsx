@@ -68,7 +68,7 @@ export default function App(props: AppProps) {
           </nav>
         </div>
         <div className="w-full">
-          <nav className="w-full text-right mt-8 text-5xl">
+          <nav className="w-full text-center mt-8 text-5xl lg:text-right">
             <a
               className="inline-block px-4 py-0 border-l border-[var(--gray)] first-of-type:border-0"
               href="https://github.com/Aetheron"
