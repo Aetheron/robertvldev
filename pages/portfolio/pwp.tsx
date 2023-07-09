@@ -4,14 +4,11 @@ import pwp from "@/public/pwp/hero.png"
 import oldHomepage from "@/public/pwp/old_homepage.png"
 import newHomepage from "@/public/pwp/new_homepage.png"
 import topicalStudies from "@/public/pwp/topical_studies.png"
+import topicalStudy from "@/public/pwp/topical_study.png"
 
 const pills = ["PHP", "Drupal", "Laravel", "Less", "MySQL"]
 
 const screenshots = [
-  {
-    src: oldHomepage,
-    alt: "Screenshot of old Preaching and Worship homepage",
-  },
   {
     src: newHomepage,
     alt: "Screenshot of new Preaching and Worship homepage",
@@ -19,6 +16,14 @@ const screenshots = [
   {
     src: topicalStudies,
     alt: "Screenshot of topical studies page",
+  },
+  {
+    src: topicalStudy,
+    alt: "Screenshot of topical study page about Grace",
+  },
+  {
+    src: oldHomepage,
+    alt: "Screenshot of old Preaching and Worship homepage",
   },
 ]
 
