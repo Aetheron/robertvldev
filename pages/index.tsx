@@ -21,7 +21,7 @@ const Home: NextPage = () => {
       </Head>
       <main>
         <div className="flex flex-col justify-between text-center gap-6 mb-12 lg:flex-row lg:text-left">
-          <div>
+          <div className="lg:max-w-[60%]">
             <h1 className="text-gray-300">Hi, I&apos;m Bob</h1>
             <h1 className="text-gray-300">VanLonkhuyzen</h1>
             <br />
@@ -33,6 +33,8 @@ const Home: NextPage = () => {
               <Chip className="bg-orange" label="WordPress"></Chip>
               <Chip className="bg-orange" label="React"></Chip>
               <Chip className="bg-orange" label="NextJS"></Chip>
+              <Chip className="bg-orange" label="TypeScript"></Chip>
+              <Chip className="bg-orange" label="Tailwind"></Chip>
               <Chip className="bg-orange" label="MySQL"></Chip>
               <Chip className="bg-orange" label="Vue"></Chip>
               <Chip className="bg-orange" label="JS/jQuery"></Chip>
