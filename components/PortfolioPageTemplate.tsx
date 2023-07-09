@@ -3,10 +3,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { StaticImageData } from "next/image"
 import { BreadCrumb } from "primereact/breadcrumb"
 import { Chip } from "primereact/chip"
+import { ConfirmDialog, confirmDialog } from "primereact/confirmdialog"
 import React from "react"
 import Image from "next/image"
 import { ParallaxBanner, ParallaxBannerLayer } from "react-scroll-parallax"
-import { Metadata, ResolvingMetadata } from "next"
 import Head from "next/head"
 
 interface ScreenshotType {
@@ -30,18 +30,30 @@ const PortfolioPageTemplate: React.FC<PortfolioPageTemplateProps> = ({
 }) => {
   const items = [{ label: "Portfolio", url: "/portfolio" }, { label: title }]
 
+  const preview = (source: StaticImageData) => {
+    confirmDialog({
+      resizable: false,
+      draggable: false,
+      blockScroll: true,
+      dismissableMask: true,
+      message: <Image src={source} alt="" />,
+      footer: <></>,
+      contentClassName: "items-stretch",
+    })
+  }
+
   return (
     <>
       <Head>
         <title>{title} - robertvl.dev</title>
       </Head>
       <div>
+        <ConfirmDialog />
         <BreadCrumb
           className="bg-gray-800 mb-4"
           home={{ icon: <FontAwesomeIcon icon={faHome} />, url: "/" }}
           model={items}
         />
-
         <ParallaxBanner className="aspect-[2/1] w-screen ml-[50%] -translate-x-1/2 lg:h-[calc(100vh-175px)]">
           <ParallaxBannerLayer speed={-20}>
             <Image
@@ -61,27 +73,16 @@ const PortfolioPageTemplate: React.FC<PortfolioPageTemplateProps> = ({
             </div>
           </ParallaxBannerLayer>
         </ParallaxBanner>
-
-        {/* </div>
-    <div class="card-container">
-      <slot name="cards"></slot>
-    </div>
-    <div class="screenshots">
-      <img :id="sc.id" :src="sc.src" :alt="sc.alt" v-for="sc in screenshots" />
-    </div>
-    <v-overlay :activator="'#' + sc.id" v-for="sc in screenshots"
-      ><img class="overlay" :src="sc.src" :alt="sc.alt"
-    /></v-overlay>
-     */}
         <div className="flex flex-wrap">
           {screenshots &&
             screenshots?.map((image, i) => (
               <div key={i} className="lg:flex-[50%] lg:max-w-[50%]">
                 <Image
-                  className="w-full p-3 rounded-3xl"
+                  className="w-full p-3 rounded-3xl cursor-pointer"
                   src={image.src}
                   alt={image.alt}
                   placeholder="blur"
+                  onClick={() => preview(image.src)}
                 />
               </div>
             ))}
