@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "test:component": "CYPRESS_RECORD_KEY=$(grep CYPRESS_RECORD_KEY .env | cut -d '=' -f2) cypress run --component --record"
   },
   "dependencies": {
     "@emotion/react": "^11.11.1",
