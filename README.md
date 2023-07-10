@@ -28,7 +28,8 @@
 ## Features
 
 - TypeScript
-- Error reporting with Sentry
+- Sentry error reporting
+- FontAwesome icons
 
 ## Getting started
 
