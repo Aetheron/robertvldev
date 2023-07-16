@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "test:component": "CYPRESS_RECORD_KEY=$(grep CYPRESS_RECORD_KEY .env.local | cut -d '=' -f2) cypress run --component --record"
+    "test:component": "CYPRESS_RECORD_KEY=$(grep CYPRESS_RECORD_KEY .env.local | cut -d '=' -f2) cypress run --component --record",
+    "pull-env": "vercel env pull .env.local"
   },
   "dependencies": {
     "@emotion/react": "^11.11.1",
