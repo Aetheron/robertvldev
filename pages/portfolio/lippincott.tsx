@@ -1,4 +1,6 @@
-import PortfolioPageTemplate from "@/components/PortfolioPageTemplate"
+import PortfolioPageTemplate, {
+  ScreenshotType,
+} from "@/components/PortfolioPageTemplate"
 import { NextPage } from "next/types"
 import lippincott from "@/public/lippincott/hero.jpg"
 import podcastDesktop from "@/public/lippincott/Lippincott_screenshot_desktop.png"
@@ -12,7 +14,7 @@ const Lippincott: NextPage = () => {
     "MySQL",
     "Ansible",
   ]
-  const screenshots = [
+  const screenshots: ScreenshotType[] = [
     { src: podcastDesktop, alt: "StockX About Buying screenshot" },
     { src: podcastMobile, alt: "StockX How it Works screenshot" },
   ]

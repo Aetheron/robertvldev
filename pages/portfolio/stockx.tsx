@@ -1,4 +1,6 @@
-import PortfolioPageTemplate from "@/components/PortfolioPageTemplate"
+import PortfolioPageTemplate, {
+  ScreenshotType,
+} from "@/components/PortfolioPageTemplate"
 import { NextPage } from "next/types"
 import Image from "next/image"
 import stockx from "@/public/stockx/hero.jpg"
@@ -18,7 +20,7 @@ const StockX: NextPage = () => {
     "Render",
   ]
 
-  const screenshots = [
+  const screenshots: ScreenshotType[] = [
     { src: buying, alt: "StockX About Buying screenshot" },
     { src: hiw, alt: "StockX How it Works screenshot" },
     { src: blog, alt: "StockX Blog screenshot" },

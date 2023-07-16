@@ -1,4 +1,6 @@
-import PortfolioPageTemplate from "@/components/PortfolioPageTemplate"
+import PortfolioPageTemplate, {
+  ScreenshotType,
+} from "@/components/PortfolioPageTemplate"
 import { NextPage } from "next/types"
 import jets from "@/public/jets/hero.jpg"
 import comingSoon from "@/public/jets/Jets_coming_soon.png"
@@ -20,7 +22,7 @@ const JetsPizza: NextPage = () => {
     "WPEngine",
   ]
 
-  const screenshots = [
+  const screenshots: ScreenshotType[] = [
     { src: mapDesktop, alt: "Jet's Pizza Location Map screenshot" },
     { src: mapListDesktop, alt: "Jet's Pizza Locations List screenshot" },
     {

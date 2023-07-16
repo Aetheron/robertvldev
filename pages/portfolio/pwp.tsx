@@ -1,4 +1,6 @@
-import PortfolioPageTemplate from "@/components/PortfolioPageTemplate"
+import PortfolioPageTemplate, {
+  ScreenshotType,
+} from "@/components/PortfolioPageTemplate"
 import { NextPage } from "next"
 import pwp from "@/public/pwp/hero.png"
 import oldHomepage from "@/public/pwp/old_homepage.png"
@@ -8,7 +10,7 @@ import topicalStudy from "@/public/pwp/topical_study.png"
 
 const pills = ["PHP", "Drupal", "Laravel", "Less", "MySQL"]
 
-const screenshots = [
+const screenshots: ScreenshotType[] = [
   {
     src: newHomepage,
     alt: "Screenshot of new Preaching and Worship homepage",

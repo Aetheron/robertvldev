@@ -1,4 +1,6 @@
-import PortfolioPageTemplate from "@/components/PortfolioPageTemplate"
+import PortfolioPageTemplate, {
+  ScreenshotType,
+} from "@/components/PortfolioPageTemplate"
 import { NextPage } from "next/types"
 import csw from "@/public/csw/hero.jpg"
 import homepage from "@/public/csw/homepage.png"
@@ -11,7 +13,7 @@ import selfAssessment from "@/public/csw/self_assessment.png"
 const CSW: NextPage = () => {
   const pills = ["Vue", "MongoDB", "Render"]
 
-  const screenshots = [
+  const screenshots: ScreenshotType[] = [
     { src: homepage, alt: "CSW Homepage screenshot" },
     { src: profileBuilder, alt: "CSW Profile Builder screenshot" },
     {
