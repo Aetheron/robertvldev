@@ -9,7 +9,12 @@ import Image from "next/image"
 import { ParallaxBanner, ParallaxBannerLayer } from "react-scroll-parallax"
 import Head from "next/head"
 
-interface ScreenshotType {
+export interface FlipCardType {
+  front: React.ReactNode
+  back: React.ReactNode
+}
+
+export interface ScreenshotType {
   src: StaticImageData
   alt: string
 }
@@ -18,6 +23,7 @@ export interface PortfolioPageTemplateProps {
   title: string
   heroImage: StaticImageData
   pills: string[]
+  flipCards?: FlipCardType[]
   screenshots?: ScreenshotType[]
 }
 
@@ -26,6 +32,7 @@ const PortfolioPageTemplate: React.FC<PortfolioPageTemplateProps> = ({
   title,
   heroImage,
   pills,
+  flipCards,
   screenshots,
 }) => {
   const items = [{ label: "Portfolio", url: "/portfolio" }, { label: title }]
