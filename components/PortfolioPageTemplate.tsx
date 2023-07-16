@@ -9,7 +9,7 @@ import Image from "next/image"
 import { ParallaxBanner, ParallaxBannerLayer } from "react-scroll-parallax"
 import Head from "next/head"
 
-interface ScreenshotType {
+export interface ScreenshotType {
   src: StaticImageData
   alt: string
 }
@@ -60,6 +60,7 @@ const PortfolioPageTemplate: React.FC<PortfolioPageTemplateProps> = ({
               src={heroImage}
               className="h-full blur-md brightness-50 lg:w-screen lg:max-w-[100vw]"
               alt=""
+              priority={true}
             ></Image>
           </ParallaxBannerLayer>
           <ParallaxBannerLayer>
