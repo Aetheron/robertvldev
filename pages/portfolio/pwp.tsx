@@ -36,7 +36,16 @@ const PWP: NextPage = () => {
       pills={pills}
       heroImage={pwp}
       screenshots={screenshots}
-    ></PortfolioPageTemplate>
+    >
+      <div className="m-4 text-lg">
+        <h3 className="mb-2">Features</h3>
+        <ul className="ml-4 list-disc">
+          <li>Search engine site built on Sphinx</li>
+          <li>Drupal framework for site functionality and theming</li>
+          <li>Database management and querying using Laravel ORM</li>
+        </ul>
+      </div>
+    </PortfolioPageTemplate>
   )
 }
 

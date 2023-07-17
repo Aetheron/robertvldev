@@ -41,7 +41,22 @@ const CSW: NextPage = () => {
         heroImage={csw}
         pills={pills}
         screenshots={screenshots}
-      ></PortfolioPageTemplate>
+      >
+        <div className="m-4 text-lg">
+          <h3 className="mb-2">Features</h3>
+          <ul className="ml-4 list-disc">
+            <li>
+              Website facilitating reviews of co-workers and management by
+              grading individually documented items of job descriptions and
+              related skills
+            </li>
+            <li>VueJS frontend</li>
+            <li>ExpressJS API making requests to MongoDB using Mongoose</li>
+            <li>PDF generation using Puppeteer</li>
+            <li>Managed hosting infrastructure</li>
+          </ul>
+        </div>
+      </PortfolioPageTemplate>
     </>
   )
 }

@@ -7,7 +7,6 @@ import {
 } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { NextPage } from "next"
-import { BreadCrumb } from "primereact/breadcrumb"
 import spax from "@/public/spax/hero.jpg"
 
 const Spax: NextPage = () => {
