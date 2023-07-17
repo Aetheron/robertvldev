@@ -15,8 +15,14 @@ const Lippincott: NextPage = () => {
     "Ansible",
   ]
   const screenshots: ScreenshotType[] = [
-    { src: podcastDesktop, alt: "StockX About Buying screenshot" },
-    { src: podcastMobile, alt: "StockX How it Works screenshot" },
+    {
+      src: podcastDesktop,
+      alt: "Lippincott podcast page screenshot on a desktop device",
+    },
+    {
+      src: podcastMobile,
+      alt: "Lippincott podcast page screenshot on a mobile device",
+    },
   ]
 
   return (
@@ -26,7 +32,20 @@ const Lippincott: NextPage = () => {
         heroImage={lippincott}
         pills={pills}
         screenshots={screenshots}
-      ></PortfolioPageTemplate>
+      >
+        <div className="m-4 text-lg">
+          <h3 className="mb-2">Features</h3>
+          <ul className="ml-4 list-disc">
+            <li>Deployment with Ansible</li>
+            <li>Animated search result images</li>
+            <li>Custom mp3 player for podcast episodes</li>
+            <li>
+              Dynamic content size and arrangement adjustments based on screen
+              size
+            </li>
+          </ul>
+        </div>
+      </PortfolioPageTemplate>
     </>
   )
 }
