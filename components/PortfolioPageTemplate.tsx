@@ -54,7 +54,7 @@ const PortfolioPageTemplate: React.FC<PortfolioPageTemplateProps> = ({
           home={{ icon: <FontAwesomeIcon icon={faHome} />, url: "/" }}
           model={items}
         />
-        <ParallaxBanner className="aspect-[2/1] w-screen ml-[50%] -translate-x-1/2 lg:h-[calc(100vh-175px)]">
+        <ParallaxBanner className="h-[75vh] w-screen ml-[50%] -translate-x-1/2 lg:h-[calc(100vh-175px)]">
           <ParallaxBannerLayer speed={-20}>
             <Image
               src={heroImage}
