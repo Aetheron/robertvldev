@@ -14,6 +14,15 @@ import {
 } from "@fortawesome/free-brands-svg-icons"
 import logo from "@/public/logo.svg"
 import { ParallaxProvider } from "react-scroll-parallax"
+import { storyblokInit, apiPlugin } from "@storyblok/react"
+
+storyblokInit({
+  accessToken: process.env.NEXT_PUBLIC_STORYBLOK_ACCESS_KEY,
+  use: [apiPlugin],
+  apiOptions: {
+    region: "us",
+  },
+})
 
 const oxygen = Oxygen({ subsets: ["latin"], weight: "300" })
 
