@@ -41,7 +41,7 @@ const Certifications: NextPage = () => {
       const { data }: { data: SBStoryType } = await storyblokApi.get(
         "cdn/stories/certifications",
         {
-          version: "draft",
+          version: process.env.NODE_ENV == "production" ? "published" : "draft",
         }
       )
       data.story.content.body.map((item: SBComponentType) => {
