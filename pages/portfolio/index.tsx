@@ -93,7 +93,7 @@ const Portfolio: NextPage = () => {
           </Card>
           <Card
             className="w-full bg-gray-800 lg:min-w-[250px] lg:w-auto shadow-md hover:shadow-xl hover:transition-all"
-            title="PWP"
+            title="Preaching and Worship"
           >
             <Link href="/portfolio/pwp">
               <Button

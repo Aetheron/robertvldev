@@ -32,7 +32,7 @@ const screenshots: ScreenshotType[] = [
 const PWP: NextPage = () => {
   return (
     <PortfolioPageTemplate
-      title="Preaching and Worship"
+      title="Preaching and Worship (PWP)"
       pills={pills}
       heroImage={pwp}
       screenshots={screenshots}
