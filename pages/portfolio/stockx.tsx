@@ -39,7 +39,7 @@ const StockX: NextPage = () => {
         screenshots={screenshots}
       >
         <div className="m-4 text-lg">
-          <h3 className="mb-2">Features</h3>
+          <h3 className="mb-2 font-bold">Features</h3>
           <ul className="ml-4 list-disc">
             <li>
               Managed hosting infrastructure on Render (moved from WPEngine)
