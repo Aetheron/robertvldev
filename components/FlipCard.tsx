@@ -10,6 +10,7 @@ export interface CardType {
 
 const FlipCard: React.FC<CardType> = ({ title, front, back }) => {
   const [flipped, setFlipped] = useState<boolean>(false)
+  const [debounce, setDebounce] = useState<boolean>(true)
   const { transform, opacity } = useSpring({
     opacity: flipped ? 1 : 0,
     transform: `perspective(600px) rotateX(${flipped ? 180 : 0}deg)`,
@@ -19,21 +20,29 @@ const FlipCard: React.FC<CardType> = ({ title, front, back }) => {
   const AnimatedCard = animated(Card)
 
   return (
-    <div className="relative">
+    <div
+      className="relative"
+      onMouseEnter={() => {
+        setFlipped((state) => (state = !state))
+        setTimeout(() => setDebounce(false), 500)
+      }}
+      onMouseLeave={() => {
+        if (!debounce) {
+          setFlipped((state) => (state = !state))
+          setDebounce(true)
+        }
+      }}
+    >
       <AnimatedCard
         className="bg-white text-gray-700 text-center w-52 h-52"
         style={{ opacity: opacity.to((o) => 1 - o), transform }}
         title={title}
-        onMouseEnter={() => setFlipped((state) => (state = !state))}
-        onMouseLeave={() => setFlipped((state) => (state = !state))}
       >
         {front}
       </AnimatedCard>
       <AnimatedCard
         className="bg-white text-gray-700 text-center w-52 h-52 absolute top-0"
         style={{ opacity, transform, rotateX: "180deg" }}
-        onMouseEnter={() => setFlipped((state) => (state = !state))}
-        onMouseLeave={() => setFlipped((state) => (state = !state))}
       >
         {back}
       </AnimatedCard>
