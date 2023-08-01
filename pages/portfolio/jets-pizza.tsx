@@ -56,7 +56,7 @@ const JetsPizza: NextPage = () => {
       back: (
         <p>
           Targeted coupons and promotions at collections of stores grouped by
-          location called Designated Marketing Areas.
+          location called Designated Marketing Areas
         </p>
       ),
     },
@@ -71,7 +71,7 @@ const JetsPizza: NextPage = () => {
       back: (
         <p>
           Use Mapbox API and browser geolocation API to locate users and display
-          stores near the user.
+          stores near the user
         </p>
       ),
     },
