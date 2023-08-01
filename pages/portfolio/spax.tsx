@@ -1,13 +1,19 @@
-import PortfolioPageTemplate from "@/components/PortfolioPageTemplate"
+import PortfolioPageTemplate, {
+  ScreenshotType,
+} from "@/components/PortfolioPageTemplate"
 import {
-  faHome,
-  faPenRuler,
+  faBugSlash,
+  faCloudBolt,
   faWallet,
-  faWrench,
 } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { NextPage } from "next"
 import spax from "@/public/spax/hero.jpg"
+import about from "@/public/spax/spax_about.png"
+// import coatings from "@/public/spax/spax_coatings.png"
+import colorMatch from "@/public/spax/spax_color_match.png"
+import whereToBuy from "@/public/spax/spax_where_to_buy.png"
+import { CardType } from "@/components/FlipCard"
 
 const Spax: NextPage = () => {
   const pills = [
@@ -23,37 +29,58 @@ const Spax: NextPage = () => {
     "Digital Ocean",
   ]
 
+  const cards: CardType[] = [
+    {
+      title: "eCommerce",
+      front: (
+        <FontAwesomeIcon
+          className="w-12 h-12"
+          icon={faWallet}
+        ></FontAwesomeIcon>
+      ),
+      back: <p>Product detail pages with information on where to buy</p>,
+    },
+    {
+      title: "Jamstack",
+      front: (
+        <FontAwesomeIcon
+          className="w-12 h-12"
+          icon={faCloudBolt}
+        ></FontAwesomeIcon>
+      ),
+      back: <p>Headless CMS, Static Site Generation, Server Side Rendering</p>,
+    },
+    {
+      title: "Debugging",
+      front: (
+        <FontAwesomeIcon
+          className="w-12 h-12"
+          icon={faBugSlash}
+        ></FontAwesomeIcon>
+      ),
+      back: <p>Advanced debugging with Sentry</p>,
+    },
+  ]
+
+  const screenshots: ScreenshotType[] = [
+    { src: about, alt: "Spax About page screenshot" },
+    // { src: coatings, alt: "Spax fastener coatings page screenshot" },
+    { src: colorMatch, alt: "Spax fastener color match tool screenshot" },
+    {
+      src: whereToBuy,
+      alt: "Spax Where To Buy map and locator page screenshot",
+    },
+  ]
+
   return (
     <>
-      <PortfolioPageTemplate title="Spax" heroImage={spax} pills={pills}>
-        {/* <template #cards>
-      <ClientDetailsCard title="Active Development">
-        <template #icon
-          ><FontAwesomeIcon
-            icon={faWrench}
-            style="width: 100px; height: 100px; padding-top: 10px"
-        /></template>
-        This site is in active development. Due to this, no screenshots or
-        mockups can be shown.
-      </ClientDetailsCard>
-      <ClientDetailsCard title="New Site">
-        <template #icon
-          ><FontAwesomeIcon
-            icon={faPenRuler}
-            style="width: 100px; height: 100px; padding-top: 10px"
-        /></template>
-        Decided on the tech stack with the client and built from the ground up.
-      </ClientDetailsCard>
-      <ClientDetailsCard title="eCommerce">
-        <template #icon
-          ><FontAwesomeIcon
-            icon={faWallet}
-            style="width: 100px; height: 100px; padding-top: 10px"
-        /></template>
-        Product detail pages with information on where to buy
-      </ClientDetailsCard>
-    </template> */}
-      </PortfolioPageTemplate>
+      <PortfolioPageTemplate
+        title="Spax"
+        heroImage={spax}
+        pills={pills}
+        cards={cards}
+        screenshots={screenshots}
+      ></PortfolioPageTemplate>
     </>
   )
 }

@@ -4,10 +4,12 @@ import { StaticImageData } from "next/image"
 import { BreadCrumb } from "primereact/breadcrumb"
 import { Chip } from "primereact/chip"
 import { ConfirmDialog, confirmDialog } from "primereact/confirmdialog"
-import React from "react"
+import React, { useState } from "react"
 import Image from "next/image"
 import { ParallaxBanner, ParallaxBannerLayer } from "react-scroll-parallax"
 import Head from "next/head"
+import FlipCard from "./FlipCard"
+import { CardType } from "./FlipCard"
 
 export interface ScreenshotType {
   src: StaticImageData
@@ -18,6 +20,7 @@ export interface PortfolioPageTemplateProps {
   title: string
   heroImage: StaticImageData
   pills: string[]
+  cards?: CardType[]
   screenshots?: ScreenshotType[]
 }
 
@@ -26,6 +29,7 @@ const PortfolioPageTemplate: React.FC<PortfolioPageTemplateProps> = ({
   title,
   heroImage,
   pills,
+  cards,
   screenshots,
 }) => {
   const items = [{ label: "Portfolio", url: "/portfolio" }, { label: title }]
@@ -74,6 +78,18 @@ const PortfolioPageTemplate: React.FC<PortfolioPageTemplateProps> = ({
             </div>
           </ParallaxBannerLayer>
         </ParallaxBanner>
+        {cards && (
+          <div className="flex flex-wrap gap-2 justify-evenly mt-5">
+            {cards.map((card, i) => (
+              <FlipCard
+                key={i}
+                title={card.title}
+                front={card.front}
+                back={card.back}
+              ></FlipCard>
+            ))}
+          </div>
+        )}
         <div className="flex flex-wrap">
           {screenshots &&
             screenshots?.map((image, i) => (
