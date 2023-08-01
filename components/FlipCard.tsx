@@ -2,13 +2,13 @@ import { animated, useSpring } from "@react-spring/web"
 import { Card } from "primereact/card"
 import React, { useState } from "react"
 
-export interface FlipCardProps {
+export interface CardType {
   title: string
   front: React.ReactNode
   back: React.ReactNode
 }
 
-const FlipCard: React.FC<FlipCardProps> = ({ title, front, back }) => {
+const FlipCard: React.FC<CardType> = ({ title, front, back }) => {
   const [flipped, setFlipped] = useState<boolean>(false)
   const { transform, opacity } = useSpring({
     opacity: flipped ? 1 : 0,
@@ -19,7 +19,7 @@ const FlipCard: React.FC<FlipCardProps> = ({ title, front, back }) => {
   const AnimatedCard = animated(Card)
 
   return (
-    <div className="flex flex-row gap-2 justify-between mt-5">
+    <div className="relative">
       <AnimatedCard
         className="bg-white text-gray-700 text-center w-52 h-52"
         style={{ opacity: opacity.to((o) => 1 - o), transform }}
@@ -28,6 +28,13 @@ const FlipCard: React.FC<FlipCardProps> = ({ title, front, back }) => {
         onMouseLeave={() => setFlipped((state) => (state = !state))}
       >
         {front}
+      </AnimatedCard>
+      <AnimatedCard
+        className="bg-white text-gray-700 text-center w-52 h-52 absolute top-0"
+        style={{ opacity, transform, rotateX: "180deg" }}
+        onMouseEnter={() => setFlipped((state) => (state = !state))}
+        onMouseLeave={() => setFlipped((state) => (state = !state))}
+      >
         {back}
       </AnimatedCard>
     </div>

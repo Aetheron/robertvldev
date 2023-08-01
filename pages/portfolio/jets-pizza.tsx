@@ -8,6 +8,12 @@ import mapDesktop from "@/public/jets/Jets_map_desktop.png"
 import mapListDesktop from "@/public/jets/Jets_map_list_desktop.png"
 import mapListMobile from "@/public/jets/Jets_map_list_mobile.png"
 import mapMobile from "@/public/jets/Jets_map_mobile.png"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import {
+  faLocationCrosshairs,
+  faMapLocationDot,
+  faTimeline,
+} from "@fortawesome/free-solid-svg-icons"
 
 const JetsPizza: NextPage = () => {
   const pills = [
@@ -42,6 +48,53 @@ const JetsPizza: NextPage = () => {
         title="Jet's Pizza"
         heroImage={jets}
         pills={pills}
+        cards={[
+          {
+            title: "Deployment Pipeline",
+            front: (
+              <FontAwesomeIcon
+                className="w-12 h-12"
+                icon={faTimeline}
+              ></FontAwesomeIcon>
+            ),
+            back: (
+              <p>
+                Build React assets and install WordPress plugins using GitHub
+                Actions
+              </p>
+            ),
+          },
+          {
+            title: "Store DMAs",
+            front: (
+              <FontAwesomeIcon
+                className="w-12 h-12"
+                icon={faMapLocationDot}
+              ></FontAwesomeIcon>
+            ),
+            back: (
+              <p>
+                Targeted coupons and promotions at collections of stores grouped
+                by location called Designated Marketing Areas.
+              </p>
+            ),
+          },
+          {
+            title: "Geolocation",
+            front: (
+              <FontAwesomeIcon
+                className="w-12 h-12"
+                icon={faLocationCrosshairs}
+              ></FontAwesomeIcon>
+            ),
+            back: (
+              <p>
+                Use Mapbox API and browser geolocation API to locate users and
+                display stores near the user.
+              </p>
+            ),
+          },
+        ]}
         screenshots={screenshots}
       >
         <div className="m-4 text-lg">
