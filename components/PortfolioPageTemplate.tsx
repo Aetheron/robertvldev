@@ -10,6 +10,8 @@ import { ParallaxBanner, ParallaxBannerLayer } from "react-scroll-parallax"
 import Head from "next/head"
 import FlipCard from "./FlipCard"
 import { CardType } from "./FlipCard"
+import Link from "next/link"
+import { MenuItem, MenuItemOptions } from "primereact/menuitem"
 
 export interface ScreenshotType {
   src: StaticImageData
@@ -32,7 +34,21 @@ const PortfolioPageTemplate: React.FC<PortfolioPageTemplateProps> = ({
   cards,
   screenshots,
 }) => {
-  const items = [{ label: "Portfolio", url: "/portfolio" }, { label: title }]
+  const nextLinkTemplate = (item: MenuItem, options: MenuItemOptions) => (
+    <Link href={item.url ?? "/"} className={options.className}>
+      {item.icon}
+      {item.label}
+    </Link>
+  )
+
+  const items = [
+    {
+      label: "Portfolio",
+      url: "/portfolio",
+      template: nextLinkTemplate,
+    },
+    { label: title },
+  ]
 
   const preview = (source: StaticImageData) => {
     confirmDialog({
@@ -55,7 +71,11 @@ const PortfolioPageTemplate: React.FC<PortfolioPageTemplateProps> = ({
         <ConfirmDialog />
         <BreadCrumb
           className="bg-gray-800 mb-4"
-          home={{ icon: <FontAwesomeIcon icon={faHome} />, url: "/" }}
+          home={{
+            icon: <FontAwesomeIcon icon={faHome} />,
+            url: "/",
+            template: nextLinkTemplate,
+          }}
           model={items}
         />
         <ParallaxBanner className="h-[75vh] w-screen ml-[50%] -translate-x-1/2 lg:h-[calc(100vh-175px)]">
