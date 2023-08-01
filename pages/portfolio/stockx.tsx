@@ -8,6 +8,10 @@ import buying from "@/public/stockx/stockx_buying.png"
 import hiw from "@/public/stockx/stockx_hiw.png"
 import blog from "@/public/stockx/stockx_blog.png"
 import news from "@/public/stockx/stockx_newsroom_ko_kr.png"
+import { CardType } from "@/components/FlipCard"
+import { faDollyBox, faLanguage } from "@fortawesome/free-solid-svg-icons"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { icon } from "@fortawesome/fontawesome-svg-core"
 
 const StockX: NextPage = () => {
   const pills = [
@@ -18,6 +22,39 @@ const StockX: NextPage = () => {
     "MySQL",
     "Smartling",
     "Render",
+  ]
+
+  const cards: CardType[] = [
+    {
+      title: "Translation",
+      front: (
+        <FontAwesomeIcon
+          className="w-12 h-12"
+          icon={faLanguage}
+        ></FontAwesomeIcon>
+      ),
+      back: (
+        <p>
+          Custom translation solution using Wordpress i18n, Smartling, and
+          custom Wordpress plugin
+        </p>
+      ),
+    },
+    {
+      title: "Replatform",
+      front: (
+        <FontAwesomeIcon
+          className="w-12 h-12"
+          icon={faDollyBox}
+        ></FontAwesomeIcon>
+      ),
+      back: (
+        <p>
+          Moved the sites from WPEngine to Render, increasing stability and
+          reliability.
+        </p>
+      ),
+    },
   ]
 
   const screenshots: ScreenshotType[] = [
@@ -36,6 +73,7 @@ const StockX: NextPage = () => {
         title="StockX"
         heroImage={stockx}
         pills={pills}
+        cards={cards}
         screenshots={screenshots}
       >
         <div className="m-4 text-lg">
@@ -50,9 +88,15 @@ const StockX: NextPage = () => {
               APIs
             </li>
             <li>
-              Implemented custom translation system including automatic text
-              submission and retrieval from translation software API using
-              custom Wordpress plugin
+              Implemented custom translation system
+              <ul className="ml-4 list-disc">
+                <li>
+                  Automatic text submission and retrieval from translation
+                  software API using custom Wordpress plugin
+                </li>
+                <li>Smartling human translation workflow</li>
+                <li>Intrgrated into Wordpress i18n translation library</li>
+              </ul>
             </li>
             <li>Improved site stability and uptime</li>
             <li>
