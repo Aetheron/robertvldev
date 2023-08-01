@@ -24,7 +24,7 @@ const FlipCard: React.FC<CardType> = ({ title, front, back }) => {
       className="relative"
       onMouseEnter={() => {
         setFlipped((state) => (state = !state))
-        setTimeout(() => setDebounce(false), 500)
+        setTimeout(() => setDebounce(false), 100)
       }}
       onMouseLeave={() => {
         if (!debounce) {
