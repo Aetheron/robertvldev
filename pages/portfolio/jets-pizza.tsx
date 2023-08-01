@@ -13,7 +13,9 @@ import {
   faLocationCrosshairs,
   faMapLocationDot,
   faTimeline,
+  faBell,
 } from "@fortawesome/free-solid-svg-icons"
+import { CardType } from "@/components/FlipCard"
 
 const JetsPizza: NextPage = () => {
   const pills = [
@@ -26,6 +28,65 @@ const JetsPizza: NextPage = () => {
     "Mapbox",
     "Push Notifications",
     "WPEngine",
+  ]
+
+  const cards: CardType[] = [
+    {
+      title: "Deployment Pipeline",
+      front: (
+        <FontAwesomeIcon
+          className="w-12 h-12"
+          icon={faTimeline}
+        ></FontAwesomeIcon>
+      ),
+      back: (
+        <p>
+          Build React assets and install WordPress plugins using GitHub Actions
+        </p>
+      ),
+    },
+    {
+      title: "Store DMAs",
+      front: (
+        <FontAwesomeIcon
+          className="w-12 h-12"
+          icon={faMapLocationDot}
+        ></FontAwesomeIcon>
+      ),
+      back: (
+        <p>
+          Targeted coupons and promotions at collections of stores grouped by
+          location called Designated Marketing Areas.
+        </p>
+      ),
+    },
+    {
+      title: "Geolocation",
+      front: (
+        <FontAwesomeIcon
+          className="w-12 h-12"
+          icon={faLocationCrosshairs}
+        ></FontAwesomeIcon>
+      ),
+      back: (
+        <p>
+          Use Mapbox API and browser geolocation API to locate users and display
+          stores near the user.
+        </p>
+      ),
+    },
+    {
+      title: "Push Notifications",
+      front: (
+        <FontAwesomeIcon className="w-12 h-12" icon={faBell}></FontAwesomeIcon>
+      ),
+      back: (
+        <p>
+          Send push notifications containing deals or CTAs to over half a
+          million users
+        </p>
+      ),
+    },
   ]
 
   const screenshots: ScreenshotType[] = [
@@ -48,53 +109,7 @@ const JetsPizza: NextPage = () => {
         title="Jet's Pizza"
         heroImage={jets}
         pills={pills}
-        cards={[
-          {
-            title: "Deployment Pipeline",
-            front: (
-              <FontAwesomeIcon
-                className="w-12 h-12"
-                icon={faTimeline}
-              ></FontAwesomeIcon>
-            ),
-            back: (
-              <p>
-                Build React assets and install WordPress plugins using GitHub
-                Actions
-              </p>
-            ),
-          },
-          {
-            title: "Store DMAs",
-            front: (
-              <FontAwesomeIcon
-                className="w-12 h-12"
-                icon={faMapLocationDot}
-              ></FontAwesomeIcon>
-            ),
-            back: (
-              <p>
-                Targeted coupons and promotions at collections of stores grouped
-                by location called Designated Marketing Areas.
-              </p>
-            ),
-          },
-          {
-            title: "Geolocation",
-            front: (
-              <FontAwesomeIcon
-                className="w-12 h-12"
-                icon={faLocationCrosshairs}
-              ></FontAwesomeIcon>
-            ),
-            back: (
-              <p>
-                Use Mapbox API and browser geolocation API to locate users and
-                display stores near the user.
-              </p>
-            ),
-          },
-        ]}
+        cards={cards}
         screenshots={screenshots}
       >
         <div className="m-4 text-lg">
