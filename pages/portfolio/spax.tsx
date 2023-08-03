@@ -75,7 +75,7 @@ const Spax: NextPage = () => {
   return (
     <>
       <PortfolioPageTemplate
-        title="Spax"
+        title="SPAX"
         heroImage={spax}
         pills={pills}
         cards={cards}
