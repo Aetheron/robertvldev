@@ -7,8 +7,42 @@ import oldHomepage from "@/public/pwp/old_homepage.png"
 import newHomepage from "@/public/pwp/new_homepage.png"
 import topicalStudies from "@/public/pwp/topical_studies.png"
 import topicalStudy from "@/public/pwp/topical_study.png"
+import { CardType } from "@/components/FlipCard"
+import {
+  faHandHoldingHeart,
+  faMagnifyingGlass,
+} from "@fortawesome/free-solid-svg-icons"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 const pills = ["PHP", "Drupal", "Laravel", "Less", "MySQL"]
+
+const cards: CardType[] = [
+  {
+    title: "Nonprofit",
+    front: (
+      <FontAwesomeIcon
+        className="w-12 h-12"
+        icon={faHandHoldingHeart}
+      ></FontAwesomeIcon>
+    ),
+    back: (
+      <p>
+        Nonprofit organization connected to Calvin University and Calvin
+        Institute of Christian Worship
+      </p>
+    ),
+  },
+  {
+    title: "Search Engine",
+    front: (
+      <FontAwesomeIcon
+        className="w-12 h-12"
+        icon={faMagnifyingGlass}
+      ></FontAwesomeIcon>
+    ),
+    back: <p>Search topical studies, sermons, images, articles, and more</p>,
+  },
+]
 
 const screenshots: ScreenshotType[] = [
   {
@@ -35,12 +69,17 @@ const PWP: NextPage = () => {
       title="Preaching and Worship (PWP)"
       pills={pills}
       heroImage={pwp}
+      cards={cards}
       screenshots={screenshots}
     >
       <div className="m-4 text-lg">
         <h3 className="mb-2 font-bold">Features</h3>
         <ul className="ml-4 list-disc">
           <li>Search engine site built on Sphinx</li>
+          <li>
+            PHP spider scripts to crawl approved sites for searchable
+            information
+          </li>
           <li>Drupal framework for site functionality and theming</li>
           <li>Database management and querying using Laravel ORM</li>
         </ul>
