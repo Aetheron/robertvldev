@@ -63,7 +63,7 @@ const Certifications: NextPage = () => {
       setCourses(courseCards)
     }
     fetchData()
-  })
+  }, [])
 
   return (
     <>
