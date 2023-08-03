@@ -5,7 +5,6 @@ const date = new Date().getDate().toString()
 
 describe("<CourseItem />", () => {
   it("renders", () => {
-    // see: https://on.cypress.io/mounting-react
     cy.mount(
       <CourseItem title="Cypress Test" date={date} issuer="Cypress.io" />
     )
