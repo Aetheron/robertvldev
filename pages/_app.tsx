@@ -15,6 +15,7 @@ import {
 import logo from "@/public/logo.svg"
 import { ParallaxProvider } from "react-scroll-parallax"
 import { storyblokInit, apiPlugin } from "@storyblok/react"
+import Script from "next/script"
 
 storyblokInit({
   accessToken: process.env.NEXT_PUBLIC_STORYBLOK_ACCESS_KEY,
@@ -38,6 +39,15 @@ export default function App(props: AppProps) {
           content="minimum-scale=1, initial-scale=1, width=device-width"
         />
       </Head>
+      {/* <!-- Google Tag Manager --> */}
+      <Script id="google-tag-manager" strategy="afterInteractive">
+        {`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-N34NH46');`}
+      </Script>
+      {/* <!-- End Google Tag Manager --> */}
 
       <header className="leading-normal max-h-screen mb-4 lg:flex">
         <Image
