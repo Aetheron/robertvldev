@@ -119,6 +119,7 @@ const PortfolioPageTemplate: React.FC<PortfolioPageTemplateProps> = ({
                   src={image.src}
                   alt={image.alt}
                   placeholder="blur"
+                  quality={75}
                   onClick={() => preview(image.src)}
                 />
               </div>
