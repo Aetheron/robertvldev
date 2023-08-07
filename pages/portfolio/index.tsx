@@ -8,7 +8,7 @@ const Portfolio: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Portfolio</title>
+        <title>Portfolio - robertvl.dev</title>
       </Head>
       <div>
         <h1>Portfolio</h1>
