@@ -9,6 +9,7 @@ import topicalStudies from "@/public/pwp/topical_studies.png"
 import topicalStudy from "@/public/pwp/topical_study.png"
 import { CardType } from "@/components/FlipCard"
 import {
+  faChartLine,
   faHandHoldingHeart,
   faMagnifyingGlass,
 } from "@fortawesome/free-solid-svg-icons"
@@ -41,6 +42,11 @@ const cards: CardType[] = [
       ></FontAwesomeIcon>
     ),
     back: <p>Search topical studies, sermons, images, articles, and more</p>,
+  },
+  {
+    title: "A/B Tests",
+    front: <FontAwesomeIcon className="w-12 h-12" icon={faChartLine} />,
+    back: <p>Google Optimize A/B testing to refine user experience</p>,
   },
 ]
 
