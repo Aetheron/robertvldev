@@ -30,6 +30,7 @@
     "eslint-config-next": "13.4.7",
     "next": "13.4.7",
     "postcss": "8.4.24",
+    "prettier": "^3.0.3",
     "primereact": "^9.6.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
@@ -39,6 +40,7 @@
   },
   "devDependencies": {
     "cypress": "12.17.3",
+    "eslint-plugin-react": "^7.33.2",
     "prettier-plugin-organize-imports": "^3.2.2"
   }
 }
