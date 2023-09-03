@@ -28,6 +28,19 @@ const Portfolio: NextPage = () => {
           </Card>
           <Card
             className="w-full bg-gray-800 shadow-md lg:min-w-[250px] lg:w-auto hover:shadow-xl hover:transition-all"
+            title="Physicians Health Plan"
+          >
+            <Link href="/portfolio/sparrow-health">
+              <Button
+                className="bg-orange bg-opacity-10 hover:bg-orange hover:text-white hover:opacity-100"
+                outlined
+              >
+                Read more
+              </Button>
+            </Link>
+          </Card>
+          <Card
+            className="w-full bg-gray-800 shadow-md lg:min-w-[250px] lg:w-auto hover:shadow-xl hover:transition-all"
             title="SPAX"
           >
             <Link href="/portfolio/spax">
