@@ -2,22 +2,17 @@ import CertificationItem, {
   CertificateItemProps,
 } from "@/components/CertificationItem"
 import CourseItem, { CourseItemProps } from "@/components/CourseItem"
-import {
-  StoryblokComponent,
-  getStoryblokApi,
-  setComponents,
-  useStoryblokState,
-} from "@storyblok/react"
+import { getStoryblokApi } from "@storyblok/react"
 import type {
   ISbStoryData,
   StoryblokComponentType,
 } from "@storyblok/react/dist/types"
-import type { ISbLinkURLObject } from "storyblok-js-client"
 import Head from "next/head"
 import { NextPage } from "next/types"
 import { Card } from "primereact/card"
 import { Skeleton } from "primereact/skeleton"
 import { useEffect, useState } from "react"
+import type { ISbLinkURLObject } from "storyblok-js-client"
 
 interface SBStoryType {
   cv: number
@@ -41,7 +36,8 @@ const Certifications: NextPage = () => {
       const { data }: { data: SBStoryType } = await storyblokApi.get(
         "cdn/stories/certifications",
         {
-          version: process.env.NODE_ENV == "production" ? "published" : "draft",
+          version:
+            process.env.VERCEL_ENV == "production" ? "published" : "draft",
         }
       )
       data.story.content.body.map((item: SBComponentType) => {

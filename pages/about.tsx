@@ -1,74 +1,67 @@
-import { Timeline } from "primereact/timeline"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faBriefcase, faGraduationCap } from "@fortawesome/free-solid-svg-icons"
-import type { NextPage } from "next/types"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import {
+  ISbStoryData,
+  StoryblokComponentType,
+  getStoryblokApi,
+} from "@storyblok/react"
 import Head from "next/head"
+import type { NextPage } from "next/types"
+import { Timeline } from "primereact/timeline"
+import React, { useEffect, useState } from "react"
+import type { ISbLinkURLObject } from "storyblok-js-client"
+import { render } from "storyblok-rich-text-react-renderer"
 
+interface SBStoryType {
+  cv: number
+  links: (ISbStoryData | ISbLinkURLObject)[]
+  rels: ISbStoryData[]
+  story: ISbStoryData
+}
+interface SBComponentType
+  extends StoryblokComponentType<string>,
+    TimelineEvent {}
 interface TimelineEvent {
-  content: JSX.Element
-  icon?: JSX.Element
+  content: any
+  icon?: string
   color?: string
+  position?: string
+}
+interface TimelineItem {
+  content: React.ReactNode
+  icon: React.ReactNode | null
+}
+const TimelineIcon: { [index: string]: React.ReactNode } = {
+  graduation_cap: <FontAwesomeIcon icon={faGraduationCap} />,
+  briefcase: <FontAwesomeIcon icon={faBriefcase} />,
 }
 
 const About: NextPage = () => {
-  const events: TimelineEvent[] = [
-    {
-      content: <p>2009</p>,
-    },
-    {
-      content: (
-        <div>
-          <h3>Calvin University</h3>
-          <p className="max-w-96 ml-auto">
-            Bachelor of Science in Engineering, concentration in Electrical and
-            Computer Engineering
-          </p>
-        </div>
-      ),
-      icon: <FontAwesomeIcon icon={faGraduationCap} />,
-    },
-    {
-      content: <p>2013</p>,
-    },
-    {
-      content: (
-        <div>
-          <h3>Calvin Theological Seminary</h3>
-          <p className="max-w-96 ml-auto">
-            Master of Arts in Missions and Evangelism
-          </p>
-        </div>
-      ),
-      icon: <FontAwesomeIcon icon={faGraduationCap} />,
-    },
-    {
-      content: <p>2016</p>,
-    },
-    {
-      content: (
-        <div>
-          <h3>Christian Classics Ethereal Library</h3>
-          <p className="max-w-96 ml-auto">Web Developer</p>
-        </div>
-      ),
-      icon: <FontAwesomeIcon icon={faBriefcase} />,
-    },
-    {
-      content: <p>2020</p>,
-    },
-    {
-      content: (
-        <div>
-          <h3>Fusionary</h3>
-          <p className="max-w-96 ml-auto">Web Developer and DevOps Engineer</p>
-        </div>
-      ),
-      icon: <FontAwesomeIcon icon={faBriefcase} />,
-    },
-    {
-      content: <p>2023</p>,
-    },
-  ]
+  const [timelineItems, setTimelineItems] = useState<TimelineItem[]>()
+  useEffect(() => {
+    async function fetchData() {
+      let timelineItems: TimelineItem[] = []
+
+      const storyblokApi = getStoryblokApi()
+      const { data }: { data: SBStoryType } = await storyblokApi.get(
+        "cdn/stories/about",
+        {
+          version:
+            process.env.VERCEL_ENV == "production" ? "published" : "draft",
+        }
+      )
+      data.story.content.body.map((item: SBComponentType) => {
+        if (item.component == "timeline_event") {
+          timelineItems.push({
+            content: render(item.content),
+            icon: item.icon ? TimelineIcon[item.icon] : null,
+          })
+        }
+      })
+      setTimelineItems(timelineItems)
+    }
+    fetchData()
+  }, [])
 
   return (
     <>
@@ -81,7 +74,7 @@ const About: NextPage = () => {
           <Timeline
             className="w-full"
             align="alternate"
-            value={events}
+            value={timelineItems}
             marker={(item) => {
               if (item.icon) {
                 return (
