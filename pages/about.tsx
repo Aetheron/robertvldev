@@ -46,7 +46,8 @@ const About: NextPage = () => {
       const { data }: { data: SBStoryType } = await storyblokApi.get(
         "cdn/stories/about",
         {
-          version: process.env.NODE_ENV == "production" ? "published" : "draft",
+          version:
+            process.env.VERCEL_ENV == "production" ? "published" : "draft",
         }
       )
       data.story.content.body.map((item: SBComponentType) => {
