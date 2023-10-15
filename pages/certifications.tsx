@@ -37,7 +37,9 @@ const Certifications: NextPage = () => {
         "cdn/stories/certifications",
         {
           version:
-            process.env.VERCEL_ENV == "production" ? "published" : "draft",
+            process.env.NEXT_PUBLIC_VERCEL_ENV == "production"
+              ? "published"
+              : "draft",
         }
       )
       data.story.content.body.map((item: SBComponentType) => {

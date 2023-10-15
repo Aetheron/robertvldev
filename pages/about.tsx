@@ -47,10 +47,11 @@ const About: NextPage = () => {
         "cdn/stories/about",
         {
           version:
-            process.env.VERCEL_ENV == "production" ? "published" : "draft",
+            process.env.NEXT_PUBLIC_VERCEL_ENV == "production"
+              ? "published"
+              : "draft",
         }
       )
-      console.log(process.env.VERCEL_ENV)
       data.story.content.body.map((item: SBComponentType) => {
         if (item.component == "timeline_event") {
           timelineItems.push({
