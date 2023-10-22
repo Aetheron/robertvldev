@@ -1,17 +1,17 @@
-import { NextPage } from "next/types"
-import Image from "next/image"
 import src from "@/public/Bob-VanLonkhuyzen.png"
-import { Chip } from "primereact/chip"
-import { Card } from "primereact/card"
-import { Button } from "primereact/button"
-import Link from "next/link"
 import detroitAxle from "@/public/DetroitAxle.png"
 import digitalRealty from "@/public/DigitalRealty.png"
 import growX from "@/public/GrowX.png"
 import jetsPizza from "@/public/JetsPizza.png"
-import s24 from "@/public/s24-ntt-logo.png"
 import stockX from "@/public/StockX_Green_Digital_RGB.png"
+import s24 from "@/public/s24-ntt-logo.png"
 import Head from "next/head"
+import Image from "next/image"
+import Link from "next/link"
+import { NextPage } from "next/types"
+import { Button } from "primereact/button"
+import { Card } from "primereact/card"
+import { Chip } from "primereact/chip"
 
 const Home: NextPage = () => {
   return (
@@ -25,12 +25,15 @@ const Home: NextPage = () => {
             <h1 className="text-gray-300">Hi, I&apos;m Bob</h1>
             <h1 className="text-gray-300">VanLonkhuyzen</h1>
             <br />
-            <h2 className="text-gray-300 mb-6">
-              Web Developer and DevOps Engineer
-            </h2>
+            <div className="flex flex-wrap flex-col md:flex-row whitespace-nowrap gap-3">
+              <h2 className="text-gray-300 mb-6">Web Developer,</h2>
+              <h2 className="text-gray-300 mb-6">Application Developer,</h2>
+              <h2 className="text-gray-300 mb-6">DevOps Engineer</h2>
+            </div>
             <div className="flex flex-wrap justify-center gap-5 lg:justify-start">
               <Chip className="bg-orange" label="PHP"></Chip>
               <Chip className="bg-orange" label="WordPress"></Chip>
+              <Chip className="bg-orange" label="C#"></Chip>
               <Chip className="bg-orange" label="React"></Chip>
               <Chip className="bg-orange" label="NextJS"></Chip>
               <Chip className="bg-orange" label="TypeScript"></Chip>
@@ -47,6 +50,7 @@ const Home: NextPage = () => {
               className="rounded-3xl mx-auto"
               src={src}
               alt="Headshot of Bob VanLonkhuyzen"
+              priority
             />
           </div>
         </div>
