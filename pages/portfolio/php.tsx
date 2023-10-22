@@ -3,7 +3,7 @@ import csw from "@/public/sparrow/hero.png"
 import { NextPage } from "next/types"
 
 const Sparrow: NextPage = () => {
-  const pills = ["C#"]
+  const pills = ["C#", "MSSQL", "T-SQL", "Oracle Database", "PL/SQL"]
 
   return (
     <>
