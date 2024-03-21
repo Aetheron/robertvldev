@@ -1,17 +1,15 @@
+import { CardType } from "@/components/FlipCard"
 import PortfolioPageTemplate, {
   ScreenshotType,
 } from "@/components/PortfolioPageTemplate"
-import { NextPage } from "next/types"
-import Image from "next/image"
 import stockx from "@/public/stockx/hero.jpg"
+import blog from "@/public/stockx/stockx_blog.png"
 import buying from "@/public/stockx/stockx_buying.png"
 import hiw from "@/public/stockx/stockx_hiw.png"
-import blog from "@/public/stockx/stockx_blog.png"
 import news from "@/public/stockx/stockx_newsroom_ko_kr.png"
-import { CardType } from "@/components/FlipCard"
 import { faDollyBox, faLanguage } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { icon } from "@fortawesome/fontawesome-svg-core"
+import { NextPage } from "next/types"
 
 const StockX: NextPage = () => {
   const pills = [
@@ -29,7 +27,7 @@ const StockX: NextPage = () => {
       title: "Translation",
       front: (
         <FontAwesomeIcon
-          className="w-12 h-12"
+          className="w-full h-12"
           icon={faLanguage}
         ></FontAwesomeIcon>
       ),
@@ -44,7 +42,7 @@ const StockX: NextPage = () => {
       title: "Replatform",
       front: (
         <FontAwesomeIcon
-          className="w-12 h-12"
+          className="w-full h-12"
           icon={faDollyBox}
         ></FontAwesomeIcon>
       ),

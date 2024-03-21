@@ -1,6 +1,8 @@
 import PortfolioPageTemplate, {
   ScreenshotType,
 } from "@/components/PortfolioPageTemplate"
+import spax from "@/public/spax/hero.jpg"
+import about from "@/public/spax/spax_about.png"
 import {
   faBugSlash,
   faCloudBolt,
@@ -8,12 +10,10 @@ import {
 } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { NextPage } from "next"
-import spax from "@/public/spax/hero.jpg"
-import about from "@/public/spax/spax_about.png"
 // import coatings from "@/public/spax/spax_coatings.png"
+import { CardType } from "@/components/FlipCard"
 import colorMatch from "@/public/spax/spax_color_match.png"
 import whereToBuy from "@/public/spax/spax_where_to_buy.png"
-import { CardType } from "@/components/FlipCard"
 
 const Spax: NextPage = () => {
   const pills = [
@@ -34,7 +34,7 @@ const Spax: NextPage = () => {
       title: "eCommerce",
       front: (
         <FontAwesomeIcon
-          className="w-12 h-12"
+          className="w-full h-12"
           icon={faWallet}
         ></FontAwesomeIcon>
       ),
@@ -44,17 +44,17 @@ const Spax: NextPage = () => {
       title: "Jamstack",
       front: (
         <FontAwesomeIcon
-          className="w-12 h-12"
+          className="w-full h-12"
           icon={faCloudBolt}
         ></FontAwesomeIcon>
       ),
       back: <p>Headless CMS, Static Site Generation, Server Side Rendering</p>,
     },
     {
-      title: "Debugging",
+      title: "Error Aggregation",
       front: (
         <FontAwesomeIcon
-          className="w-12 h-12"
+          className="w-full h-12"
           icon={faBugSlash}
         ></FontAwesomeIcon>
       ),

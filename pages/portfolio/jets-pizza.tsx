@@ -1,21 +1,21 @@
+import { CardType } from "@/components/FlipCard"
 import PortfolioPageTemplate, {
   ScreenshotType,
 } from "@/components/PortfolioPageTemplate"
-import { NextPage } from "next/types"
-import jets from "@/public/jets/hero.jpg"
 import comingSoon from "@/public/jets/Jets_coming_soon.png"
 import mapDesktop from "@/public/jets/Jets_map_desktop.png"
 import mapListDesktop from "@/public/jets/Jets_map_list_desktop.png"
 import mapListMobile from "@/public/jets/Jets_map_list_mobile.png"
 import mapMobile from "@/public/jets/Jets_map_mobile.png"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import jets from "@/public/jets/hero.jpg"
 import {
+  faBell,
   faLocationCrosshairs,
   faMapLocationDot,
   faTimeline,
-  faBell,
 } from "@fortawesome/free-solid-svg-icons"
-import { CardType } from "@/components/FlipCard"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { NextPage } from "next/types"
 
 const JetsPizza: NextPage = () => {
   const pills = [
@@ -35,7 +35,7 @@ const JetsPizza: NextPage = () => {
       title: "Deployment Pipeline",
       front: (
         <FontAwesomeIcon
-          className="w-12 h-12"
+          className="w-full h-12"
           icon={faTimeline}
         ></FontAwesomeIcon>
       ),
@@ -49,7 +49,7 @@ const JetsPizza: NextPage = () => {
       title: "Store DMAs",
       front: (
         <FontAwesomeIcon
-          className="w-12 h-12"
+          className="w-full h-12"
           icon={faMapLocationDot}
         ></FontAwesomeIcon>
       ),
@@ -64,7 +64,7 @@ const JetsPizza: NextPage = () => {
       title: "Geolocation",
       front: (
         <FontAwesomeIcon
-          className="w-12 h-12"
+          className="w-full h-12"
           icon={faLocationCrosshairs}
         ></FontAwesomeIcon>
       ),
@@ -78,7 +78,10 @@ const JetsPizza: NextPage = () => {
     {
       title: "Push Notifications",
       front: (
-        <FontAwesomeIcon className="w-12 h-12" icon={faBell}></FontAwesomeIcon>
+        <FontAwesomeIcon
+          className="w-full h-12"
+          icon={faBell}
+        ></FontAwesomeIcon>
       ),
       back: (
         <p>

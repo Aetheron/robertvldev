@@ -1,19 +1,19 @@
+import { CardType } from "@/components/FlipCard"
 import PortfolioPageTemplate, {
   ScreenshotType,
 } from "@/components/PortfolioPageTemplate"
-import { NextPage } from "next"
 import pwp from "@/public/pwp/hero.png"
-import oldHomepage from "@/public/pwp/old_homepage.png"
 import newHomepage from "@/public/pwp/new_homepage.png"
+import oldHomepage from "@/public/pwp/old_homepage.png"
 import topicalStudies from "@/public/pwp/topical_studies.png"
 import topicalStudy from "@/public/pwp/topical_study.png"
-import { CardType } from "@/components/FlipCard"
 import {
   faChartLine,
   faHandHoldingHeart,
   faMagnifyingGlass,
 } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { NextPage } from "next"
 
 const pills = ["PHP", "Drupal", "Laravel", "Less", "MySQL"]
 
@@ -22,7 +22,7 @@ const cards: CardType[] = [
     title: "Nonprofit",
     front: (
       <FontAwesomeIcon
-        className="w-12 h-12"
+        className="w-full h-12"
         icon={faHandHoldingHeart}
       ></FontAwesomeIcon>
     ),
@@ -37,7 +37,7 @@ const cards: CardType[] = [
     title: "Search Engine",
     front: (
       <FontAwesomeIcon
-        className="w-12 h-12"
+        className="w-full h-12"
         icon={faMagnifyingGlass}
       ></FontAwesomeIcon>
     ),
@@ -45,7 +45,7 @@ const cards: CardType[] = [
   },
   {
     title: "A/B Tests",
-    front: <FontAwesomeIcon className="w-12 h-12" icon={faChartLine} />,
+    front: <FontAwesomeIcon className="w-full h-12" icon={faChartLine} />,
     back: <p>Google Optimize A/B testing to refine user experience</p>,
   },
 ]
