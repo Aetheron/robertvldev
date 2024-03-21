@@ -1,21 +1,21 @@
-import { AppProps } from "next/app"
-import Head from "next/head"
 import "@/app/globals.css"
 import "@/app/primereact_theme.css"
-import "primereact/resources/primereact.min.css"
-import { Oxygen } from "next/font/google"
-import Image from "next/image"
-import Link from "next/link"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import logo from "@/public/logo.svg"
 import {
   faCodepen,
   faGithub,
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons"
-import logo from "@/public/logo.svg"
-import { ParallaxProvider } from "react-scroll-parallax"
-import { storyblokInit, apiPlugin } from "@storyblok/react"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { apiPlugin, storyblokInit } from "@storyblok/react"
+import { AppProps } from "next/app"
+import { Oxygen } from "next/font/google"
+import Head from "next/head"
+import Image from "next/image"
+import Link from "next/link"
 import Script from "next/script"
+import "primereact/resources/primereact.min.css"
+import { ParallaxProvider } from "react-scroll-parallax"
 
 storyblokInit({
   accessToken: process.env.NEXT_PUBLIC_STORYBLOK_ACCESS_KEY,

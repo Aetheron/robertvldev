@@ -1,6 +1,7 @@
+import { SpeedInsights } from "@vercel/speed-insights/next"
+import { Inter } from "next/font/google"
 import Script from "next/script"
 import "./globals.css"
-import { Inter } from "next/font/google"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -25,6 +26,7 @@ export default function RootLayout({
           {/* <!-- End Google Tag Manager (noscript) --> */}
         </Script>
         {children}
+        <SpeedInsights />
       </body>
     </html>
   )
