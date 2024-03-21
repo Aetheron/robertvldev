@@ -56,6 +56,7 @@ export default function App(props: AppProps) {
           src={logo}
           width="125"
           height="125"
+          priority
         />
 
         <div className="w-full">
