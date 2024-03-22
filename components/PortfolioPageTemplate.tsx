@@ -1,17 +1,15 @@
 import { faHome } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { StaticImageData } from "next/image"
+import Head from "next/head"
+import Image, { StaticImageData } from "next/image"
+import Link from "next/link"
 import { BreadCrumb } from "primereact/breadcrumb"
 import { Chip } from "primereact/chip"
 import { ConfirmDialog, confirmDialog } from "primereact/confirmdialog"
-import React, { useState } from "react"
-import Image from "next/image"
-import { ParallaxBanner, ParallaxBannerLayer } from "react-scroll-parallax"
-import Head from "next/head"
-import FlipCard from "./FlipCard"
-import { CardType } from "./FlipCard"
-import Link from "next/link"
 import { MenuItem, MenuItemOptions } from "primereact/menuitem"
+import React from "react"
+import { ParallaxBanner, ParallaxBannerLayer } from "react-scroll-parallax"
+import FlipCard, { CardType } from "./FlipCard"
 
 export interface ScreenshotType {
   src: StaticImageData
@@ -72,7 +70,7 @@ const PortfolioPageTemplate: React.FC<PortfolioPageTemplateProps> = ({
         <BreadCrumb
           className="bg-gray-800 mb-4"
           home={{
-            icon: <FontAwesomeIcon icon={faHome} />,
+            icon: <FontAwesomeIcon icon={faHome} className="w-5 h-5" />,
             url: "/",
             template: nextLinkTemplate,
           }}
