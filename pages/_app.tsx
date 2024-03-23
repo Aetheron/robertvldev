@@ -8,6 +8,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { apiPlugin, storyblokInit } from "@storyblok/react"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import { AppProps } from "next/app"
 import { Oxygen } from "next/font/google"
 import Head from "next/head"
@@ -122,9 +123,8 @@ export default function App(props: AppProps) {
           </nav>
         </div>
       </header>
-
       <Component {...pageProps} />
-
+      <SpeedInsights />
       <footer className="text-center mt-7">
         <p>©️ 2020 - {new Date().getFullYear()} Robert VanLonkhuyzen</p>
       </footer>
