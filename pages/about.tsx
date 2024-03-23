@@ -32,8 +32,8 @@ interface TimelineItem {
   icon: React.ReactNode | null
 }
 const TimelineIcon: { [index: string]: React.ReactNode } = {
-  graduation_cap: <FontAwesomeIcon icon={faGraduationCap} />,
-  briefcase: <FontAwesomeIcon icon={faBriefcase} />,
+  graduation_cap: <FontAwesomeIcon icon={faGraduationCap} className="p-2" />,
+  briefcase: <FontAwesomeIcon icon={faBriefcase} className="p-2" />,
 }
 
 const About: NextPage = () => {
