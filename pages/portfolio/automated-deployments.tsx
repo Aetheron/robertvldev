@@ -3,6 +3,7 @@ import {
   faBolt,
   faCloudArrowUp,
   faDatabase,
+  faExternalLink,
   faGlobe,
   faHome,
   faListCheck,
@@ -36,7 +37,7 @@ const AutomatedDeployments: NextPage = () => {
       icon: <FontAwesomeIcon icon={faHandPointer} className="p-2" />,
     },
     {
-      content: <h3>Trigger GitHub action using api request</h3>,
+      content: <h3>Trigger GitHub action using API request</h3>,
       icon: <FontAwesomeIcon icon={faBolt} className="p-2" />,
     },
     {
@@ -107,10 +108,27 @@ const AutomatedDeployments: NextPage = () => {
           <Chip className="bg-orange" label="GitHub Actions"></Chip>
           <Chip className="bg-orange" label="Golang"></Chip>
         </div>
-        <a href="https://pkg.go.dev/github.com/fusionary/go-render">
-          <pre>go-render</pre>
-          package
-        </a>
+        <div className="py-4">
+          <h2>Render</h2>
+          <a
+            href="https://pkg.go.dev/github.com/fusionary/go-render"
+            target="_blank"
+            className="inline-flex gap-1 items-center"
+          >
+            <pre className="inline">go-render</pre> package
+            <FontAwesomeIcon
+              icon={faExternalLink}
+              className="w-3 h-3"
+            ></FontAwesomeIcon>
+          </a>
+          <p>
+            Golang package to make API requests to Render, allowing programmatic
+            creation, manipulation, and status checking of jobs, deployments,
+            and services.
+          </p>
+        </div>
+
+        <h2>Automated Deployment Pipeline</h2>
         <Timeline
           align="alternate"
           value={events}
