@@ -13,11 +13,10 @@ import {
 } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { NextPage } from "next"
+import Head from "next/head"
+import { BreadCrumb } from "primereact/breadcrumb"
 import { Chip } from "primereact/chip"
 import { Timeline } from "primereact/timeline"
-import React from "react"
-import { BreadCrumb } from "primereact/breadcrumb"
-import Head from "next/head"
 
 interface TimelineEvent {
   content: JSX.Element
@@ -34,31 +33,31 @@ const AutomatedDeployments: NextPage = () => {
           <p className="text-gray-300">in CraftCMS admin UI</p>
         </div>
       ),
-      icon: <FontAwesomeIcon icon={faHandPointer} />,
+      icon: <FontAwesomeIcon icon={faHandPointer} className="p-2" />,
     },
     {
       content: <h3>Trigger GitHub action using api request</h3>,
-      icon: <FontAwesomeIcon icon={faBolt} />,
+      icon: <FontAwesomeIcon icon={faBolt} className="p-2" />,
     },
     {
       content: <h3>Back up staging and production databases</h3>,
-      icon: <FontAwesomeIcon icon={faCloudArrowUp} />,
+      icon: <FontAwesomeIcon icon={faCloudArrowUp} className="p-2" />,
     },
     {
       content: <h3>Create git tag</h3>,
-      icon: <FontAwesomeIcon icon={faTag} />,
+      icon: <FontAwesomeIcon icon={faTag} className="p-2" />,
     },
     {
       content: <h3>Create new production database</h3>,
-      icon: <FontAwesomeIcon icon={faDatabase} />,
+      icon: <FontAwesomeIcon icon={faDatabase} className="p-2" />,
     },
     {
       content: <h3>Create new production web container</h3>,
-      icon: <FontAwesomeIcon icon={faGlobe} />,
+      icon: <FontAwesomeIcon icon={faGlobe} className="p-2" />,
     },
     {
       content: <h3>Update production backup cron</h3>,
-      icon: <FontAwesomeIcon icon={faRotate} />,
+      icon: <FontAwesomeIcon icon={faRotate} className="p-2" />,
     },
     {
       content: (
@@ -70,15 +69,15 @@ const AutomatedDeployments: NextPage = () => {
           </p>
         </div>
       ),
-      icon: <FontAwesomeIcon icon={faRocket} />,
+      icon: <FontAwesomeIcon icon={faRocket} className="p-2" />,
     },
     {
       content: <h3>Update production queue listener</h3>,
-      icon: <FontAwesomeIcon icon={faListCheck} />,
+      icon: <FontAwesomeIcon icon={faListCheck} className="p-2" />,
     },
     {
       content: <h3>Trigger Render deployment</h3>,
-      icon: <FontAwesomeIcon icon={faTerminal} />,
+      icon: <FontAwesomeIcon icon={faTerminal} className="p-2" />,
     },
   ]
 
@@ -95,7 +94,10 @@ const AutomatedDeployments: NextPage = () => {
       <div>
         <BreadCrumb
           className="bg-gray-800 mb-4"
-          home={{ icon: <FontAwesomeIcon icon={faHome} />, url: "/" }}
+          home={{
+            icon: <FontAwesomeIcon icon={faHome} className="w-5 h-5" />,
+            url: "/",
+          }}
           model={items}
         />
         <h1>Automated Deployments</h1>
