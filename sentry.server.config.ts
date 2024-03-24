@@ -3,6 +3,7 @@
 // https://docs.sentry.io/platforms/javascript/guides/nextjs/
 
 import * as Sentry from "@sentry/nextjs"
+import { SamplingContext } from "@sentry/types"
 
 Sentry.init({
   dsn: "https://34cb66f2d8234036b2058cbce07c6aa5@o4504131190456320.ingest.sentry.io/4505462636478464",
