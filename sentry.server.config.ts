@@ -12,7 +12,14 @@ Sentry.init({
   environment: process.env.VERCEL_ENV ? process.env.VERCEL_ENV : "local",
 
   // Adjust this value in production, or use tracesSampler for greater control
-  tracesSampleRate: 1,
+  // tracesSampleRate: 1,
+  tracesSampler: (context: SamplingContext): boolean | number => {
+    if (process.env.VERCEL_ENV && process.env.VERCEL_ENV == "production") {
+      return 0.8
+    } else {
+      return false
+    }
+  },
 
   // Setting this option to true will print useful information to the console while you're setting up Sentry.
   debug: false,
