@@ -21,7 +21,7 @@ const PHP: NextPage = () => {
           icon={faFilePrescription}
         ></FontAwesomeIcon>
       ),
-      back: <p>HIPPA regulation compliance</p>,
+      back: <p>HIPAA regulation compliance</p>,
     },
     {
       title: "Microsoft Graph API",
