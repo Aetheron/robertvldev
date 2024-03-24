@@ -63,7 +63,7 @@ const PortfolioPageTemplate: React.FC<PortfolioPageTemplateProps> = ({
   return (
     <>
       <Head>
-        <title>{title} - robertvl.dev</title>
+        <title>{`${title} - robertvl.dev`}</title>
       </Head>
       <div>
         <ConfirmDialog />
@@ -76,7 +76,7 @@ const PortfolioPageTemplate: React.FC<PortfolioPageTemplateProps> = ({
           }}
           model={items}
         />
-        <ParallaxBanner className="h-[75vh] w-screen ml-[50%] -translate-x-1/2 lg:h-[calc(100vh-175px)]">
+        <ParallaxBanner className="h-[75vh] w-screen max-w-[100vw] ml-[50%] -translate-x-1/2 lg:h-[calc(100vh-175px)]">
           <ParallaxBannerLayer speed={-20}>
             <Image
               src={heroImage}

@@ -90,7 +90,7 @@ const AutomatedDeployments: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Automated Deployments - robertvl.dev</title>
+        <title>{`Automated Deployments - robertvl.dev`}</title>
       </Head>
       <div>
         <BreadCrumb
