@@ -66,6 +66,11 @@
   resolved "https://registry.yarnpkg.com/@colors/colors/-/colors-1.5.0.tgz#bb504579c1cae923e6576a4f5da43d25f97bdbd9"
   integrity sha512-ooWCrlZP11i8GImSjTHYHLkvFDP48nS4+204nGb1RiX/WXYHmJA2III9/e2DWVabCESdW7hBAEzHRqUn9OUVvQ==
 
+"@contentful/vercel-nextjs-toolkit@^1.6.0":
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/@contentful/vercel-nextjs-toolkit/-/vercel-nextjs-toolkit-1.6.0.tgz#11503b39096ea25160db20347868d90cc9d44f00"
+  integrity sha512-0XuYMJeSD+ZFUKjeVvxXBtxtlt+0sIivb5zbh21jIFFFbQ9TT7nlZaZoar89rOlbDyMKglG1/ZudChk5z+cqgw==
+
 "@cypress/request@^3.0.0":
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/@cypress/request/-/request-3.0.1.tgz#72d7d5425236a2413bd3d8bb66d02d9dc3168960"
