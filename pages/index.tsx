@@ -1,9 +1,9 @@
 import src from "@/public/Bob-VanLonkhuyzen.png"
 import detroitAxle from "@/public/DetroitAxle.png"
 import digitalRealty from "@/public/DigitalRealty.png"
-import growX from "@/public/GrowX.png"
 import jetsPizza from "@/public/JetsPizza.png"
 import stockX from "@/public/StockX_Green_Digital_RGB.png"
+import umhp from "@/public/UM-Health-Plan_Logo-Horizontal-CMYK.png"
 import s24 from "@/public/s24-ntt-logo.png"
 import Head from "next/head"
 import Image from "next/image"
@@ -31,14 +31,14 @@ const Home: NextPage = () => {
               <h2 className="text-gray-300 mb-6">DevOps Engineer</h2>
             </div>
             <div className="flex flex-wrap justify-center gap-5 lg:justify-start">
-              <Chip className="bg-orange" label="PHP"></Chip>
-              <Chip className="bg-orange" label="WordPress"></Chip>
               <Chip className="bg-orange" label="C#"></Chip>
               <Chip className="bg-orange" label="React"></Chip>
               <Chip className="bg-orange" label="NextJS"></Chip>
               <Chip className="bg-orange" label="TypeScript"></Chip>
               <Chip className="bg-orange" label="Tailwind"></Chip>
               <Chip className="bg-orange" label="MySQL"></Chip>
+              <Chip className="bg-orange" label="PHP"></Chip>
+              <Chip className="bg-orange" label="WordPress"></Chip>
               <Chip className="bg-orange" label="Vue"></Chip>
               <Chip className="bg-orange" label="JS/jQuery"></Chip>
               <Chip className="bg-orange" label="Laravel"></Chip>
@@ -57,6 +57,13 @@ const Home: NextPage = () => {
         <div className="text-center">
           <h2>Some clients I have worked with</h2>
           <div className="flex flex-wrap justify-center gap-6 my-12">
+            <Card className="flex items-center justify-center bg-white w-[250px] h-24 shadow-md hover:shadow-xl hover:transition-all hover:-translate-y-1">
+              <Image
+                // className="w-full"
+                src={umhp}
+                alt="University of Michigan Health Plan logo"
+              />
+            </Card>
             <Card className="flex items-center justify-center bg-white w-[250px] h-24 shadow-md hover:shadow-xl hover:transition-all hover:-translate-y-1">
               <svg
                 className="w-full h-full inline-block"
@@ -114,9 +121,6 @@ const Home: NextPage = () => {
               <Image src={jetsPizza} alt="Jet's Pizza logo" />
             </Card>
             <Card className="flex items-center justify-center bg-white w-[250px] h-24 shadow-md hover:shadow-xl hover:transition-all hover:-translate-y-1">
-              <Image src={digitalRealty} alt="Digital Realty logo" />
-            </Card>
-            <Card className="flex items-center justify-center bg-white w-[250px] h-24 shadow-md hover:shadow-xl hover:transition-all hover:-translate-y-1">
               <svg
                 className="w-full h-full inline-block"
                 xmlns="http://www.w3.org/2000/svg"
@@ -128,6 +132,12 @@ const Home: NextPage = () => {
                   d="M0 15.672V.784h2.742v12.439H9.6v2.449H0zM14.548 1.626c0 .47-.15.859-.45 1.166-.301.307-.693.46-1.176.46s-.875-.153-1.175-.46c-.301-.307-.45-.696-.45-1.166s.149-.859.45-1.166c.3-.306.692-.46 1.175-.46.483 0 .875.154 1.175.46.3.307.45.696.45 1.166zM11.61 15.672V4.368h2.644v11.304H11.61zM17.238 19.766V4.368h2.527l.02 1.92a4.39 4.39 0 0 1 1.665-1.684c.692-.392 1.482-.588 2.37-.588 1.019 0 1.926.258 2.723.774.797.516 1.42 1.22 1.87 2.115.451.895.677 1.923.677 3.086 0 .849-.14 1.639-.422 2.37a5.989 5.989 0 0 1-1.175 1.92 5.49 5.49 0 0 1-1.743 1.283c-.66.307-1.368.46-2.126.46a4.502 4.502 0 0 1-2.174-.529 4.002 4.002 0 0 1-1.567-1.528v5.799h-2.645zm5.838-6.112c.653 0 1.23-.154 1.733-.46a3.215 3.215 0 0 0 1.186-1.284c.287-.548.43-1.175.43-1.88 0-.718-.143-1.352-.43-1.9a3.217 3.217 0 0 0-1.186-1.283c-.502-.307-1.08-.46-1.733-.46s-1.234.153-1.744.46c-.509.307-.904.734-1.185 1.283-.28.548-.421 1.182-.421 1.9 0 .705.14 1.332.421 1.88.28.549.676.977 1.185 1.283.51.307 1.09.46 1.744.46zM31.267 19.766V4.368h2.527l.02 1.92a4.39 4.39 0 0 1 1.665-1.684c.692-.392 1.482-.588 2.37-.588 1.019 0 1.926.258 2.723.774.796.516 1.42 1.22 1.87 2.115.451.895.677 1.923.677 3.086 0 .849-.14 1.639-.422 2.37a5.989 5.989 0 0 1-1.175 1.92 5.49 5.49 0 0 1-1.743 1.283c-.66.307-1.369.46-2.126.46a4.502 4.502 0 0 1-2.174-.529 4.002 4.002 0 0 1-1.567-1.528v5.799h-2.645zm5.838-6.112c.653 0 1.23-.154 1.733-.46a3.215 3.215 0 0 0 1.186-1.284c.287-.548.43-1.175.43-1.88 0-.718-.143-1.352-.43-1.9a3.217 3.217 0 0 0-1.186-1.283c-.502-.307-1.08-.46-1.733-.46s-1.234.153-1.744.46c-.51.307-.904.734-1.185 1.283-.28.548-.421 1.182-.421 1.9 0 .705.14 1.332.421 1.88.28.549.676.977 1.185 1.283.51.307 1.09.46 1.744.46zM48.335 1.626c0 .47-.15.859-.45 1.166-.301.307-.693.46-1.176.46s-.875-.153-1.175-.46c-.3-.307-.45-.696-.45-1.166s.15-.859.45-1.166c.3-.306.692-.46 1.175-.46.483 0 .875.154 1.176.46.3.307.45.696.45 1.166zm-2.938 14.046V4.368h2.644v11.304h-2.644zM51.044 15.672V4.368h2.547l.02 1.803a3.53 3.53 0 0 1 1.42-1.587c.633-.379 1.361-.568 2.184-.568 1.306 0 2.312.415 3.017 1.244.705.83 1.058 2.02 1.058 3.575v6.837h-2.645V9.325c0-1.972-.757-2.958-2.272-2.958-.836 0-1.492.277-1.969.832-.477.555-.715 1.336-.715 2.341v6.132h-2.645zM69.482 16.024c-1.215 0-2.272-.242-3.174-.725s-1.596-1.172-2.086-2.066c-.49-.895-.734-1.943-.734-3.144 0-1.215.25-2.276.754-3.184a5.42 5.42 0 0 1 2.096-2.125c.894-.51 1.93-.764 3.105-.764.587 0 1.13.072 1.626.215.496.144.966.314 1.41.51v2.448a5.472 5.472 0 0 0-1.4-.597 5.474 5.474 0 0 0-1.44-.206c-1.058 0-1.904.323-2.537.97-.634.646-.95 1.525-.95 2.635 0 1.162.316 2.066.95 2.713.633.646 1.511.97 2.635.97.457 0 .894-.056 1.312-.167.418-.11.895-.284 1.43-.52v2.332a7.05 7.05 0 0 1-1.381.51 6.424 6.424 0 0 1-1.616.195zM80.212 16.024c-.849 0-1.639-.15-2.37-.45a5.693 5.693 0 0 1-1.91-1.274 5.99 5.99 0 0 1-1.734-4.27c0-.849.154-1.639.46-2.37a5.896 5.896 0 0 1 1.274-1.91 5.898 5.898 0 0 1 1.91-1.274 6.064 6.064 0 0 1 2.37-.46c.849 0 1.639.154 2.37.46a5.904 5.904 0 0 1 1.91 1.274 5.907 5.907 0 0 1 1.274 1.91 6.07 6.07 0 0 1 .46 2.37c0 .849-.154 1.635-.46 2.36a6.05 6.05 0 0 1-1.274 1.91 5.699 5.699 0 0 1-1.91 1.274 6.18 6.18 0 0 1-2.37.45zm0-2.37c.666 0 1.25-.154 1.753-.46a3.149 3.149 0 0 0 1.176-1.284c.28-.548.421-1.175.421-1.88 0-.718-.14-1.352-.421-1.9a3.15 3.15 0 0 0-1.176-1.283c-.502-.307-1.087-.46-1.753-.46-.653 0-1.234.153-1.743.46-.51.307-.905.734-1.185 1.283-.281.548-.422 1.182-.422 1.9 0 .705.14 1.332.422 1.88.28.549.675.977 1.185 1.283.51.307 1.09.46 1.743.46zM93.287 16.024c-1.333 0-2.319-.385-2.958-1.156-.64-.77-.96-1.887-.96-3.35v-4.74h-2.331V4.564h2.33V1.548h2.645v3.016h3.683v2.214h-3.683v4.525c0 .823.14 1.42.422 1.793.28.372.727.558 1.341.558.405 0 .823-.069 1.254-.206a5.562 5.562 0 0 0 1.117-.48v2.41a7.705 7.705 0 0 1-1.372.47c-.483.117-.979.176-1.488.176zM103.14 16.024c-1.332 0-2.318-.385-2.958-1.156-.64-.77-.96-1.887-.96-3.35v-4.74H96.89V4.564h2.33V1.548h2.646v3.016h3.682v2.214h-3.682v4.525c0 .823.14 1.42.42 1.793.281.372.729.558 1.343.558.404 0 .822-.069 1.253-.206a5.562 5.562 0 0 0 1.117-.48v2.41a7.704 7.704 0 0 1-1.371.47c-.484.117-.98.176-1.489.176z"
                 />
               </svg>
+            </Card>
+            <Card className="flex items-center justify-center bg-white w-[250px] h-24 shadow-md hover:shadow-xl hover:transition-all hover:-translate-y-1">
+              <Image src={digitalRealty} alt="Digital Realty logo" />
+            </Card>
+            <Card className="flex items-center justify-center bg-white w-[250px] h-24 shadow-md hover:shadow-xl hover:transition-all hover:-translate-y-1">
+              <Image src={detroitAxle} alt="Detroit Axle logo" />
             </Card>
             <Card className="flex items-center justify-center bg-white w-[250px] h-24 shadow-md hover:shadow-xl hover:transition-all hover:-translate-y-1">
               <svg
@@ -153,14 +163,11 @@ const Home: NextPage = () => {
               </svg>
             </Card>
             <Card className="flex items-center justify-center bg-white w-[250px] h-24 shadow-md hover:shadow-xl hover:transition-all hover:-translate-y-1">
-              <Image src={detroitAxle} alt="Detroit Axle logo" />
-            </Card>
-            <Card className="flex items-center justify-center bg-white w-[250px] h-24 shadow-md hover:shadow-xl hover:transition-all hover:-translate-y-1">
               <Image className="w-full" src={s24} alt="Secure 24 logo" />
             </Card>
-            <Card className="flex items-center justify-center bg-white w-[250px] h-24 shadow-md hover:shadow-xl hover:transition-all hover:-translate-y-1">
+            {/* <Card className="flex items-center justify-center bg-white w-[250px] h-24 shadow-md hover:shadow-xl hover:transition-all hover:-translate-y-1">
               <Image src={growX} alt="GrowX logo" />
-            </Card>
+            </Card> */}
           </div>
           <Link href="/portfolio">
             <Button className="hover:bg-orange-400">Learn more</Button>
