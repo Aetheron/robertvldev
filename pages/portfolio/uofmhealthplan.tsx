@@ -87,62 +87,94 @@ const PHP: NextPage = () => {
       pills={pills}
       cards={cards}
     >
-      <div className="border-b border-gray-200 pb-5 dark:border-white/10">
-        <h3 className="text-3xl font-semibold text-gray-900 dark:text-white">
+      <div className="mt-16 border-b border-gray-200 pb-5 dark:border-white/10">
+        <h3 className="text-center text-4xl font-semibold text-gray-900 dark:text-white">
           Projects
         </h3>
       </div>
-      <h4 className="text-xl font-semibold text-gray-900 dark:text-white">
-        Provider Directories
-      </h4>
-      <Stats stats={providerDirectoriesStats} />
-      {/* <h5 className="text-base font-semibold text-gray-900 dark:text-white">
+      <div className="flex flex-col gap-2">
+        <div className="divide-y divide-gray-200 overflow-hidden rounded-lg bg-white shadow dark:divide-white/10 dark:bg-gray-800/50 dark:shadow-none dark:outline dark:outline-1 dark:-outline-offset-1 dark:outline-white/10">
+          <div className="border-b border-gray-200 px-4 py-5 sm:px-6 dark:border-white/10">
+            <h4 className="pb-4 text-xl font-semibold text-gray-900 dark:text-white">
+              Provider Directories
+            </h4>
+            <Stats stats={providerDirectoriesStats} />
+            {/* <h5 className="text-base font-semibold text-gray-900 dark:text-white">
         Problem: 
       </h5> */}
-      <ul className="list-disc pl-4">
-        <li>
-          Query details about providers that are a part of the U of M Health
-          Plan
-        </li>
-        <li>Build a Table of Contents with page numbers</li>
-        <li>
-          Create document sections with different orderings of provider data
-        </li>
-      </ul>
+          </div>
+          <div className="px-4 py-5 sm:p-6">
+            <ul className="list-disc pl-4">
+              <li>
+                Query details about providers that are a part of the U of M
+                Health Plan
+              </li>
+              <li>Build a Table of Contents with page numbers</li>
+              <li>
+                Create document sections with different orderings of provider
+                data
+              </li>
+            </ul>
+          </div>
+        </div>
 
-      <h4 className="text-xl font-semibold text-gray-900 dark:text-white">
-        Provider Incentive Plan
-      </h4>
-      <Stats stats={pipStats} />
-      <h5 className="text-base font-semibold text-gray-900 dark:text-white">
-        Problem: The software to build the reports is outdated and no longer
-        runs.
-      </h5>
-      <ul className="list-disc pl-4">
-        <li>
-          Generate PDFs for distribution to providers detailing their member
-          visits
-        </li>
-        <li>Calculate incentive dollar payouts</li>
-        <li>Create pie charts of key visit metrics</li>
-        <li>
-          Use a templating engine to reduce code redundency and increase
-          maintainability
-        </li>
-      </ul>
-      <h4 className="text-xl font-semibold text-gray-900 dark:text-white">
-        Provider Data Automation
-      </h4>
-      <ul className="list-disc pl-4">
-        <li>Query source-of-truth database for provider data</li>
-        <li>Send SOAP API requests to Facets endpoint</li>
-      </ul>
-      <h4 className="text-xl font-semibold text-gray-900 dark:text-white">
-        HEDIS
-      </h4>
-      <ul className="list-disc pl-4">
-        <li>Add automated data integrity testing and file format testing</li>
-      </ul>
+        <div className="divide-y divide-gray-200 overflow-hidden rounded-lg bg-white shadow dark:divide-white/10 dark:bg-gray-800/50 dark:shadow-none dark:outline dark:outline-1 dark:-outline-offset-1 dark:outline-white/10">
+          <div className="border-b border-gray-200 px-4 py-5 sm:px-6 dark:border-white/10">
+            <h4 className="pb-4 text-xl font-semibold text-gray-900 dark:text-white">
+              Provider Incentive Plan
+            </h4>
+            <Stats stats={pipStats} />
+          </div>
+
+          <div className="px-4 py-5 sm:p-6">
+            <h5 className="text-base font-semibold text-gray-900 dark:text-white">
+              Problem: The software to build the reports is outdated and no
+              longer runs.
+            </h5>
+            <ul className="list-disc pl-4">
+              <li>
+                Generate PDFs for distribution to providers detailing their
+                member visits
+              </li>
+              <li>Calculate incentive dollar payouts</li>
+              <li>Create pie charts of key visit metrics</li>
+              <li>
+                Use a templating engine to reduce code redundency and increase
+                maintainability
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="divide-y divide-gray-200 overflow-hidden rounded-lg bg-white shadow dark:divide-white/10 dark:bg-gray-800/50 dark:shadow-none dark:outline dark:outline-1 dark:-outline-offset-1 dark:outline-white/10">
+          <div className="border-b border-gray-200 px-4 py-5 sm:px-6 dark:border-white/10">
+            <h4 className="text-xl font-semibold text-gray-900 dark:text-white">
+              Provider Data Automation
+            </h4>
+          </div>
+          <div className="px-4 py-5 sm:p-6">
+            <ul className="list-disc pl-4">
+              <li>Query source-of-truth database for provider data</li>
+              <li>Send SOAP API requests to Facets endpoint</li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="divide-y divide-gray-200 overflow-hidden rounded-lg bg-white shadow dark:divide-white/10 dark:bg-gray-800/50 dark:shadow-none dark:outline dark:outline-1 dark:-outline-offset-1 dark:outline-white/10">
+          <div className="border-b border-gray-200 px-4 py-5 sm:px-6 dark:border-white/10">
+            <h4 className="text-xl font-semibold text-gray-900 dark:text-white">
+              HEDIS
+            </h4>
+          </div>
+          <div className="px-4 py-5 sm:p-6">
+            <ul className="list-disc pl-4">
+              <li>
+                Add automated data integrity testing and file format testing
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </PortfolioPageTemplate>
   )
 }
