@@ -30,7 +30,7 @@ const Portfolio: NextPage = () => {
             className="w-full bg-gray-800 shadow-md lg:min-w-[250px] lg:w-auto hover:shadow-xl hover:transition-all"
             title="Physicians Health Plan"
           >
-            <Link href="/portfolio/php">
+            <Link href="/portfolio/uofmhealthplan">
               <Button
                 className="bg-orange bg-opacity-10 hover:bg-orange hover:text-white hover:opacity-100"
                 outlined
