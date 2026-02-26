@@ -724,13 +724,13 @@
   integrity sha512-//oorEZjL6sbPcKUaCdIGlIUeH26mgzimjBB77G6XRgnDl/L5wOnpyBGRe/Mmf5CVW3PwEBE1NjiMZ/ssFh4wA==
 
 "@types/prop-types@*":
-  version "15.7.5"
-  resolved "https://registry.npmjs.org/@types/prop-types/-/prop-types-15.7.5.tgz"
-  integrity sha512-JCB8C6SnDoQf0cNycqd/35A7MjcnK+ZTqE7judS6o7utxUCg6imJg3QK2qzHKszlTjcj2cn+NwMB2i96ubpj7w==
+  version "15.7.15"
+  resolved "https://registry.yarnpkg.com/@types/prop-types/-/prop-types-15.7.15.tgz#e6e5a86d602beaca71ce5163fadf5f95d70931c7"
+  integrity sha512-F6bEyamV9jKGAFBEmlQnesRPGOQqS2+Uwi0Em15xenOxHaf2hv6L8YCVn3rPdPJOiJfPiCnLIRyvwVaqMY3MIw==
 
 "@types/react-dom@18.2.6":
   version "18.2.6"
-  resolved "https://registry.npmjs.org/@types/react-dom/-/react-dom-18.2.6.tgz"
+  resolved "https://registry.yarnpkg.com/@types/react-dom/-/react-dom-18.2.6.tgz#ad621fa71a8db29af7c31b41b2ea3d8a6f4144d1"
   integrity sha512-2et4PDvg6PVCyS7fuTc4gPoksV58bW0RwSxWKcPRcHZf0PRUGq03TKcD/rUHe3azfV6/5/biUBJw+HhCQjaP0A==
   dependencies:
     "@types/react" "*"
@@ -742,9 +742,16 @@
   dependencies:
     "@types/react" "*"
 
-"@types/react@*", "@types/react@18.2.14":
+"@types/react@*":
+  version "19.2.14"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-19.2.14.tgz#39604929b5e3957e3a6fa0001dafb17c7af70bad"
+  integrity sha512-ilcTH/UniCkMdtexkoCN0bI7pMcJDvmQFPvuPvmEaYA/NSfFTAgdUSLAoVjaRJm7+6PvcM+q1zYOwS4wTYMF9w==
+  dependencies:
+    csstype "^3.2.2"
+
+"@types/react@18.2.14":
   version "18.2.14"
-  resolved "https://registry.npmjs.org/@types/react/-/react-18.2.14.tgz"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-18.2.14.tgz#fa7a6fecf1ce35ca94e74874f70c56ce88f7a127"
   integrity sha512-A0zjq+QN/O0Kpe30hA1GidzyFjatVvrpIvWLxD+xv67Vt91TWWgco9IvrJBkeyHm1trGaFS/FSGqPlhyeZRm0g==
   dependencies:
     "@types/prop-types" "*"
@@ -752,9 +759,9 @@
     csstype "^3.0.2"
 
 "@types/scheduler@*":
-  version "0.16.3"
-  resolved "https://registry.npmjs.org/@types/scheduler/-/scheduler-0.16.3.tgz"
-  integrity sha512-5cJ8CB4yAx7BH1oMvdU0Jh9lrEXyPkar6F9G/ERswkCuvP4KQZfZkSjcMbAICCpQTN4OuZn8tz0HiKv9TGZgrQ==
+  version "0.26.0"
+  resolved "https://registry.yarnpkg.com/@types/scheduler/-/scheduler-0.26.0.tgz#2b7183b9bbb622d130b23bedf06899b7fec7eed5"
+  integrity sha512-WFHp9YUJQ6CKshqoC37iOlHnQSmxNc795UhB26CyBBttrN9svdIrUjl/NjnNmfcwtncN0h/0PPAFWv9ovP8mLA==
 
 "@types/sinonjs__fake-timers@8.1.1":
   version "8.1.1"
@@ -1593,10 +1600,10 @@ cssesc@^3.0.0:
   resolved "https://registry.yarnpkg.com/cssesc/-/cssesc-3.0.0.tgz#37741919903b868565e1c09ea747445cd18983ee"
   integrity sha512-/Tb/JcjK111nNScGob5MNtsntNM1aCNUDipB/TkwZFhyDrrE47SOx/18wF2bbjgc3ZzCSKW1T5nt5EbFoAz/Vg==
 
-csstype@^3.0.2:
-  version "3.1.2"
-  resolved "https://registry.npmjs.org/csstype/-/csstype-3.1.2.tgz"
-  integrity sha512-I7K1Uu0MBPzaFKg4nI5Q7Vs2t+3gWWW648spaF+Rg7pI9ds18Ugn+lvg4SHczUdKlHI5LWBXyqfS8+DufyBsgQ==
+csstype@^3.0.2, csstype@^3.2.2:
+  version "3.2.3"
+  resolved "https://registry.yarnpkg.com/csstype/-/csstype-3.2.3.tgz#ec48c0f3e993e50648c86da559e2610995cf989a"
+  integrity sha512-z1HGKcYy2xA8AGQfwrn0PAy+PB7X/GSj3UVJW9qKyn43xWa+gl5nXmU4qqLMRzWVLFC8KusUX8T/0kCiOYpAIQ==
 
 cypress@13.3.1:
   version "13.3.1"
@@ -4858,6 +4865,7 @@ streamsearch@^1.1.0:
   integrity sha512-Mcc5wHehp9aXz1ax6bZUyY5afg9u2rv5cqQI3mRrYkGC8rW2hM02jWuwjtL++LS5qinSyhj2QfLyNsuc+VsExg==
 
 "string-width-cjs@npm:string-width@^4.2.0", string-width@^4.1.0, string-width@^4.2.0:
+  name string-width-cjs
   version "4.2.3"
   resolved "https://registry.yarnpkg.com/string-width/-/string-width-4.2.3.tgz#269c7117d27b05ad2e536830a8ec895ef9c6d010"
   integrity sha512-wKyQRQpjJ0sIp62ErSZdGsjMJWsap5oRNihHhu6G7JVO/9jIB6UyevL+tXuOqrng8j/cxKTWyWUwvSTriiZz/g==
@@ -5561,6 +5569,7 @@ which@^2.0.1, which@^2.0.2:
     isexe "^2.0.0"
 
 "wrap-ansi-cjs@npm:wrap-ansi@^7.0.0", wrap-ansi@^7.0.0:
+  name wrap-ansi-cjs
   version "7.0.0"
   resolved "https://registry.yarnpkg.com/wrap-ansi/-/wrap-ansi-7.0.0.tgz#67e145cff510a6a6984bdf1152911d69d2eb9e43"
   integrity sha512-YVGIj2kamLSTxw6NsZjoBxfSwsn0ycdesmc4p+Q21c5zPuZ1pl+NfxVdxPtdHvmNVOQ6XSYG4AUtyt/Fi7D16Q==
