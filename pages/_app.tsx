@@ -126,7 +126,7 @@ export default function App(props: AppProps) {
       <Component {...pageProps} />
       <SpeedInsights />
       <footer className="text-center mt-7">
-        <p>©️ 2020 - {new Date().getFullYear()} Robert VanLonkhuyzen</p>
+        <p>© 2020 - {new Date().getFullYear()} Robert VanLonkhuyzen</p>
       </footer>
     </ParallaxProvider>
   )
