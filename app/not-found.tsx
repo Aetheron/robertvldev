@@ -16,7 +16,11 @@ export default function Notfound() {
       />
       <p>Whoops. That page doesn&apos;t exist.</p>
       <p>
-        Click <Link href="/">here</Link> to go back home.
+        Click{" "}
+        <Link className="text-orange-500" href="/">
+          here
+        </Link>{" "}
+        to go back home.
       </p>
     </div>
   )
