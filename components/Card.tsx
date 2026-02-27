@@ -2,7 +2,7 @@ import clsx from "clsx"
 import { HTMLAttributes } from "react"
 
 export type CardType = {
-  title: string
+  title?: string
 } & HTMLAttributes<HTMLElement>
 
 export default function Card({ title, className, children }: CardType) {
@@ -13,9 +13,11 @@ export default function Card({ title, className, children }: CardType) {
         className
       )}
     >
-      <div className="px-4 py-5 sm:px-6">
-        <h3>{title}</h3>
-      </div>
+      {title && (
+        <div className="px-4 py-5 sm:px-6">
+          <h3>{title}</h3>
+        </div>
+      )}
       <div className="px-4 py-5 sm:p-6">{children}</div>
     </div>
   )

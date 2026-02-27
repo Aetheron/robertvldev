@@ -1,3 +1,6 @@
+import Button from "@/components/Button"
+import Card from "@/components/Card"
+import Pill from "@/components/Pill"
 import src from "@/public/Bob-VanLonkhuyzen.png"
 import detroitAxle from "@/public/DetroitAxle.png"
 import digitalRealty from "@/public/DigitalRealty.png"
@@ -9,9 +12,6 @@ import Head from "next/head"
 import Image from "next/image"
 import Link from "next/link"
 import { NextPage } from "next/types"
-import { Button } from "primereact/button"
-import { Card } from "primereact/card"
-import { Chip } from "primereact/chip"
 
 const Home: NextPage = () => {
   return (
@@ -31,18 +31,45 @@ const Home: NextPage = () => {
               <h2 className="text-gray-300 mb-6">DevOps Engineer</h2>
             </div>
             <div className="flex flex-wrap justify-center gap-5 lg:justify-start">
-              <Chip className="bg-orange" label="C#"></Chip>
-              <Chip className="bg-orange" label="React"></Chip>
-              <Chip className="bg-orange" label="NextJS"></Chip>
-              <Chip className="bg-orange" label="TypeScript"></Chip>
-              <Chip className="bg-orange" label="Tailwind"></Chip>
-              <Chip className="bg-orange" label="MySQL"></Chip>
-              <Chip className="bg-orange" label="PHP"></Chip>
-              <Chip className="bg-orange" label="WordPress"></Chip>
-              <Chip className="bg-orange" label="Vue"></Chip>
-              <Chip className="bg-orange" label="JS/jQuery"></Chip>
-              <Chip className="bg-orange" label="Laravel"></Chip>
-              <Chip className="bg-orange" label="GitHub Actions"></Chip>
+              <Pill className="bg-orange-500 dark:bg-orange-500 text-orange-200 dark:text-orange-100">
+                <b>C#</b>
+              </Pill>
+              <Pill className="bg-orange-500 dark:bg-orange-500 text-orange-200 dark:text-orange-100">
+                <b>.NET Framework</b>
+              </Pill>
+              <Pill className="bg-orange-500 dark:bg-orange-500 text-orange-200 dark:text-orange-100">
+                <b>React</b>
+              </Pill>
+              <Pill className="bg-orange-500 dark:bg-orange-500 text-orange-200 dark:text-orange-100">
+                <b>NextJS</b>
+              </Pill>
+              <Pill className="bg-orange-500 dark:bg-orange-500 text-orange-200 dark:text-orange-100">
+                <b>TypeScript</b>
+              </Pill>
+              <Pill className="bg-orange-500 dark:bg-orange-500 text-orange-200 dark:text-orange-100">
+                <b>Tailwind</b>
+              </Pill>
+              <Pill className="bg-orange-500 dark:bg-orange-500 text-orange-200 dark:text-orange-100">
+                <b>MySQL</b>
+              </Pill>
+              <Pill className="bg-orange-500 dark:bg-orange-500 text-orange-200 dark:text-orange-100">
+                <b>PHP</b>
+              </Pill>
+              <Pill className="bg-orange-500 dark:bg-orange-500 text-orange-200 dark:text-orange-100">
+                <b>WordPress</b>
+              </Pill>
+              <Pill className="bg-orange-500 dark:bg-orange-500 text-orange-200 dark:text-orange-100">
+                <b>Vue</b>
+              </Pill>
+              <Pill className="bg-orange-500 dark:bg-orange-500 text-orange-200 dark:text-orange-100">
+                <b>JS/jQuery</b>
+              </Pill>
+              <Pill className="bg-orange-500 dark:bg-orange-500 text-orange-200 dark:text-orange-100">
+                <b>Laravel</b>
+              </Pill>
+              <Pill className="bg-orange-500 dark:bg-orange-500 text-orange-200 dark:text-orange-100">
+                <b>GitHub Actions</b>
+              </Pill>
             </div>
           </div>
           <div>
@@ -57,14 +84,14 @@ const Home: NextPage = () => {
         <div className="text-center">
           <h2>Some clients I have worked with</h2>
           <div className="flex flex-wrap justify-center gap-6 my-12">
-            <Card className="flex items-center justify-center bg-white w-[250px] h-24 shadow-md hover:shadow-xl hover:transition-all hover:-translate-y-1">
+            <Card className="flex items-center justify-center bg-white dark:bg-white w-[250px] h-24 shadow-md hover:shadow-xl hover:transition-all hover:-translate-y-1">
               <Image
                 // className="w-full"
                 src={umhp}
                 alt="University of Michigan Health Plan logo"
               />
             </Card>
-            <Card className="flex items-center justify-center bg-white w-[250px] h-24 shadow-md hover:shadow-xl hover:transition-all hover:-translate-y-1">
+            <Card className="flex items-center justify-center bg-white dark:bg-white w-[250px] h-24 shadow-md hover:shadow-xl hover:transition-all hover:-translate-y-1">
               <svg
                 className="w-full h-full inline-block"
                 width="153"
@@ -114,13 +141,13 @@ const Home: NextPage = () => {
                 </defs>
               </svg>
             </Card>
-            <Card className="flex items-center justify-center bg-white w-[250px] h-24 shadow-md hover:shadow-xl hover:transition-all hover:-translate-y-1">
+            <Card className="flex items-center justify-center bg-white dark:bg-white w-[250px] h-24 shadow-md hover:shadow-xl hover:transition-all hover:-translate-y-1">
               <Image src={stockX} alt="StockX logo" />
             </Card>
-            <Card className="flex items-center justify-center bg-white w-[250px] h-24 shadow-md hover:shadow-xl hover:transition-all hover:-translate-y-1">
+            <Card className="flex items-center justify-center bg-white dark:bg-white w-[250px] h-24 shadow-md hover:shadow-xl hover:transition-all hover:-translate-y-1">
               <Image src={jetsPizza} alt="Jet's Pizza logo" />
             </Card>
-            <Card className="flex items-center justify-center bg-white w-[250px] h-24 shadow-md hover:shadow-xl hover:transition-all hover:-translate-y-1">
+            <Card className="flex items-center justify-center bg-white dark:bg-white w-[250px] h-24 shadow-md hover:shadow-xl hover:transition-all hover:-translate-y-1">
               <svg
                 className="w-full h-full inline-block"
                 xmlns="http://www.w3.org/2000/svg"
@@ -133,13 +160,13 @@ const Home: NextPage = () => {
                 />
               </svg>
             </Card>
-            <Card className="flex items-center justify-center bg-white w-[250px] h-24 shadow-md hover:shadow-xl hover:transition-all hover:-translate-y-1">
+            <Card className="flex items-center justify-center bg-white dark:bg-white w-[250px] h-24 shadow-md hover:shadow-xl hover:transition-all hover:-translate-y-1">
               <Image src={digitalRealty} alt="Digital Realty logo" />
             </Card>
-            <Card className="flex items-center justify-center bg-white w-[250px] h-24 shadow-md hover:shadow-xl hover:transition-all hover:-translate-y-1">
+            <Card className="flex items-center justify-center bg-white dark:bg-white w-[250px] h-24 shadow-md hover:shadow-xl hover:transition-all hover:-translate-y-1">
               <Image src={detroitAxle} alt="Detroit Axle logo" />
             </Card>
-            <Card className="flex items-center justify-center bg-white w-[250px] h-24 shadow-md hover:shadow-xl hover:transition-all hover:-translate-y-1">
+            <Card className="flex items-center justify-center bg-white dark:bg-white w-[250px] h-24 shadow-md hover:shadow-xl hover:transition-all hover:-translate-y-1">
               <svg
                 className="w-full h-full inline-block"
                 data-v-f2c41a8a=""
@@ -162,7 +189,7 @@ const Home: NextPage = () => {
                 </g>
               </svg>
             </Card>
-            <Card className="flex items-center justify-center bg-white w-[250px] h-24 shadow-md hover:shadow-xl hover:transition-all hover:-translate-y-1">
+            <Card className="flex items-center justify-center bg-white dark:bg-white w-[250px] h-24 shadow-md hover:shadow-xl hover:transition-all hover:-translate-y-1">
               <Image className="w-full" src={s24} alt="Secure 24 logo" />
             </Card>
             {/* <Card className="flex items-center justify-center bg-white w-[250px] h-24 shadow-md hover:shadow-xl hover:transition-all hover:-translate-y-1">
@@ -170,7 +197,9 @@ const Home: NextPage = () => {
             </Card> */}
           </div>
           <Link href="/portfolio">
-            <Button className="hover:bg-orange-400">Learn more</Button>
+            <Button className="bg-orange-500 hover:bg-orange-400 dark:bg-orange-500 dark:hover:bg-orange-400">
+              Learn more
+            </Button>
           </Link>
         </div>
       </main>
