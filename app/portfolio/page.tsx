@@ -17,10 +17,7 @@ export default function Portfolio() {
           title="Automated Deployments"
         >
           <Link href="/portfolio/automated-deployments">
-            <Button
-              className="bg-orange bg-opacity-10 hover:bg-orange hover:text-white hover:opacity-100 dark:bg-orange dark:hover:bg-orange"
-              secondary
-            >
+            <Button className="bg-orange bg-opacity-10 hover:bg-orange hover:text-white hover:opacity-100 dark:bg-orange dark:hover:bg-orange">
               Read more
             </Button>
           </Link>
@@ -30,10 +27,7 @@ export default function Portfolio() {
           title="Physicians Health Plan"
         >
           <Link href="/portfolio/uofmhealthplan">
-            <Button
-              className="bg-orange bg-opacity-10 hover:bg-orange hover:text-white hover:opacity-100 dark:bg-orange dark:hover:bg-orange"
-              primary
-            >
+            <Button className="bg-orange bg-opacity-10 hover:bg-orange hover:text-white hover:opacity-100 dark:bg-orange dark:hover:bg-orange">
               Read more
             </Button>
           </Link>
@@ -43,10 +37,7 @@ export default function Portfolio() {
           title="SPAX"
         >
           <Link href="/portfolio/spax">
-            <Button
-              className="bg-orange bg-opacity-10 hover:bg-orange hover:text-white hover:opacity-100 dark:bg-orange dark:hover:bg-orange"
-              outlined
-            >
+            <Button className="bg-orange bg-opacity-10 hover:bg-orange hover:text-white hover:opacity-100 dark:bg-orange dark:hover:bg-orange">
               Read more
             </Button>
           </Link>
@@ -56,10 +47,7 @@ export default function Portfolio() {
           title="StockX"
         >
           <Link href="/portfolio/stockx">
-            <Button
-              className="bg-orange bg-opacity-10 hover:bg-orange hover:text-white hover:opacity-100 dark:bg-orange dark:hover:bg-orange"
-              outlined
-            >
+            <Button className="bg-orange bg-opacity-10 hover:bg-orange hover:text-white hover:opacity-100 dark:bg-orange dark:hover:bg-orange">
               Read more
             </Button>
           </Link>
@@ -69,10 +57,7 @@ export default function Portfolio() {
           title="Jet's Pizza"
         >
           <Link href="/portfolio/jets-pizza">
-            <Button
-              className="bg-orange bg-opacity-10 hover:bg-orange hover:text-white hover:opacity-100 dark:bg-orange dark:hover:bg-orange"
-              outlined
-            >
+            <Button className="bg-orange bg-opacity-10 hover:bg-orange hover:text-white hover:opacity-100 dark:bg-orange dark:hover:bg-orange">
               Read more
             </Button>
           </Link>
@@ -82,10 +67,7 @@ export default function Portfolio() {
           title="Lippincott"
         >
           <Link href="/portfolio/lippincott">
-            <Button
-              className="bg-orange bg-opacity-10 hover:bg-orange hover:text-white hover:opacity-100 dark:bg-orange dark:hover:bg-orange"
-              outlined
-            >
+            <Button className="bg-orange bg-opacity-10 hover:bg-orange hover:text-white hover:opacity-100 dark:bg-orange dark:hover:bg-orange">
               Read more
             </Button>
           </Link>
@@ -95,10 +77,7 @@ export default function Portfolio() {
           title="CSW"
         >
           <Link href="/portfolio/csw">
-            <Button
-              className="bg-orange bg-opacity-10 hover:bg-orange hover:text-white hover:opacity-100 dark:bg-orange dark:hover:bg-orange"
-              outlined
-            >
+            <Button className="bg-orange bg-opacity-10 hover:bg-orange hover:text-white hover:opacity-100 dark:bg-orange dark:hover:bg-orange">
               Read more
             </Button>
           </Link>
@@ -108,10 +87,7 @@ export default function Portfolio() {
           title="Preaching and Worship"
         >
           <Link href="/portfolio/pwp">
-            <Button
-              className="bg-orange bg-opacity-10 hover:bg-orange hover:text-white hover:opacity-100 dark:bg-orange dark:hover:bg-orange"
-              outlined
-            >
+            <Button className="bg-orange bg-opacity-10 hover:bg-orange hover:text-white hover:opacity-100 dark:bg-orange dark:hover:bg-orange">
               Read more
             </Button>
           </Link>
