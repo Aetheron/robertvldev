@@ -14,7 +14,7 @@ export default function Portfolio() {
       <div className="flex flex-wrap gap-3 mt-4">
         <Card
           className="w-full bg-gray-800 shadow-md lg:min-w-[250px] lg:w-auto hover:shadow-xl hover:transition-all"
-          title="Automated Deployments"
+          cardTitle="Automated Deployments"
         >
           <Link href="/portfolio/automated-deployments">
             <Button className="bg-orange bg-opacity-10 hover:bg-orange hover:text-white hover:opacity-100 dark:bg-orange dark:hover:bg-orange">
@@ -24,7 +24,7 @@ export default function Portfolio() {
         </Card>
         <Card
           className="w-full bg-gray-800 shadow-md lg:min-w-[250px] lg:w-auto hover:shadow-xl hover:transition-all"
-          title="Physicians Health Plan"
+          cardTitle="Physicians Health Plan"
         >
           <Link href="/portfolio/uofmhealthplan">
             <Button className="bg-orange bg-opacity-10 hover:bg-orange hover:text-white hover:opacity-100 dark:bg-orange dark:hover:bg-orange">
@@ -34,7 +34,7 @@ export default function Portfolio() {
         </Card>
         <Card
           className="w-full bg-gray-800 shadow-md lg:min-w-[250px] lg:w-auto hover:shadow-xl hover:transition-all"
-          title="SPAX"
+          cardTitle="SPAX"
         >
           <Link href="/portfolio/spax">
             <Button className="bg-orange bg-opacity-10 hover:bg-orange hover:text-white hover:opacity-100 dark:bg-orange dark:hover:bg-orange">
@@ -44,7 +44,7 @@ export default function Portfolio() {
         </Card>
         <Card
           className="w-full bg-gray-800 shadow-md lg:min-w-[250px] lg:w-auto hover:shadow-xl hover:transition-all"
-          title="StockX"
+          cardTitle="StockX"
         >
           <Link href="/portfolio/stockx">
             <Button className="bg-orange bg-opacity-10 hover:bg-orange hover:text-white hover:opacity-100 dark:bg-orange dark:hover:bg-orange">
@@ -54,7 +54,7 @@ export default function Portfolio() {
         </Card>
         <Card
           className="w-full bg-gray-800 lg:min-w-[250px] lg:w-auto shadow-md hover:shadow-xl hover:transition-all"
-          title="Jet's Pizza"
+          cardTitle="Jet's Pizza"
         >
           <Link href="/portfolio/jets-pizza">
             <Button className="bg-orange bg-opacity-10 hover:bg-orange hover:text-white hover:opacity-100 dark:bg-orange dark:hover:bg-orange">
@@ -64,7 +64,7 @@ export default function Portfolio() {
         </Card>
         <Card
           className="w-full bg-gray-800 lg:min-w-[250px] lg:w-auto shadow-md hover:shadow-xl hover:transition-all"
-          title="Lippincott"
+          cardTitle="Lippincott"
         >
           <Link href="/portfolio/lippincott">
             <Button className="bg-orange bg-opacity-10 hover:bg-orange hover:text-white hover:opacity-100 dark:bg-orange dark:hover:bg-orange">
@@ -74,7 +74,7 @@ export default function Portfolio() {
         </Card>
         <Card
           className="w-full bg-gray-800 lg:min-w-[250px] lg:w-auto shadow-md hover:shadow-xl hover:transition-all"
-          title="CSW"
+          cardTitle="CSW"
         >
           <Link href="/portfolio/csw">
             <Button className="bg-orange bg-opacity-10 hover:bg-orange hover:text-white hover:opacity-100 dark:bg-orange dark:hover:bg-orange">
@@ -84,7 +84,7 @@ export default function Portfolio() {
         </Card>
         <Card
           className="w-full bg-gray-800 lg:min-w-[250px] lg:w-auto shadow-md hover:shadow-xl hover:transition-all"
-          title="Preaching and Worship"
+          cardTitle="Preaching and Worship"
         >
           <Link href="/portfolio/pwp">
             <Button className="bg-orange bg-opacity-10 hover:bg-orange hover:text-white hover:opacity-100 dark:bg-orange dark:hover:bg-orange">

@@ -1,11 +1,11 @@
 import clsx from "clsx"
-import { HTMLAttributes } from "react"
+import { HTMLAttributes, ReactNode } from "react"
 
 export type CardType = {
-  title?: string
+  cardTitle?: ReactNode
 } & HTMLAttributes<HTMLElement>
 
-export default function Card({ title, className, children }: CardType) {
+export default function Card({ cardTitle, className, children }: CardType) {
   return (
     <div
       className={clsx(
@@ -13,9 +13,9 @@ export default function Card({ title, className, children }: CardType) {
         className
       )}
     >
-      {title && (
+      {cardTitle && (
         <div className="px-4 py-5 sm:px-6">
-          <h3>{title}</h3>
+          <h3>{cardTitle}</h3>
         </div>
       )}
       <div className="px-4 py-5 sm:p-6">{children}</div>
