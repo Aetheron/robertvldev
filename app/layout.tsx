@@ -6,7 +6,7 @@ import {
 } from "@fortawesome/free-brands-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { SpeedInsights } from "@vercel/speed-insights/next"
-import { Metadata } from "next"
+import { Metadata, Viewport } from "next"
 import { Inter, Oxygen } from "next/font/google"
 import Image from "next/image"
 import Link from "next/link"
@@ -16,8 +16,11 @@ import "./globals.css"
 const inter = Inter({ subsets: ["latin"] })
 const oxygen = Oxygen({ subsets: ["latin"], weight: "300" })
 
-export const metadata: Metadata = {
-  viewport: { minimumScale: 1, initialScale: 1, width: "device-width" },
+export const metadata: Metadata = {}
+export const viewport: Viewport = {
+  minimumScale: 1,
+  initialScale: 1,
+  width: "device-width",
 }
 
 export default function RootLayout({
