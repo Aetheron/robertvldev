@@ -17,7 +17,7 @@ export default function Portfolio() {
           cardTitle="Automated Deployments"
         >
           <Link href="/portfolio/automated-deployments">
-            <Button className="bg-orange bg-opacity-10 hover:bg-orange hover:text-white hover:opacity-100 dark:bg-orange dark:hover:bg-orange">
+            <Button className="bg-orange bg-opacity-10 cursor-pointer hover:bg-orange hover:text-white hover:opacity-100 dark:bg-orange dark:hover:bg-orange-400">
               Read more
             </Button>
           </Link>
@@ -27,7 +27,7 @@ export default function Portfolio() {
           cardTitle="Physicians Health Plan"
         >
           <Link href="/portfolio/uofmhealthplan">
-            <Button className="bg-orange bg-opacity-10 hover:bg-orange hover:text-white hover:opacity-100 dark:bg-orange dark:hover:bg-orange">
+            <Button className="bg-orange bg-opacity-10 cursor-pointer hover:bg-orange hover:text-white hover:opacity-100 dark:bg-orange dark:hover:bg-orange-400">
               Read more
             </Button>
           </Link>
@@ -37,7 +37,7 @@ export default function Portfolio() {
           cardTitle="SPAX"
         >
           <Link href="/portfolio/spax">
-            <Button className="bg-orange bg-opacity-10 hover:bg-orange hover:text-white hover:opacity-100 dark:bg-orange dark:hover:bg-orange">
+            <Button className="bg-orange bg-opacity-10 cursor-pointer hover:bg-orange hover:text-white hover:opacity-100 dark:bg-orange dark:hover:bg-orange-400">
               Read more
             </Button>
           </Link>
@@ -47,7 +47,7 @@ export default function Portfolio() {
           cardTitle="StockX"
         >
           <Link href="/portfolio/stockx">
-            <Button className="bg-orange bg-opacity-10 hover:bg-orange hover:text-white hover:opacity-100 dark:bg-orange dark:hover:bg-orange">
+            <Button className="bg-orange bg-opacity-10 cursor-pointer hover:bg-orange hover:text-white hover:opacity-100 dark:bg-orange dark:hover:bg-orange-400">
               Read more
             </Button>
           </Link>
@@ -57,7 +57,7 @@ export default function Portfolio() {
           cardTitle="Jet's Pizza"
         >
           <Link href="/portfolio/jets-pizza">
-            <Button className="bg-orange bg-opacity-10 hover:bg-orange hover:text-white hover:opacity-100 dark:bg-orange dark:hover:bg-orange">
+            <Button className="bg-orange bg-opacity-10 cursor-pointer hover:bg-orange hover:text-white hover:opacity-100 dark:bg-orange dark:hover:bg-orange-400">
               Read more
             </Button>
           </Link>
@@ -67,7 +67,7 @@ export default function Portfolio() {
           cardTitle="Lippincott"
         >
           <Link href="/portfolio/lippincott">
-            <Button className="bg-orange bg-opacity-10 hover:bg-orange hover:text-white hover:opacity-100 dark:bg-orange dark:hover:bg-orange">
+            <Button className="bg-orange bg-opacity-10 cursor-pointer hover:bg-orange hover:text-white hover:opacity-100 dark:bg-orange dark:hover:bg-orange-400">
               Read more
             </Button>
           </Link>
@@ -77,7 +77,7 @@ export default function Portfolio() {
           cardTitle="CSW"
         >
           <Link href="/portfolio/csw">
-            <Button className="bg-orange bg-opacity-10 hover:bg-orange hover:text-white hover:opacity-100 dark:bg-orange dark:hover:bg-orange">
+            <Button className="bg-orange bg-opacity-10 cursor-pointer hover:bg-orange hover:text-white hover:opacity-100 dark:bg-orange dark:hover:bg-orange-400">
               Read more
             </Button>
           </Link>
@@ -87,7 +87,7 @@ export default function Portfolio() {
           cardTitle="Preaching and Worship"
         >
           <Link href="/portfolio/pwp">
-            <Button className="bg-orange bg-opacity-10 hover:bg-orange hover:text-white hover:opacity-100 dark:bg-orange dark:hover:bg-orange">
+            <Button className="bg-orange bg-opacity-10 cursor-pointer hover:bg-orange hover:text-white hover:opacity-100 dark:bg-orange dark:hover:bg-orange-400">
               Read more
             </Button>
           </Link>
