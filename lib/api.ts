@@ -17,11 +17,27 @@ const COURSES_GRAPHQL_FIELDS = `
   issuer
 `
 
+const TIMELINE_ITEM_GRAPHQL_FIELDS = `
+  sys {
+    id
+  }
+  title,
+  order,
+  content,
+  eventType
+`
+
+export type CertificationType = {
+  title: string
+  dateIssued: number
+  issuer: string
+}
+
 export type CertificationDataType = {
   data?: { certificationCollection?: { items: CertificationType[] } }
 }
 
-export type CertificationType = {
+export type CourseType = {
   title: string
   dateIssued: number
   issuer: string
@@ -31,10 +47,15 @@ export type CourseDataType = {
   data?: { courseCollection?: { items: CourseType[] } }
 }
 
-export type CourseType = {
+export type TimelineItemDataType = {
+  data?: { timelineItemCollection?: { items: TimelineItemType[] } }
+}
+
+export type TimelineItemType = {
   title: string
-  dateIssued: number
-  issuer: string
+  order: number
+  content: string
+  eventType: string
 }
 
 async function fetchGraphQL(query: string, cacheTag: string, preview = false) {
@@ -94,4 +115,22 @@ export async function getAllCourses(isDraftMode = false) {
   )
 
   return courses.data?.courseCollection?.items
+}
+
+export async function getAllTimelineItems(isDraftMode = false) {
+  const timelineItems: TimelineItemDataType = await fetchGraphQL(
+    `
+    query {
+      timelineItemCollection(order:order_ASC) {
+        items {
+          ${TIMELINE_ITEM_GRAPHQL_FIELDS}
+        }
+      }
+    }
+    `,
+    "timelineItems",
+    isDraftMode
+  )
+
+  return timelineItems.data?.timelineItemCollection?.items
 }
