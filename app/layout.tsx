@@ -57,25 +57,25 @@ export default function RootLayout({
             <div className="w-full">
               <nav className="w-full text-2xl mt-8 flex flex-wrap justify-center lg:text-base">
                 <Link
-                  className="px-4 border-l border-[var(--gray)] first-of-type:border-0"
+                  className="px-4 border-l border-(--gray) first-of-type:border-0"
                   href="/"
                 >
                   Home
                 </Link>
                 <Link
-                  className="px-4 border-l border-[var(--gray)] first-of-type:border-0"
+                  className="px-4 border-l border-(--gray) first-of-type:border-0"
                   href="/portfolio"
                 >
                   Portfolio
                 </Link>
                 <Link
-                  className="px-4 border-l border-[var(--gray)] first-of-type:border-0"
+                  className="px-4 border-l border-(--gray) first-of-type:border-0"
                   href="/certifications"
                 >
                   Certifications
                 </Link>
                 <Link
-                  className="px-4 border-l border-[var(--gray)] first-of-type:border-0"
+                  className="px-4 border-l border-(--gray) first-of-type:border-0"
                   href="/about"
                 >
                   About
@@ -85,7 +85,7 @@ export default function RootLayout({
             <div className="w-full">
               <nav className="w-full text-center mt-8 text-5xl lg:text-right">
                 <a
-                  className="inline-block px-4 py-0 border-l border-[var(--gray)] first-of-type:border-0"
+                  className="inline-block px-4 py-0 border-l border-(--gray) first-of-type:border-0"
                   href="https://github.com/Aetheron"
                   target="_blank"
                 >
@@ -95,7 +95,7 @@ export default function RootLayout({
                   ></FontAwesomeIcon>
                 </a>
                 <a
-                  className="inline-block px-4 py-0 border-l border-[var(--gray)] first-of-type:border-0"
+                  className="inline-block px-4 py-0 border-l border-(--gray) first-of-type:border-0"
                   href="https://codepen.io/aetheron"
                   target="_blank"
                 >
@@ -105,7 +105,7 @@ export default function RootLayout({
                   ></FontAwesomeIcon>
                 </a>
                 <a
-                  className="inline-block px-4 py-0 border-l border-[var(--gray)] first-of-type:border-0"
+                  className="inline-block px-4 py-0 border-l border-(--gray) first-of-type:border-0"
                   href="https://linkedin.com/in/robertvanlonkhuyzen"
                   target="_blank"
                 >

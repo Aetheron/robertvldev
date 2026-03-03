@@ -9,7 +9,7 @@ export default function Card({ cardTitle, className, children }: CardType) {
   return (
     <div
       className={clsx(
-        "divide-y divide-gray-200 overflow-hidden rounded-lg bg-white shadow dark:divide-white/10 dark:bg-gray-800/50 dark:shadow-none dark:outline dark:outline-1 dark:-outline-offset-1 dark:outline-white/10",
+        "divide-y divide-gray-200 overflow-hidden rounded-lg bg-white shadow-sm dark:divide-white/10 dark:bg-gray-800/50 dark:shadow-none dark:outline-solid dark:outline-1 dark:-outline-offset-1 dark:outline-white/10",
         className
       )}
     >
