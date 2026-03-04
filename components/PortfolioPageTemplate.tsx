@@ -1,14 +1,12 @@
-import { faHome } from "@fortawesome/free-solid-svg-icons"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import Head from "next/head"
 import Image, { StaticImageData } from "next/image"
 import Link from "next/link"
-import { BreadCrumb } from "primereact/breadcrumb"
 import { Chip } from "primereact/chip"
 import { ConfirmDialog, confirmDialog } from "primereact/confirmdialog"
 import { MenuItem, MenuItemOptions } from "primereact/menuitem"
 import React from "react"
 import { ParallaxBanner, ParallaxBannerLayer } from "react-scroll-parallax"
+import Breadcrumbs from "./Breadcrumbs"
 import FlipCard, { CardType } from "./FlipCard"
 
 export interface ScreenshotType {
@@ -48,6 +46,13 @@ const PortfolioPageTemplate: React.FC<PortfolioPageTemplateProps> = ({
     { label: title },
   ]
 
+  const breadcrumbLinks = [
+    {
+      title: "Portfolio",
+      href: "/portfolio",
+    },
+  ]
+
   const preview = (source: StaticImageData) => {
     confirmDialog({
       resizable: false,
@@ -67,15 +72,11 @@ const PortfolioPageTemplate: React.FC<PortfolioPageTemplateProps> = ({
       </Head>
       <div>
         <ConfirmDialog />
-        <BreadCrumb
-          className="bg-gray-800 mb-4"
-          home={{
-            icon: <FontAwesomeIcon icon={faHome} className="w-5 h-5" />,
-            url: "/",
-            template: nextLinkTemplate,
-          }}
-          model={items}
-        />
+        <Breadcrumbs
+          // className="bg-gray-800 p-4 rounded"
+          currentPageTitle="University of Michigan Health Plan"
+          links={breadcrumbLinks}
+        ></Breadcrumbs>
         <ParallaxBanner className="h-[75vh] w-screen max-w-[100vw] ml-[50%] -translate-x-1/2 lg:h-[calc(100vh-175px)]">
           <ParallaxBannerLayer speed={-20}>
             <Image
