@@ -24,7 +24,7 @@ export default function Portfolio() {
         </Card>
         <Card
           className="w-full bg-gray-800 shadow-md lg:min-w-[250px] lg:w-auto hover:shadow-xl hover:transition-all"
-          cardTitle="Physicians Health Plan"
+          cardTitle="U of M Health Plan"
         >
           <Link href="/portfolio/uofmhealthplan">
             <Button className="bg-orange bg-opacity-10 cursor-pointer hover:bg-orange hover:text-white hover:opacity-100 dark:bg-orange dark:hover:bg-orange-400">
