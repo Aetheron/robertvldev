@@ -74,7 +74,7 @@ const PortfolioPageTemplate: React.FC<PortfolioPageTemplateProps> = ({
         <ConfirmDialog />
         <Breadcrumbs
           // className="bg-gray-800 p-4 rounded"
-          currentPageTitle="University of Michigan Health Plan"
+          currentPageTitle={title}
           links={breadcrumbLinks}
         ></Breadcrumbs>
         <ParallaxBanner className="h-[75vh] w-screen max-w-[100vw] ml-[50%] -translate-x-1/2 lg:h-[calc(100vh-175px)]">
