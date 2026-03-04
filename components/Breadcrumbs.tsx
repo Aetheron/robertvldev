@@ -1,7 +1,7 @@
 import { HomeIcon } from "@heroicons/react/20/solid"
-import clsx from "clsx"
 import Link from "next/link"
 import { HTMLAttributes } from "react"
+import { twMerge } from "tailwind-merge"
 
 export type BreadcrumbsType = {
   currentPageTitle: string
@@ -14,7 +14,7 @@ export default function Breadcrumbs({
   links,
 }: BreadcrumbsType) {
   return (
-    <nav aria-label="Breadcrumb" className={clsx("flex my-4", className)}>
+    <nav aria-label="Breadcrumb" className={twMerge("flex my-4", className)}>
       <ol role="list" className="flex items-center space-x-4">
         <li>
           <div>
