@@ -1,13 +1,13 @@
 import Head from "next/head"
 import Image, { StaticImageData } from "next/image"
 import Link from "next/link"
-import { Chip } from "primereact/chip"
 import { ConfirmDialog, confirmDialog } from "primereact/confirmdialog"
 import { MenuItem, MenuItemOptions } from "primereact/menuitem"
 import React from "react"
 import { ParallaxBanner, ParallaxBannerLayer } from "react-scroll-parallax"
 import Breadcrumbs from "./Breadcrumbs"
 import FlipCard, { CardType } from "./FlipCard"
+import Pill from "./Pill"
 
 export interface ScreenshotType {
   src: StaticImageData
@@ -91,7 +91,12 @@ const PortfolioPageTemplate: React.FC<PortfolioPageTemplateProps> = ({
               <h1>{title}</h1>
               <div className="flex flex-wrap justify-center gap-5 mb-6  text-center">
                 {pills.map((skill, i) => (
-                  <Chip key={i} className="bg-orange" label={skill}></Chip>
+                  <Pill
+                    key={i}
+                    className="bg-orange-500 dark:bg-orange-500 text-sm font-medium text-white dark:text-white"
+                  >
+                    {skill}
+                  </Pill>
                 ))}
               </div>
             </div>
