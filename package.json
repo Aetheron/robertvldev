@@ -39,6 +39,7 @@
     "react-dom": "18",
     "react-scroll-parallax": "^3.4.2",
     "storyblok-rich-text-react-renderer": "^2.9.0",
+    "tailwind-merge": "^3.5.0",
     "tailwindcss": "^4.2.1",
     "typescript": "5.1.6"
   },
