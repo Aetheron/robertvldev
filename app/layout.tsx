@@ -96,22 +96,22 @@ export default function RootLayout({
                 </a>
                 <a
                   className="inline-block px-4 py-0 border-l border-(--gray) first-of-type:border-0 text-orange-500 hover:text-orange-300"
-                  href="https://codepen.io/aetheron"
-                  target="_blank"
-                >
-                  <FontAwesomeIcon
-                    className="block w-11 h-11"
-                    icon={faCodepen}
-                  ></FontAwesomeIcon>
-                </a>
-                <a
-                  className="inline-block px-4 py-0 border-l border-(--gray) first-of-type:border-0 text-orange-500 hover:text-orange-300"
                   href="https://linkedin.com/in/robertvanlonkhuyzen"
                   target="_blank"
                 >
                   <FontAwesomeIcon
                     className="block w-11 h-11"
                     icon={faLinkedin}
+                  ></FontAwesomeIcon>
+                </a>
+                <a
+                  className="inline-block px-4 py-0 border-l border-(--gray) first-of-type:border-0 text-orange-500 hover:text-orange-300"
+                  href="https://codepen.io/aetheron"
+                  target="_blank"
+                >
+                  <FontAwesomeIcon
+                    className="block w-11 h-11"
+                    icon={faCodepen}
                   ></FontAwesomeIcon>
                 </a>
               </nav>
