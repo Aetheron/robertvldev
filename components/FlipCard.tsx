@@ -1,6 +1,8 @@
+"use client"
+
 import { animated, useSpring } from "@react-spring/web"
-import { Card } from "primereact/card"
 import React, { useState } from "react"
+import Card from "./Card"
 
 export interface CardType {
   title: string
@@ -34,14 +36,16 @@ const FlipCard: React.FC<CardType> = ({ title, front, back }) => {
       }}
     >
       <AnimatedCard
-        className="bg-white text-gray-700 text-center w-52 h-52"
+        className="bg-white dark:bg-white text-gray-700 text-center w-52 h-52"
         style={{ opacity: opacity.to((o) => 1 - o), transform }}
-        title={title}
       >
+        <h3 className="mb-4">
+          <b>{title}</b>
+        </h3>
         {front}
       </AnimatedCard>
       <AnimatedCard
-        className="bg-white text-gray-700 text-center w-52 h-52 absolute top-0"
+        className="bg-white dark:bg-white text-gray-700 text-center w-52 h-52 absolute top-0"
         style={{ opacity, transform, rotateX: "180deg" }}
       >
         {back}

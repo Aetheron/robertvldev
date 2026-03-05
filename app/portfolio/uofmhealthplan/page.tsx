@@ -13,6 +13,7 @@ import { NextPage } from "next/types"
 const PHP: NextPage = () => {
   const pills = [
     "C#",
+    ".NET Framework",
     "ASP.NET MVC",
     "MSSQL",
     "T-SQL",
@@ -93,7 +94,7 @@ const PHP: NextPage = () => {
         </h3>
       </div>
       <div className="flex flex-col gap-2">
-        <div className="divide-y divide-gray-200 overflow-hidden rounded-lg bg-white shadow dark:divide-white/10 dark:bg-gray-800/50 dark:shadow-none dark:outline dark:outline-1 dark:-outline-offset-1 dark:outline-white/10">
+        <div className="divide-y divide-gray-200 overflow-hidden rounded-lg bg-white shadow-sm dark:divide-white/10 dark:bg-gray-800/50 dark:shadow-none dark:outline-solid dark:outline-1 dark:-outline-offset-1 dark:outline-white/10">
           <div className="border-b border-gray-200 px-4 py-5 sm:px-6 dark:border-white/10">
             <h4 className="pb-4 text-xl font-semibold text-gray-900 dark:text-white">
               Provider Directories
@@ -149,7 +150,7 @@ const PHP: NextPage = () => {
           </div>
         </div>
 
-        <div className="divide-y divide-gray-200 overflow-hidden rounded-lg bg-white shadow dark:divide-white/10 dark:bg-gray-800/50 dark:shadow-none dark:outline dark:outline-1 dark:-outline-offset-1 dark:outline-white/10">
+        <div className="divide-y divide-gray-200 overflow-hidden rounded-lg bg-white shadow-sm dark:divide-white/10 dark:bg-gray-800/50 dark:shadow-none dark:outline-solid dark:outline-1 dark:-outline-offset-1 dark:outline-white/10">
           <div className="border-b border-gray-200 px-4 py-5 sm:px-6 dark:border-white/10">
             <h4 className="pb-4 text-xl font-semibold text-gray-900 dark:text-white">
               Provider Incentive Program
@@ -208,7 +209,7 @@ const PHP: NextPage = () => {
           </div>
         </div>
 
-        <div className="divide-y divide-gray-200 overflow-hidden rounded-lg bg-white shadow dark:divide-white/10 dark:bg-gray-800/50 dark:shadow-none dark:outline dark:outline-1 dark:-outline-offset-1 dark:outline-white/10">
+        <div className="divide-y divide-gray-200 overflow-hidden rounded-lg bg-white shadow-sm dark:divide-white/10 dark:bg-gray-800/50 dark:shadow-none dark:outline-solid dark:outline-1 dark:-outline-offset-1 dark:outline-white/10">
           <div className="border-b border-gray-200 px-4 py-5 sm:px-6 dark:border-white/10">
             <h4 className="text-xl font-semibold text-gray-900 dark:text-white">
               Provider Data Automation
@@ -222,7 +223,7 @@ const PHP: NextPage = () => {
           </div>
         </div>
 
-        <div className="divide-y divide-gray-200 overflow-hidden rounded-lg bg-white shadow dark:divide-white/10 dark:bg-gray-800/50 dark:shadow-none dark:outline dark:outline-1 dark:-outline-offset-1 dark:outline-white/10">
+        <div className="divide-y divide-gray-200 overflow-hidden rounded-lg bg-white shadow-sm dark:divide-white/10 dark:bg-gray-800/50 dark:shadow-none dark:outline-solid dark:outline-1 dark:-outline-offset-1 dark:outline-white/10">
           <div className="border-b border-gray-200 px-4 py-5 sm:px-6 dark:border-white/10">
             <h4 className="text-xl font-semibold text-gray-900 dark:text-white">
               HEDIS

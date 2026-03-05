@@ -1,17 +1,23 @@
-import clsx from "clsx"
 import { HTMLAttributes, ReactNode } from "react"
+import { twMerge } from "tailwind-merge"
 
 export type CardType = {
   cardTitle?: ReactNode
 } & HTMLAttributes<HTMLElement>
 
-export default function Card({ cardTitle, className, children }: CardType) {
+export default function Card({
+  cardTitle,
+  className,
+  style,
+  children,
+}: CardType) {
   return (
     <div
-      className={clsx(
+      className={twMerge(
         "divide-y divide-gray-200 overflow-hidden rounded-lg bg-white shadow-sm dark:divide-white/10 dark:bg-gray-800/50 dark:shadow-none dark:outline-solid dark:outline-1 dark:-outline-offset-1 dark:outline-white/10",
         className
       )}
+      style={style}
     >
       {cardTitle && (
         <div className="px-4 py-5 sm:px-6">

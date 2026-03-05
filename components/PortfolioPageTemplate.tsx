@@ -1,10 +1,16 @@
+"use client"
+
 import Head from "next/head"
 import Image, { StaticImageData } from "next/image"
 import Link from "next/link"
 import { ConfirmDialog, confirmDialog } from "primereact/confirmdialog"
 import { MenuItem, MenuItemOptions } from "primereact/menuitem"
 import React from "react"
-import { ParallaxBanner, ParallaxBannerLayer } from "react-scroll-parallax"
+import {
+  ParallaxBanner,
+  ParallaxBannerLayer,
+  ParallaxProvider,
+} from "react-scroll-parallax"
 import Breadcrumbs from "./Breadcrumbs"
 import FlipCard, { CardType } from "./FlipCard"
 import Pill from "./Pill"
@@ -66,7 +72,7 @@ const PortfolioPageTemplate: React.FC<PortfolioPageTemplateProps> = ({
   }
 
   return (
-    <>
+    <ParallaxProvider>
       <Head>
         <title>{`${title} - robertvl.dev`}</title>
       </Head>
@@ -130,7 +136,7 @@ const PortfolioPageTemplate: React.FC<PortfolioPageTemplateProps> = ({
         </div>
         {children && children}
       </div>
-    </>
+    </ParallaxProvider>
   )
 }
 
