@@ -1,21 +1,18 @@
 import PortfolioPageTemplate, {
   ScreenshotType,
 } from "@/components/PortfolioPageTemplate"
-import spax from "@/public/spax/hero.jpg"
+import spax from "@/public/spax/hero.svg"
 import about from "@/public/spax/spax_about.png"
-import {
-  faBugSlash,
-  faCloudBolt,
-  faWallet,
-} from "@fortawesome/free-solid-svg-icons"
+import { faBugSlash, faCloudBolt } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { NextPage } from "next"
 // import coatings from "@/public/spax/spax_coatings.png"
 import { CardType } from "@/components/FlipCard"
 import colorMatch from "@/public/spax/spax_color_match.png"
 import whereToBuy from "@/public/spax/spax_where_to_buy.png"
+import { WalletIcon } from "@heroicons/react/20/solid"
+import { CheckBadgeIcon } from "@heroicons/react/24/outline"
 
-const Spax: NextPage = () => {
+export default function Spax() {
   const pills = [
     "React",
     "NextJS",
@@ -23,6 +20,7 @@ const Spax: NextPage = () => {
     "Tailwind",
     "CraftCMS",
     "BigCommerce",
+    "Meilisearch",
     "GraphQL",
     "C#",
     "Vercel",
@@ -32,12 +30,7 @@ const Spax: NextPage = () => {
   const cards: CardType[] = [
     {
       title: "eCommerce",
-      front: (
-        <FontAwesomeIcon
-          className="w-full h-12"
-          icon={faWallet}
-        ></FontAwesomeIcon>
-      ),
+      front: <WalletIcon className="w-full h-12" />,
       back: <p>Product detail pages with information on where to buy</p>,
     },
     {
@@ -59,6 +52,13 @@ const Spax: NextPage = () => {
         ></FontAwesomeIcon>
       ),
       back: <p>Advanced debugging with Sentry</p>,
+    },
+    {
+      title: "Component Testing",
+      front: <CheckBadgeIcon className="w-full h-12" />,
+      back: (
+        <p>Enforcing UI standardization with component testing using Jest</p>
+      ),
     },
   ]
 
@@ -84,5 +84,3 @@ const Spax: NextPage = () => {
     </>
   )
 }
-
-export default Spax
