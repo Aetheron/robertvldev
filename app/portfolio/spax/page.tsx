@@ -11,6 +11,7 @@ import colorMatch from "@/public/spax/spax_color_match.png"
 import whereToBuy from "@/public/spax/spax_where_to_buy.png"
 import { WalletIcon } from "@heroicons/react/20/solid"
 import { CheckBadgeIcon } from "@heroicons/react/24/outline"
+import { Metadata } from "next/types"
 
 export const metadata: Metadata = {
   title: "SPAX - robertvl.dev",

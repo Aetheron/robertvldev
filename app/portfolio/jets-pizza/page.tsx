@@ -7,7 +7,7 @@ import mapDesktop from "@/public/jets/Jets_map_desktop.png"
 import mapListDesktop from "@/public/jets/Jets_map_list_desktop.png"
 import mapListMobile from "@/public/jets/Jets_map_list_mobile.png"
 import mapMobile from "@/public/jets/Jets_map_mobile.png"
-import jets from "@/public/jets/hero.jpg"
+import jets from "@/public/jets/hero.svg"
 import {
   faBell,
   faLocationCrosshairs,
@@ -15,9 +15,13 @@ import {
   faTimeline,
 } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { NextPage } from "next/types"
+import { Metadata } from "next/types"
 
-const JetsPizza: NextPage = () => {
+export const metadata: Metadata = {
+  title: "Jet's Pizza - robertvl.dev",
+}
+
+export default function JetsPizza() {
   const pills = [
     "PHP",
     "Wordpress",
@@ -132,5 +136,3 @@ const JetsPizza: NextPage = () => {
     </>
   )
 }
-
-export default JetsPizza
