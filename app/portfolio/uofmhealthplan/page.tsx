@@ -8,9 +8,13 @@ import {
   faFlask,
 } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { NextPage } from "next/types"
+import { Metadata } from "next/types"
 
-const PHP: NextPage = () => {
+export const metadata: Metadata = {
+  title: "U of M Health Plan - robertvl.dev",
+}
+
+export default function UMHP() {
   const pills = [
     "C#",
     ".NET Framework",
@@ -241,5 +245,3 @@ const PHP: NextPage = () => {
     </PortfolioPageTemplate>
   )
 }
-
-export default PHP
