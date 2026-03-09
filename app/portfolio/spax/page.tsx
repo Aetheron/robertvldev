@@ -12,6 +12,10 @@ import whereToBuy from "@/public/spax/spax_where_to_buy.png"
 import { WalletIcon } from "@heroicons/react/20/solid"
 import { CheckBadgeIcon } from "@heroicons/react/24/outline"
 
+export const metadata: Metadata = {
+  title: "SPAX - robertvl.dev",
+}
+
 export default function Spax() {
   const pills = [
     "React",
