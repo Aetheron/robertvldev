@@ -1,10 +1,6 @@
 "use client"
 
-import Head from "next/head"
 import Image, { StaticImageData } from "next/image"
-import Link from "next/link"
-import { ConfirmDialog, confirmDialog } from "primereact/confirmdialog"
-import { MenuItem, MenuItemOptions } from "primereact/menuitem"
 import React from "react"
 import {
   ParallaxBanner,
@@ -14,6 +10,7 @@ import {
 import Breadcrumbs from "./Breadcrumbs"
 import FlipCard, { CardType } from "./FlipCard"
 import Pill from "./Pill"
+import PreviewableImage from "./PreviewableImage"
 
 export interface ScreenshotType {
   src: StaticImageData
@@ -36,22 +33,6 @@ const PortfolioPageTemplate: React.FC<PortfolioPageTemplateProps> = ({
   cards,
   screenshots,
 }) => {
-  const nextLinkTemplate = (item: MenuItem, options: MenuItemOptions) => (
-    <Link href={item.url ?? "/"} className={options.className}>
-      {item.icon}
-      {item.label}
-    </Link>
-  )
-
-  const items = [
-    {
-      label: "Portfolio",
-      url: "/portfolio",
-      template: nextLinkTemplate,
-    },
-    { label: title },
-  ]
-
   const breadcrumbLinks = [
     {
       title: "Portfolio",
@@ -59,25 +40,9 @@ const PortfolioPageTemplate: React.FC<PortfolioPageTemplateProps> = ({
     },
   ]
 
-  const preview = (source: StaticImageData) => {
-    confirmDialog({
-      resizable: false,
-      draggable: false,
-      blockScroll: true,
-      dismissableMask: true,
-      message: <Image src={source} alt="" />,
-      footer: <></>,
-      contentClassName: "items-stretch",
-    })
-  }
-
   return (
     <ParallaxProvider>
-      <Head>
-        <title>{`${title} - robertvl.dev`}</title>
-      </Head>
       <div>
-        <ConfirmDialog />
         <Breadcrumbs
           // className="bg-gray-800 p-4 rounded"
           currentPageTitle={title}
@@ -120,17 +85,11 @@ const PortfolioPageTemplate: React.FC<PortfolioPageTemplateProps> = ({
             ))}
           </div>
         )}
-        <div className="flex flex-wrap">
+        <div className="flex flex-wrap mt-5">
           {screenshots &&
-            screenshots?.map((image, i) => (
+            screenshots.map((image, i) => (
               <div key={i} className="lg:flex-[50%] lg:max-w-[50%]">
-                <Image
-                  className="w-full p-3 rounded-3xl cursor-pointer"
-                  src={image.src}
-                  alt={image.alt}
-                  placeholder="blur"
-                  onClick={() => preview(image.src)}
-                />
+                <PreviewableImage image={image.src} altText={image.alt} />
               </div>
             ))}
         </div>
