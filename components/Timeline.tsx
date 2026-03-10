@@ -1,11 +1,11 @@
 "use client"
 
-import { TimelineItemType } from "@/lib/api"
+import { TimelineItemDataType } from "@/lib/api"
 import { AcademicCapIcon, BriefcaseIcon } from "@heroicons/react/20/solid"
 import clsx from "clsx"
 import { ReactNode } from "react"
 
-export type TimelineType = TimelineItemType[]
+export type TimelineType = TimelineItemDataType[]
 
 const TimelineItemEventType: { [index: string]: ReactNode } = {
   Year: (
@@ -23,7 +23,7 @@ const TimelineItemEventType: { [index: string]: ReactNode } = {
   ),
 }
 
-export default function Timeline({ items }: { items: TimelineItemType[] }) {
+export default function Timeline({ items }: { items: TimelineItemDataType[] }) {
   return (
     <div className="flow-root">
       <ul role="list" className="space-y-6">

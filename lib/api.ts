@@ -27,35 +27,35 @@ const TIMELINE_ITEM_GRAPHQL_FIELDS = `
   eventType
 `
 
-export type CertificationType = {
-  title: string
-  dateIssued: number
-  issuer: string
-}
-
 export type CertificationDataType = {
-  data?: { certificationCollection?: { items: CertificationType[] } }
-}
-
-export type CourseType = {
   title: string
   dateIssued: number
   issuer: string
+}
+
+export type CertificationCollectionType = {
+  data?: { certificationCollection?: { items: CertificationDataType[] } }
 }
 
 export type CourseDataType = {
-  data?: { courseCollection?: { items: CourseType[] } }
+  title: string
+  dateIssued: number
+  issuer: string
+}
+
+export type CourseCollectionType = {
+  data?: { courseCollection?: { items: CourseDataType[] } }
 }
 
 export type TimelineItemDataType = {
-  data?: { timelineItemCollection?: { items: TimelineItemType[] } }
-}
-
-export type TimelineItemType = {
   title: string
   order: number
   content: string
   eventType: string
+}
+
+export type TimelineItemCollectionType = {
+  data?: { timelineItemCollection?: { items: TimelineItemDataType[] } }
 }
 
 async function fetchGraphQL(query: string, cacheTag: string, preview = false) {
@@ -82,7 +82,7 @@ async function fetchGraphQL(query: string, cacheTag: string, preview = false) {
 }
 
 export async function getAllCertifications(isDraftMode = false) {
-  const certifications: CertificationDataType = await fetchGraphQL(
+  const certifications: CertificationCollectionType = await fetchGraphQL(
     `
     query {
       certificationCollection {
@@ -100,7 +100,7 @@ export async function getAllCertifications(isDraftMode = false) {
 }
 
 export async function getAllCourses(isDraftMode = false) {
-  const courses: CourseDataType = await fetchGraphQL(
+  const courses: CourseCollectionType = await fetchGraphQL(
     `
     query {
       courseCollection {
@@ -118,7 +118,7 @@ export async function getAllCourses(isDraftMode = false) {
 }
 
 export async function getAllTimelineItems(isDraftMode = false) {
-  const timelineItems: TimelineItemDataType = await fetchGraphQL(
+  const timelineItems: TimelineItemCollectionType = await fetchGraphQL(
     `
     query {
       timelineItemCollection(order:order_ASC) {

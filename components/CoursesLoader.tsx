@@ -1,13 +1,14 @@
 "use client"
 
 import { getCoursesAction } from "@/app/actions"
+import { CourseDataType } from "@/lib/api"
 import { useEffect, useState } from "react"
 import Card from "./Card"
-import CourseItem, { CourseItemProps } from "./CourseItem"
+import CourseItem from "./CourseItem"
 import Skeleton from "./Skeleton"
 
 export default function CoursesLoader() {
-  const [courses, setCourses] = useState<CourseItemProps[]>()
+  const [courses, setCourses] = useState<CourseDataType[]>()
 
   useEffect(() => {
     async function fetchData() {

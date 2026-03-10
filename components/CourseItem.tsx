@@ -1,18 +1,13 @@
 import Card from "@/components/Card"
+import { CourseDataType } from "@/lib/api"
 import { faLaptopCode } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-
-export interface CourseItemProps {
-  title: string
-  dateIssued: number
-  issuer: string
-}
 
 export default function CourseItem({
   title,
   dateIssued,
   issuer,
-}: CourseItemProps) {
+}: CourseDataType) {
   return (
     <Card
       className="bg-gray-800 shadow-md hover:shadow-xl hover:transition-all"

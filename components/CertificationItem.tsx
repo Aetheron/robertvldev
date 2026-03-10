@@ -1,16 +1,11 @@
 import Card from "@/components/Card"
-
-export interface CertificateItemProps {
-  title: string
-  dateIssued: number
-  issuer: string
-}
+import { CertificationDataType } from "@/lib/api"
 
 export default function CertificationItem({
   title,
   dateIssued,
   issuer,
-}: CertificateItemProps) {
+}: CertificationDataType) {
   return (
     <Card
       className="bg-gray-800 shadow-md hover:shadow-xl hover:transition-all"

@@ -1,13 +1,13 @@
 "use client"
 
 import { getTimelineItemsAction } from "@/app/actions"
-import { TimelineItemType } from "@/lib/api"
+import { TimelineItemDataType } from "@/lib/api"
 import { useEffect, useState } from "react"
 import Skeleton from "./Skeleton"
 import Timeline from "./Timeline"
 
 export default function TimelineLoader() {
-  const [timelineItems, setTimelineItems] = useState<TimelineItemType[]>()
+  const [timelineItems, setTimelineItems] = useState<TimelineItemDataType[]>()
 
   useEffect(() => {
     async function fetchData() {

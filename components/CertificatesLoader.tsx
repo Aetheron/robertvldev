@@ -1,13 +1,15 @@
 "use client"
 
 import { getCertificatesAction } from "@/app/actions"
+import { CertificationDataType } from "@/lib/api"
 import { useEffect, useState } from "react"
 import Card from "./Card"
-import CertificationItem, { CertificateItemProps } from "./CertificationItem"
+import CertificationItem from "./CertificationItem"
 import Skeleton from "./Skeleton"
 
 export default function CertificatesLoader() {
-  const [certifications, setCertifications] = useState<CertificateItemProps[]>()
+  const [certifications, setCertifications] =
+    useState<CertificationDataType[]>()
 
   useEffect(() => {
     async function fetchData() {
