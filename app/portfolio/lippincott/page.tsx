@@ -1,12 +1,16 @@
 import PortfolioPageTemplate, {
   ScreenshotType,
 } from "@/components/PortfolioPageTemplate"
-import { NextPage } from "next/types"
-import lippincott from "@/public/lippincott/hero.jpg"
 import podcastDesktop from "@/public/lippincott/Lippincott_screenshot_desktop.png"
 import podcastMobile from "@/public/lippincott/Lippincott_screenshot_mobile.png"
+import lippincott from "@/public/lippincott/hero.jpg"
+import { Metadata } from "next/types"
 
-const Lippincott: NextPage = () => {
+export const metadata: Metadata = {
+  title: "Lippincott - robertvl.dev",
+}
+
+export default function Lippincott() {
   const pills = [
     "PHP",
     "Wordpress",
@@ -49,5 +53,3 @@ const Lippincott: NextPage = () => {
     </>
   )
 }
-
-export default Lippincott
