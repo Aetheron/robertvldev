@@ -1,17 +1,21 @@
 import PortfolioPageTemplate, {
   ScreenshotType,
 } from "@/components/PortfolioPageTemplate"
-import { NextPage } from "next/types"
-import csw from "@/public/csw/hero.jpg"
-import homepage from "@/public/csw/homepage.png"
-import profileBuilder from "@/public/csw/profile_builder.png"
-import performanceImprovements from "@/public/csw/performance_improvements.png"
 import assessmentTools from "@/public/csw/assessment_tools.png"
 import competencyComparison from "@/public/csw/competency_comparison.png"
+import csw from "@/public/csw/hero.svg"
+import homepage from "@/public/csw/homepage.png"
+import performanceImprovements from "@/public/csw/performance_improvements.png"
+import profileBuilder from "@/public/csw/profile_builder.png"
 import selfAssessment from "@/public/csw/self_assessment.png"
+import { Metadata } from "next/types"
 
-const CSW: NextPage = () => {
-  const pills = ["Vue", "MongoDB", "Render"]
+export const metadata: Metadata = {
+  title: "CSW - robertvl.dev",
+}
+
+export default function CSW() {
+  const pills = ["VueJS", "MongoDB", "Render", "Puppeteer"]
 
   const screenshots: ScreenshotType[] = [
     { src: homepage, alt: "CSW Homepage screenshot" },
@@ -60,5 +64,3 @@ const CSW: NextPage = () => {
     </>
   )
 }
-
-export default CSW
