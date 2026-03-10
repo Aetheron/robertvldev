@@ -2,20 +2,25 @@ import { CardType } from "@/components/FlipCard"
 import PortfolioPageTemplate, {
   ScreenshotType,
 } from "@/components/PortfolioPageTemplate"
-import pwp from "@/public/pwp/hero.png"
+import pwp from "@/public/pwp/hero.svg"
 import newHomepage from "@/public/pwp/new_homepage.png"
 import oldHomepage from "@/public/pwp/old_homepage.png"
 import topicalStudies from "@/public/pwp/topical_studies.png"
 import topicalStudy from "@/public/pwp/topical_study.png"
 import {
   faChartLine,
+  faCodeFork,
   faHandHoldingHeart,
   faMagnifyingGlass,
 } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { NextPage } from "next"
+import { Metadata } from "next/types"
 
-const pills = ["PHP", "Drupal", "Laravel", "Less", "MySQL"]
+export const metadata: Metadata = {
+  title: "PWP - robertvl.dev",
+}
+
+const pills = ["PHP", "Drupal", "Laravel", "Less", "MySQL", "Sphinx"]
 
 const cards: CardType[] = [
   {
@@ -48,6 +53,11 @@ const cards: CardType[] = [
     front: <FontAwesomeIcon className="w-full h-12" icon={faChartLine} />,
     back: <p>Google Optimize A/B testing to refine user experience</p>,
   },
+  {
+    title: "Web Crawler",
+    front: <FontAwesomeIcon className="w-full h-12" icon={faCodeFork} />,
+    back: <p>Scrape pages of partnered sites for content and catalog it</p>,
+  },
 ]
 
 const screenshots: ScreenshotType[] = [
@@ -69,7 +79,7 @@ const screenshots: ScreenshotType[] = [
   },
 ]
 
-const PWP: NextPage = () => {
+export default function PWP() {
   return (
     <PortfolioPageTemplate
       title="Preaching and Worship (PWP)"
@@ -93,5 +103,3 @@ const PWP: NextPage = () => {
     </PortfolioPageTemplate>
   )
 }
-
-export default PWP
