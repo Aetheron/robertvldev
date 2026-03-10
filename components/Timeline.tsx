@@ -1,29 +1,18 @@
 "use client"
 
-import { TimelineItemDataType } from "@/lib/api"
-import { AcademicCapIcon, BriefcaseIcon } from "@heroicons/react/20/solid"
 import clsx from "clsx"
 import { ReactNode } from "react"
 
-export type TimelineType = TimelineItemDataType[]
-
-const TimelineItemEventType: { [index: string]: ReactNode } = {
-  Year: (
-    <div className="size-1.5 rounded-full bg-orange-100 ring-3 ring-orange-300 dark:bg-orange-700 dark:ring-orange-500" />
-  ),
-  Education: (
-    <div className="justify-items-center content-center size-8 rounded-full bg-orange-100 ring-3 ring-orange-300 dark:bg-orange-700 dark:ring-orange-500">
-      <AcademicCapIcon className="size-6" />
-    </div>
-  ),
-  Employment: (
-    <div className="justify-items-center content-center size-8 rounded-full bg-orange-100 ring-3 ring-orange-300 dark:bg-orange-700 dark:ring-orange-500">
-      <BriefcaseIcon className="size-6" />
-    </div>
-  ),
+export type TimelineItemType = {
+  order: number
+  title: string
+  content?: ReactNode
+  icon?: ReactNode
 }
 
-export default function Timeline({ items }: { items: TimelineItemDataType[] }) {
+export type TimelineType = TimelineItemType[]
+
+export default function Timeline({ items }: { items: TimelineType }) {
   return (
     <div className="flow-root">
       <ul role="list" className="space-y-6">
@@ -38,7 +27,13 @@ export default function Timeline({ items }: { items: TimelineItemDataType[] }) {
               <div className="w-px bg-orange-600 dark:bg-orange-500" />
             </div>
             <div className="relative flex size-10 flex-none items-center justify-center">
-              {TimelineItemEventType[item.eventType]}
+              {item.icon ? (
+                <div className="justify-items-center content-center size-8 rounded-full bg-orange-100 ring-3 ring-orange-300 dark:bg-orange-700 dark:ring-orange-500">
+                  {item.icon}
+                </div>
+              ) : (
+                <div className="size-1.5 rounded-full bg-orange-100 ring-3 ring-orange-300 dark:bg-orange-700 dark:ring-orange-500" />
+              )}
             </div>
 
             <div>
