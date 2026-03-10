@@ -3,14 +3,17 @@ import PortfolioPageTemplate, {
 } from "@/components/PortfolioPageTemplate"
 import spax from "@/public/spax/hero.svg"
 import about from "@/public/spax/spax_about.png"
-import { faBugSlash, faCloudBolt } from "@fortawesome/free-solid-svg-icons"
+import {
+  faBugSlash,
+  faCloudBolt,
+  faListCheck,
+} from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 // import coatings from "@/public/spax/spax_coatings.png"
 import { CardType } from "@/components/FlipCard"
 import colorMatch from "@/public/spax/spax_color_match.png"
 import whereToBuy from "@/public/spax/spax_where_to_buy.png"
 import { WalletIcon } from "@heroicons/react/20/solid"
-import { CheckBadgeIcon } from "@heroicons/react/24/outline"
 import { Metadata } from "next/types"
 
 export const metadata: Metadata = {
@@ -60,7 +63,12 @@ export default function Spax() {
     },
     {
       title: "Component Testing",
-      front: <CheckBadgeIcon className="w-full h-12" />,
+      front: (
+        <FontAwesomeIcon
+          className="w-full h-12"
+          icon={faListCheck}
+        ></FontAwesomeIcon>
+      ),
       back: (
         <p>Enforcing UI standardization with component testing using Jest</p>
       ),
