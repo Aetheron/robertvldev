@@ -83,14 +83,14 @@ export default function Home() {
         <div className="text-center">
           <h2>Some clients I have worked with</h2>
           <div className="flex flex-wrap justify-center gap-6 my-12">
-            <Card className="flex items-center justify-center bg-white dark:bg-white w-[250px] h-24 shadow-md hover:shadow-xl hover:transition-all hover:-translate-y-1">
+            <Card className="flex items-center justify-center bg-white dark:bg-white w-62.5 h-24 shadow-md hover:shadow-xl hover:transition-all hover:-translate-y-1">
               <Image
                 // className="w-full"
                 src={umhp}
                 alt="University of Michigan Health Plan logo"
               />
             </Card>
-            <Card className="flex items-center justify-center bg-white dark:bg-white w-[250px] h-24 shadow-md hover:shadow-xl hover:transition-all hover:-translate-y-1">
+            <Card className="flex items-center justify-center bg-white dark:bg-white w-62.5 h-24 shadow-md hover:shadow-xl hover:transition-all hover:-translate-y-1">
               <svg
                 className="w-full h-full inline-block"
                 width="153"
@@ -140,13 +140,13 @@ export default function Home() {
                 </defs>
               </svg>
             </Card>
-            <Card className="flex items-center justify-center bg-white dark:bg-white w-[250px] h-24 shadow-md hover:shadow-xl hover:transition-all hover:-translate-y-1">
+            <Card className="flex items-center justify-center bg-white dark:bg-white w-62.5 h-24 shadow-md hover:shadow-xl hover:transition-all hover:-translate-y-1">
               <Image src={stockX} alt="StockX logo" />
             </Card>
-            <Card className="flex items-center justify-center bg-white dark:bg-white w-[250px] h-24 shadow-md hover:shadow-xl hover:transition-all hover:-translate-y-1">
+            <Card className="flex items-center justify-center bg-white dark:bg-white w-62.5 h-24 shadow-md hover:shadow-xl hover:transition-all hover:-translate-y-1">
               <Image src={jetsPizza} alt="Jet's Pizza logo" />
             </Card>
-            <Card className="flex items-center justify-center bg-white dark:bg-white w-[250px] h-24 shadow-md hover:shadow-xl hover:transition-all hover:-translate-y-1">
+            <Card className="flex items-center justify-center bg-white dark:bg-white w-62.5 h-24 shadow-md hover:shadow-xl hover:transition-all hover:-translate-y-1">
               <svg
                 className="w-full h-full inline-block"
                 xmlns="http://www.w3.org/2000/svg"
@@ -159,13 +159,13 @@ export default function Home() {
                 />
               </svg>
             </Card>
-            <Card className="flex items-center justify-center bg-white dark:bg-white w-[250px] h-24 shadow-md hover:shadow-xl hover:transition-all hover:-translate-y-1">
+            <Card className="flex items-center justify-center bg-white dark:bg-white w-62.5 h-24 shadow-md hover:shadow-xl hover:transition-all hover:-translate-y-1">
               <Image src={digitalRealty} alt="Digital Realty logo" />
             </Card>
-            <Card className="flex items-center justify-center bg-white dark:bg-white w-[250px] h-24 shadow-md hover:shadow-xl hover:transition-all hover:-translate-y-1">
+            <Card className="flex items-center justify-center bg-white dark:bg-white w-62.5 h-24 shadow-md hover:shadow-xl hover:transition-all hover:-translate-y-1">
               <Image src={detroitAxle} alt="Detroit Axle logo" />
             </Card>
-            <Card className="flex items-center justify-center bg-white dark:bg-white w-[250px] h-24 shadow-md hover:shadow-xl hover:transition-all hover:-translate-y-1">
+            <Card className="flex items-center justify-center bg-white dark:bg-white w-62.5 h-24 shadow-md hover:shadow-xl hover:transition-all hover:-translate-y-1">
               <svg
                 className="w-full h-full inline-block"
                 data-v-f2c41a8a=""
@@ -188,7 +188,7 @@ export default function Home() {
                 </g>
               </svg>
             </Card>
-            <Card className="flex items-center justify-center bg-white dark:bg-white w-[250px] h-24 shadow-md hover:shadow-xl hover:transition-all hover:-translate-y-1">
+            <Card className="flex items-center justify-center bg-white dark:bg-white w-62.5 h-24 shadow-md hover:shadow-xl hover:transition-all hover:-translate-y-1">
               <Image className="w-full" src={s24} alt="Secure 24 logo" />
             </Card>
             {/* <Card className="flex items-center justify-center bg-white w-[250px] h-24 shadow-md hover:shadow-xl hover:transition-all hover:-translate-y-1">
