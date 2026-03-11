@@ -31,43 +31,43 @@ export default function Home() {
               <h2 className="text-gray-300 mb-6">DevOps Engineer</h2>
             </div>
             <div className="flex flex-wrap justify-center gap-5 lg:justify-start">
-              <Pill className="text-base bg-orange-500 dark:bg-orange-500 text-orange-200 dark:text-orange-100">
+              <Pill className="lg:text-base bg-orange-500 dark:bg-orange-500 text-orange-200 dark:text-orange-100">
                 <b>C#</b>
               </Pill>
-              <Pill className="text-base bg-orange-500 dark:bg-orange-500 text-orange-200 dark:text-orange-100">
+              <Pill className="lg:text-base bg-orange-500 dark:bg-orange-500 text-orange-200 dark:text-orange-100">
                 <b>.NET Framework</b>
               </Pill>
-              <Pill className="text-base bg-orange-500 dark:bg-orange-500 text-orange-200 dark:text-orange-100">
+              <Pill className="lg:text-base bg-orange-500 dark:bg-orange-500 text-orange-200 dark:text-orange-100">
                 <b>React</b>
               </Pill>
-              <Pill className="text-base bg-orange-500 dark:bg-orange-500 text-orange-200 dark:text-orange-100">
+              <Pill className="lg:text-base bg-orange-500 dark:bg-orange-500 text-orange-200 dark:text-orange-100">
                 <b>NextJS</b>
               </Pill>
-              <Pill className="text-base bg-orange-500 dark:bg-orange-500 text-orange-200 dark:text-orange-100">
+              <Pill className="lg:text-base bg-orange-500 dark:bg-orange-500 text-orange-200 dark:text-orange-100">
                 <b>TypeScript</b>
               </Pill>
-              <Pill className="text-base bg-orange-500 dark:bg-orange-500 text-orange-200 dark:text-orange-100">
+              <Pill className="lg:text-base bg-orange-500 dark:bg-orange-500 text-orange-200 dark:text-orange-100">
                 <b>Tailwind</b>
               </Pill>
-              <Pill className="text-base bg-orange-500 dark:bg-orange-500 text-orange-200 dark:text-orange-100">
+              <Pill className="lg:text-base bg-orange-500 dark:bg-orange-500 text-orange-200 dark:text-orange-100">
                 <b>MySQL</b>
               </Pill>
-              <Pill className="text-base bg-orange-500 dark:bg-orange-500 text-orange-200 dark:text-orange-100">
+              <Pill className="lg:text-base bg-orange-500 dark:bg-orange-500 text-orange-200 dark:text-orange-100">
                 <b>PHP</b>
               </Pill>
-              <Pill className="text-base bg-orange-500 dark:bg-orange-500 text-orange-200 dark:text-orange-100">
+              <Pill className="lg:text-base bg-orange-500 dark:bg-orange-500 text-orange-200 dark:text-orange-100">
                 <b>WordPress</b>
               </Pill>
-              <Pill className="text-base bg-orange-500 dark:bg-orange-500 text-orange-200 dark:text-orange-100">
+              <Pill className="lg:text-base bg-orange-500 dark:bg-orange-500 text-orange-200 dark:text-orange-100">
                 <b>Vue</b>
               </Pill>
-              <Pill className="text-base bg-orange-500 dark:bg-orange-500 text-orange-200 dark:text-orange-100">
+              <Pill className="lg:text-base bg-orange-500 dark:bg-orange-500 text-orange-200 dark:text-orange-100">
                 <b>JS/jQuery</b>
               </Pill>
-              <Pill className="text-base bg-orange-500 dark:bg-orange-500 text-orange-200 dark:text-orange-100">
+              <Pill className="lg:text-base bg-orange-500 dark:bg-orange-500 text-orange-200 dark:text-orange-100">
                 <b>Laravel</b>
               </Pill>
-              <Pill className="text-base bg-orange-500 dark:bg-orange-500 text-orange-200 dark:text-orange-100">
+              <Pill className="lg:text-base bg-orange-500 dark:bg-orange-500 text-orange-200 dark:text-orange-100">
                 <b>GitHub Actions</b>
               </Pill>
             </div>
