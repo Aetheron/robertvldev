@@ -8,16 +8,17 @@ import jetsPizza from "@/public/JetsPizza.png"
 import stockX from "@/public/StockX_Green_Digital_RGB.png"
 import umhp from "@/public/UM-Health-Plan_Logo-Horizontal-CMYK.png"
 import s24 from "@/public/s24-ntt-logo.png"
-import Head from "next/head"
 import Image from "next/image"
 import Link from "next/link"
+import { Metadata } from "next/types"
+
+export const metadata: Metadata = {
+  title: "Home - robertvl.dev",
+}
 
 export default function Home() {
   return (
     <>
-      <Head>
-        <title>Home - robertvl.dev</title>
-      </Head>
       <main>
         <div className="flex flex-col justify-between text-center gap-6 mb-12 lg:flex-row lg:text-left">
           <div className="lg:max-w-[60%]">
