@@ -1,4 +1,4 @@
-@import 'tailwindcss';
+@import "tailwindcss";
 
 @config '../tailwind.config.js';
 
@@ -107,6 +107,6 @@ h4 {
   @apply text-lg lg:text-xl;
 }
 
-.p-timeline .p-timeline-event .p-timeline-event-connector {
-  background-color: var(--light-gray);
+a {
+  @apply cursor-pointer;
 }

@@ -197,7 +197,7 @@ const Home: NextPage = () => {
             </Card> */}
           </div>
           <Link href="/portfolio">
-            <Button className="bg-orange-500 hover:bg-orange-400 dark:bg-orange-500 dark:hover:bg-orange-400">
+            <Button className="cursor-pointer bg-orange-500 hover:bg-orange-400 dark:bg-orange-500 dark:hover:bg-orange-400">
               Learn more
             </Button>
           </Link>
