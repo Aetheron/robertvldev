@@ -11,9 +11,8 @@ import s24 from "@/public/s24-ntt-logo.png"
 import Head from "next/head"
 import Image from "next/image"
 import Link from "next/link"
-import { NextPage } from "next/types"
 
-const Home: NextPage = () => {
+export default function Home() {
   return (
     <>
       <Head>
@@ -206,5 +205,3 @@ const Home: NextPage = () => {
     </>
   )
 }
-
-export default Home
