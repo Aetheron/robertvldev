@@ -26,7 +26,12 @@ export default function Stats({ className, heading, stats }: StatsType) {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <dl className="grid grid-cols-1 gap-x-8 gap-y-16 text-center lg:grid-cols-3">
           {stats.map((stat, i) => (
-            <div key={i} className="mx-auto flex max-w-xs flex-col gap-y-4">
+            <div
+              key={i}
+              className={`mx-auto flex max-w-xs flex-col gap-y-4 ${
+                i == 3 && stats.length == 4 ? "col-start-2 col-end-2" : ""
+              }`}
+            >
               <dt className="text-base/7 font-normal text-gray-600 dark:text-gray-400">
                 {stat.name}
               </dt>
