@@ -1,6 +1,6 @@
 import { CardType } from "@/components/FlipCard"
 import PortfolioPageTemplate from "@/components/PortfolioPageTemplate"
-import Stats, { StatsData } from "@/components/Stats"
+import Stats, { StatsDataType } from "@/components/Stats"
 import umhp from "@/public/umhp/hero.svg"
 import {
   faCubes,
@@ -70,18 +70,18 @@ export default function UMHP() {
     },
   ]
 
-  const providerDirectoriesStats: StatsData[] = [
+  const providerDirectoriesStats: StatsDataType[] = [
     { name: "saved", value: "$18,000", unit: "/year" },
     { name: "paper saved", value: "~300,000", unit: "pages/year" },
     { name: "directories generated", value: "84", unit: "/year" },
   ]
 
-  const pipStats: StatsData[] = [
+  const pipStats: StatsDataType[] = [
     { name: "reports generated", value: "~400", unit: "/month" },
     // { name: "developer hours saved", value: "", unit: "/report" },
   ]
 
-  const pdaStats: StatsData[] = [
+  const pdaStats: StatsDataType[] = [
     { name: "time saved", value: "", unit: "hours/" },
   ]
 
@@ -103,7 +103,7 @@ export default function UMHP() {
             <h4 className="pb-4 text-xl font-semibold text-gray-900 dark:text-white">
               Provider Directories
             </h4>
-            <Stats stats={providerDirectoriesStats} />
+            <Stats className="py-8 sm:py-4" stats={providerDirectoriesStats} />
           </div>
           <div className="px-4 py-5 sm:p-6">
             <h5 className="font-bold text-lg">Overview</h5>
@@ -159,7 +159,7 @@ export default function UMHP() {
             <h4 className="pb-4 text-xl font-semibold text-gray-900 dark:text-white">
               Provider Incentive Program
             </h4>
-            <Stats stats={pipStats} />
+            <Stats className="py-8 sm:py-4" stats={pipStats} />
           </div>
 
           <div className="px-4 py-5 sm:p-6">
