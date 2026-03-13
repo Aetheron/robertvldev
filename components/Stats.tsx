@@ -22,7 +22,7 @@ export default function Stats({ className, heading, stats }: StatsType) {
         className
       )}
     >
-      {heading && <h2 className="text-center text-5xl pb-12">{heading}</h2>}
+      {heading && <h2 className="text-center text-5xl pb-18">{heading}</h2>}
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <dl className="grid grid-cols-1 gap-x-8 gap-y-16 text-center lg:grid-cols-3">
           {stats.map((stat, i) => (
