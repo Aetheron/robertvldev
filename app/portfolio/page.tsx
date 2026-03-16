@@ -2,13 +2,13 @@ import PortfolioListItem, {
   PortfolioImageCardType,
 } from "@/components/PortfolioImageCard"
 import csw from "@/public/csw/hero.svg"
+import render from "@/public/events-list-deploys.png"
 import jets from "@/public/jets/hero.svg"
 import lippincott from "@/public/lippincott/hero.jpg"
 import pwp from "@/public/pwp/new_homepage.png"
 import spax from "@/public/spax/hero.svg"
 import stockx from "@/public/stockx/hero.svg"
 import umhp from "@/public/umhp/hero.svg"
-import render from "@/public/yaml-sync.webp"
 import { Metadata } from "next/types"
 
 export const metadata: Metadata = {
@@ -34,6 +34,7 @@ export default function Portfolio() {
       type: "Project",
       link: "/portfolio/automated-deployments",
       image: render,
+      position: "left",
     },
     {
       title: "SPAX",

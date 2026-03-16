@@ -6,6 +6,7 @@ export type PortfolioImageCardType = {
   type: string
   link: string
   image: StaticImageData
+  position?: "left" | "right" | "center"
 }
 
 export default function PortfolioLImageCard({
@@ -14,11 +15,18 @@ export default function PortfolioLImageCard({
   item: PortfolioImageCardType
 }) {
   return (
-    <div className="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl bg-gray-900 min-w-full md:min-w-3xs lg:min-w-md px-8 pt-80 pb-8 sm:pt-48 dark:bg-gray-800">
+    <div className="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl bg-gray-900 min-w-full md:min-w-3xs lg:min-w-xsm px-8 pt-80 pb-8 sm:pt-48 dark:bg-gray-800">
       <Image
         alt=""
         src={item.image}
-        className="absolute inset-0 -z-10 size-full object-cover"
+        className={`absolute inset-0 -z-10 size-full object-cover ${
+          item.position == "left"
+            ? "lg:object-left"
+            : item.position == "right"
+            ? "lg:object-right"
+            : ""
+        }`}
+        // placeholder="blur"
       />
       <div className="absolute inset-0 -z-10 bg-linear-to-t from-gray-900 via-gray-900/40 dark:from-black/80 dark:via-black/40" />
       <div className="absolute inset-0 -z-10 rounded-2xl inset-ring inset-ring-gray-900/10 dark:inset-ring-white/10" />
