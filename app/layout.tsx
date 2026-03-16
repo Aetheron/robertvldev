@@ -120,7 +120,10 @@ export default function RootLayout({
           {children}
           <SpeedInsights />
           <footer className="text-center mt-7">
-            <p>© 2020 - {new Date().getFullYear()} Robert VanLonkhuyzen</p>
+            <p>
+              © 2020 - {new Date().getFullYear()} Robert VanLonkhuyzen. All
+              rights reserved.
+            </p>
           </footer>
         </div>
       </body>
