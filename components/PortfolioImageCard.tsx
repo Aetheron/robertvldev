@@ -21,9 +21,9 @@ export default function PortfolioLImageCard({
         src={item.image}
         className={`absolute inset-0 -z-10 size-full object-cover transition-transform transform group-hover:scale-105 ${
           item.position == "left"
-            ? "lg:object-left"
+            ? "object-left"
             : item.position == "right"
-            ? "lg:object-right"
+            ? "object-right"
             : ""
         }`}
         // placeholder="blur"
