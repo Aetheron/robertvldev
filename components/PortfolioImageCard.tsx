@@ -14,7 +14,7 @@ export default function PortfolioLImageCard({
   item: PortfolioImageCardType
 }) {
   return (
-    <div className="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl bg-gray-900 min-w-1/6 px-8 pt-80 pb-8 sm:pt-48 dark:bg-gray-800">
+    <div className="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl bg-gray-900 min-w-full md:min-w-3xs lg:min-w-md px-8 pt-80 pb-8 sm:pt-48 dark:bg-gray-800">
       <Image
         alt=""
         src={item.image}
