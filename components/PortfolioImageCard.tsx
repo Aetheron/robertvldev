@@ -15,11 +15,11 @@ export default function PortfolioLImageCard({
   item: PortfolioImageCardType
 }) {
   return (
-    <div className="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl bg-gray-900 min-w-full md:min-w-3xs lg:min-w-xsm px-8 pt-80 pb-8 sm:pt-48 dark:bg-gray-800">
+    <div className="group relative isolate flex flex-col justify-end overflow-hidden rounded-2xl bg-gray-900 min-w-full md:min-w-3xs lg:min-w-xsm px-8 pt-80 pb-8 sm:pt-48 dark:bg-gray-800">
       <Image
         alt=""
         src={item.image}
-        className={`absolute inset-0 -z-10 size-full object-cover ${
+        className={`absolute inset-0 -z-10 size-full object-cover transition-transform transform group-hover:scale-105 ${
           item.position == "left"
             ? "lg:object-left"
             : item.position == "right"
@@ -36,7 +36,7 @@ export default function PortfolioLImageCard({
           {item.type}
         </Pill>
       </div>
-      <h3 className="mt-3 text-lg/6 font-semibold text-gray-50">
+      <h3 className="mt-3 text-lg/6 font-semibold text-gray-50 hover:text-gray-100">
         <a href={item.link}>
           <span className="absolute inset-0" />
           {item.title}
