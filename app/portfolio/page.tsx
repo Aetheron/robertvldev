@@ -4,10 +4,11 @@ import PortfolioListItem, {
 import csw from "@/public/csw/hero.svg"
 import jets from "@/public/jets/hero.svg"
 import lippincott from "@/public/lippincott/hero.jpg"
-import pwp from "@/public/pwp/hero.svg"
+import pwp from "@/public/pwp/new_homepage.png"
 import spax from "@/public/spax/hero.svg"
 import stockx from "@/public/stockx/hero.svg"
 import umhp from "@/public/umhp/hero.svg"
+import render from "@/public/yaml-sync.webp"
 import { Metadata } from "next/types"
 
 export const metadata: Metadata = {
@@ -16,17 +17,23 @@ export const metadata: Metadata = {
 
 export default function Portfolio() {
   const links: PortfolioImageCardType[] = [
-    {
-      title: "Automated Deployments",
-      type: "Project",
-      link: "/portfolio/automated-deployments",
-      image: null,
-    },
+    // {
+    //   title: "Formulary Maintenance Tool",
+    //   type: "Project",
+    //   link: "/portfolio/formulary-maintenance-tool",
+    //   image: fmt,
+    // },
     {
       title: "University of Michigan Health Plan",
       type: "Client",
       link: "/portfolio/uofmhealthplan",
       image: umhp,
+    },
+    {
+      title: "Automated Deployments",
+      type: "Project",
+      link: "/portfolio/automated-deployments",
+      image: render,
     },
     {
       title: "SPAX",
