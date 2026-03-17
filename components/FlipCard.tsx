@@ -45,7 +45,7 @@ const FlipCard: React.FC<CardType> = ({ title, front, back }) => {
         {front}
       </AnimatedCard>
       <AnimatedCard
-        className="bg-white dark:bg-white text-gray-700 text-center w-52 h-52 absolute top-0"
+        className="bg-white dark:bg-white text-gray-700 text-center w-52 h-52 absolute top-0 select-none"
         style={{ opacity, transform, rotateX: "180deg" }}
       >
         {back}
