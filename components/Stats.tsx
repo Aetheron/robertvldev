@@ -18,7 +18,7 @@ export default function Stats({ className, heading, stats }: StatsType) {
   return (
     <div
       className={twMerge(
-        "rounded-lg py-24 sm:py-32 bg-white dark:bg-gray-900",
+        "rounded-lg py-24 px-8 sm:py-32 bg-white dark:bg-gray-900",
         className
       )}
     >
