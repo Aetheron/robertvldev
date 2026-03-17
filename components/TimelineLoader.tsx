@@ -45,26 +45,28 @@ export default function TimelineLoader() {
   return timelineItems ? (
     <Timeline items={timelineItems}></Timeline>
   ) : (
-    <div className="flex flex-col gap-6">
-      <div className="flex gap-1">
-        <Skeleton className="size-12 rounded-full" />
-        <div className="flex flex-col gap-1 text-left">
-          <Skeleton className="w-72 h-10" />
-          <Skeleton className="w-96 h-6" />
+    <div className="mx-auto w-full">
+      <div className="flex flex-col gap-6">
+        <div className="flex gap-1 w-full">
+          <Skeleton className="size-12 rounded-full" />
+          <div className="flex flex-col gap-1 text-left w-full">
+            <Skeleton className="max-w-72 mr-12 h-10" />
+            <Skeleton className="max-w-96 h-6" />
+          </div>
         </div>
-      </div>
-      <div className="flex gap-1">
-        <Skeleton className="size-12 rounded-full" />
-        <div className="flex flex-col gap-1 text-left">
-          <Skeleton className="w-72 h-10" />
-          <Skeleton className="w-96 h-6" />
+        <div className="flex gap-1 w-full">
+          <Skeleton className="size-12 rounded-full" />
+          <div className="flex flex-col gap-1 text-left w-full">
+            <Skeleton className="max-w-72 mr-12 h-10" />
+            <Skeleton className="max-w-96 h-6" />
+          </div>
         </div>
-      </div>
-      <div className="flex gap-1">
-        <Skeleton className="size-12 rounded-full" />
-        <div className="flex flex-col gap-1 text-left">
-          <Skeleton className="w-72 h-10" />
-          <Skeleton className="w-96 h-6" />
+        <div className="flex gap-1 w-full">
+          <Skeleton className="size-12 rounded-full" />
+          <div className="flex flex-col gap-1 text-left w-full">
+            <Skeleton className="max-w-72 mr-12 h-10" />
+            <Skeleton className="max-w-96 h-6" />
+          </div>
         </div>
       </div>
     </div>
