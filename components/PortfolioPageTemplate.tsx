@@ -52,14 +52,14 @@ const PortfolioPageTemplate: React.FC<PortfolioPageTemplateProps> = ({
           <ParallaxBannerLayer speed={-20}>
             <Image
               src={heroImage}
-              className="h-full blur-md brightness-50 lg:w-screen lg:max-w-[100vw]"
+              className="h-full blur-md brightness-50 object-cover lg:w-screen lg:max-w-[100vw]"
               alt=""
               priority={true}
             ></Image>
           </ParallaxBannerLayer>
           <ParallaxBannerLayer>
             <div className="absolute inset-0 flex flex-col items-center justify-center gap-10">
-              <h1>{title}</h1>
+              <h1 className="text-center text-5xl lg:text-6xl">{title}</h1>
               <div className="flex flex-wrap justify-center gap-5 mb-6  text-center">
                 {pills.map((skill, i) => (
                   <Pill
