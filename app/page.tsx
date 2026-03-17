@@ -318,7 +318,7 @@ export default function Home() {
             </div>
           </section>
           {/* CTA Learn More */}
-          <div className="relative isolate overflow-hidden bg-white dark:bg-gray-900">
+          <div className="relative isolate overflow-y-clip bg-white dark:bg-gray-900">
             <div className="px-6 py-24 sm:py-32 lg:px-8">
               <div className="mx-auto max-w-2xl text-center">
                 <h2 className="text-4xl font-semibold tracking-tight text-balance text-gray-900 sm:text-5xl dark:text-gray-100">
@@ -358,7 +358,7 @@ export default function Home() {
               />
               <defs>
                 <radialGradient id="8d958450-c69f-4251-94bc-4e091a323369">
-                  <stop stopColor="#7775D6" />
+                  <stop stopColor="#eba47c" />
                   <stop offset={1} stopColor="#d66400" />
                 </radialGradient>
               </defs>
