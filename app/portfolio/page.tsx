@@ -5,6 +5,7 @@ import csw from "@/public/csw/hero.svg"
 import render from "@/public/events-list-deploys.png"
 import jets from "@/public/jets/hero.svg"
 import lippincott from "@/public/lippincott/hero.jpg"
+import luyh from "@/public/luyh/cover.jpg"
 import pwp from "@/public/pwp/new_homepage.png"
 import spax from "@/public/spax/hero.svg"
 import stockx from "@/public/stockx/hero.svg"
@@ -71,6 +72,12 @@ export default function Portfolio() {
       type: "Project",
       link: "/portfolio/pwp",
       image: pwp,
+    },
+    {
+      title: "Lift Up Your Hearts Hymnal App",
+      type: "Project",
+      link: "/portfolio/luyh",
+      image: luyh,
     },
   ]
 
