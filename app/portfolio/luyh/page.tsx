@@ -7,6 +7,11 @@ import info from "@/public/luyh/info.jpg"
 import lectionary from "@/public/luyh/lectionary.jpg"
 import score from "@/public/luyh/score.jpg"
 import search from "@/public/luyh/search.jpg"
+import { Metadata } from "next/types"
+
+export const metadata: Metadata = {
+  title: "Lift Up Your Hearts Hymnal App - robertvl.dev",
+}
 
 export default function LUYH() {
   const pills = ["Objective-C / Cocoa"]
