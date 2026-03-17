@@ -29,7 +29,7 @@ export default function Stats({ className, heading, stats }: StatsType) {
             <div
               key={i}
               className={`mx-auto flex max-w-xs flex-col gap-y-4 ${
-                i == 3 && stats.length == 4 ? "col-start-2 col-end-2" : ""
+                i == 3 && stats.length == 4 ? "lg:col-start-2 lg:col-end-2" : ""
               }`}
             >
               <dt className="text-base/7 font-normal text-gray-600 dark:text-gray-400">
