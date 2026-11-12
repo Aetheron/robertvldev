@@ -85,7 +85,7 @@ export default function Portfolio() {
   return (
     <div>
       <h1>Portfolio</h1>
-      <div className="flex flex-wrap gap-3 mt-4">
+      <div className="mt-4 flex flex-wrap gap-3">
         {links &&
           links.map((link) => (
             <PortfolioListItem key={link.title} item={link} />
