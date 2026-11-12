@@ -7,6 +7,7 @@ import fmtcompareindividualfield from "@/public/fmt/fmt-compare-individual-field
 import fmtcompare from "@/public/fmt/fmt-compare.png"
 import fmtdashboard from "@/public/fmt/fmt-dashboard.png"
 import fmtnewdrug from "@/public/fmt/fmt-new-drug.png"
+import hero from "@/public/fmt/hero.svg"
 import { CloudIcon, UserGroupIcon } from "@heroicons/react/24/outline"
 
 export default function FormularyMaintenanceTool() {
@@ -62,7 +63,7 @@ export default function FormularyMaintenanceTool() {
   return (
     <PortfolioPageTemplate
       title="Formulary Maintenance Tool"
-      heroImage={null}
+      heroImage={hero}
       pills={pills}
       cards={cards}
       screenshots={screenshots}
