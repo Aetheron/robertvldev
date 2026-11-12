@@ -5559,9 +5559,9 @@ synckit@^0.8.5:
     tslib "^2.5.0"
 
 systeminformation@^5.31.1:
-  version "5.31.4"
-  resolved "https://registry.yarnpkg.com/systeminformation/-/systeminformation-5.31.4.tgz#788d80a821d572f4369683c4c61d466d86451fb4"
-  integrity sha512-lZppDyQx91VdS5zJvAyGkmwe+Mq6xY978BDUG2wRkWE+jkmUF5ti8cvOovFQoN5bvSFKCXVkyKEaU5ec3SJiRg==
+  version "5.33.20"
+  resolved "https://registry.yarnpkg.com/systeminformation/-/systeminformation-5.33.20.tgz#e9368e3eccf4f8040004905954e956ae38e1f911"
+  integrity sha512-8Cd5qcDjE8bHums5QhSbXo69qDC5sqKY9H6dZXq+nHIoN9cq9cjJrpasHRWq2vTp19acpgc7VlJP6gRoKvV+dA==
 
 tabbable@^6.0.0:
   version "6.4.0"
