@@ -3,6 +3,7 @@ import PortfolioListItem, {
 } from "@/components/PortfolioImageCard"
 import csw from "@/public/csw/hero.svg"
 import render from "@/public/events-list-deploys.png"
+import fmt from "@/public/fmt/fmt-dashboard.png"
 import jets from "@/public/jets/hero.svg"
 import lippincott from "@/public/lippincott/hero.jpg"
 import luyh from "@/public/luyh/cover.jpg"
@@ -18,12 +19,12 @@ export const metadata: Metadata = {
 
 export default function Portfolio() {
   const links: PortfolioImageCardType[] = [
-    // {
-    //   title: "Formulary Maintenance Tool",
-    //   type: "Project",
-    //   link: "/portfolio/formulary-maintenance-tool",
-    //   image: fmt,
-    // },
+    {
+      title: "Formulary Maintenance Tool",
+      type: "Project",
+      link: "/portfolio/formulary-maintenance-tool",
+      image: fmt,
+    },
     {
       title: "University of Michigan Health Plan",
       type: "Client",
@@ -84,7 +85,7 @@ export default function Portfolio() {
   return (
     <div>
       <h1>Portfolio</h1>
-      <div className="flex flex-wrap gap-3 mt-4">
+      <div className="mt-4 flex flex-wrap gap-3">
         {links &&
           links.map((link) => (
             <PortfolioListItem key={link.title} item={link} />
