@@ -4,6 +4,7 @@ import Stats, { StatsDataType } from "@/components/Stats"
 import src from "@/public/Bob-VanLonkhuyzen.png"
 import detroitAxle from "@/public/DetroitAxle.png"
 import digitalRealty from "@/public/DigitalRealty.png"
+import codeforgood from "@/public/Horizontal_Logo.svg"
 import jetsPizza from "@/public/JetsPizza.png"
 import stockX from "@/public/StockX_Green_Digital_RGB.png"
 import umhp from "@/public/UM-Health-Plan_Logo-Horizontal-CMYK.png"
@@ -110,8 +111,11 @@ export default function Home() {
           {/* Clients grid block */}
           <div className="text-center font-semibold px-4 py-24 rounded-lg">
             <h2>Some of the clients I have worked with</h2>
-            <div className="flex flex-wrap justify-center gap-6 my-12">
-              <Card className="flex items-center justify-center bg-white dark:bg-white w-62.5 h-24 shadow-md hover:shadow-xl hover:transition-all hover:-translate-y-1">
+          <div className="my-12 flex flex-wrap justify-center gap-6">
+            <Card className="flex h-24 w-62.5 items-center justify-center bg-white shadow-md hover:-translate-y-1 hover:shadow-xl hover:transition-all dark:bg-white">
+              <Image src={codeforgood} alt="Code for Good logo" />
+            </Card>
+            <Card className="flex h-24 w-62.5 items-center justify-center bg-white shadow-md hover:-translate-y-1 hover:shadow-xl hover:transition-all dark:bg-white">
                 <Image
                   // className="w-full"
                   src={umhp}
